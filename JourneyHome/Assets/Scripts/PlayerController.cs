@@ -31,17 +31,30 @@ public class PlayerController : MonoBehaviour
         // Ground Check
         isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
 
+        // Input for horizontal movement
         float moveInput = Input.GetAxisRaw("Horizontal");
         float speed = isSneaking ? sneakSpeed : walkSpeed;
         Vector3 velocity = new Vector3(moveInput * speed, rb.velocity.y, 0f);
         rb.velocity = velocity;
 
-
+        if (moveInput < 0)
+        {
+            if (transform.rotation.eulerAngles.y != 270)
+            {
+                transform.rotation = Quaternion.Euler(0, 270, 0);
+            }
+        }
+        else if (moveInput > 0)
+        {
+            if (transform.rotation.eulerAngles.y != 90)
+            {
+                transform.rotation = Quaternion.Euler(0, 90, 0);
+            }
+        }
         // Sneaking
         isSneaking = Input.GetKey(KeyCode.LeftShift);
         transform.localScale = isSneaking ? sneakScale : originalScale;
 
-  
         // Jumping
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
