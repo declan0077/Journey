@@ -1,5 +1,19 @@
 ﻿title: Start
 position: -284,-283
 ---
-Declan: or like a global chat style
+Allen: Sneaky Stealty Like
+<<CameraSwitch Soldier>>
+Rick: I hope no aliens Escape
+<<CameraSwitch Player>>
+
+===
+
+title: Seen
+position: -284,-283
+---
+<<CameraSwitch Soldier>>
+Rick: OI I see you
+<<CameraSwitch Player>>
+Allen: No you dont
+
 ===

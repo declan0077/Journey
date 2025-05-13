@@ -118,6 +118,7 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity 2022.3.58f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -343,6 +344,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ProBuilder.AddOns.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ProBuilder.AssetIdRemapUtility.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ProBuilder.Editor.ref.dll"
@@ -377,6 +380,8 @@
 "Assets/EasyTransitions/Scripts/Transition.cs"
 "Assets/EasyTransitions/Scripts/TransitionManager.cs"
 "Assets/EasyTransitions/Scripts/TransitionSettings.cs"
+"Assets/KeyPressed.cs"
+"Assets/Level.cs"
 "Assets/Samples/Yarn Spinner/2.5.1/3D Speech Bubble/Scripts/Spinner.cs"
 "Assets/Samples/Yarn Spinner/2.5.1/3D Speech Bubble/Scripts/YarnCharacter.cs"
 "Assets/Samples/Yarn Spinner/2.5.1/3D Speech Bubble/Scripts/YarnCharacterView.cs"
@@ -388,8 +393,8 @@
 "Assets/Scripts/Interactable/IActivate.cs"
 "Assets/Scripts/Interfaces/Door.cs"
 "Assets/Scripts/Interfaces/Ladder.cs"
-"Assets/Scripts/Ui/NextLevel.cs"
 "Assets/Scripts/Ui/TransitionEffect.cs"
+"Assets/YarnHelper.cs"
 -langversion:9.0
 /deterministic
 /optimize+
