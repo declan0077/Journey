@@ -7,7 +7,20 @@ public class PlayerController : MonoBehaviour
 {
     public float walkSpeed = 5f;
     public float sneakSpeed = 2f;
+
+
+    [Header("Jump Settings")]
+    public AnimationCurve jumpCurve; 
+    public float jumpDuration = 0.5f; 
     public float jumpForce = 7f;
+    private bool isJumping = false;
+    private float jumpTimer = 0f;
+
+    [Header("Air Control Settings")]
+    public float airControlMultiplier = 0.5f; 
+
+
+
     public LayerMask groundLayer;
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
@@ -22,7 +35,7 @@ public class PlayerController : MonoBehaviour
 
 
     public bool isClimbing = false;
-    public Transform model; // Assign this in the Inspector
+    public Transform model; 
 
     private void Start()
     {
@@ -34,53 +47,113 @@ public class PlayerController : MonoBehaviour
     {
         // Ground Check
         isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
+       
+        
         if (GameManager.Instance.GetGameState() == GameManager.GameState.Dialog)
         {
+            rb.velocity = Vector3.zero;
             return;
         }
 
+
+
         if (GameManager.Instance.GetGameState() == GameManager.GameState.Play)
         {
-            // Movement input
-            float moveInput = Input.GetAxisRaw("Horizontal");
+            if (isGrounded)
+            {
+                // Movement input
+                float moveInput = Input.GetAxisRaw("Horizontal");
+                // Apply horizontal movement
+                float speed = isSneaking ? sneakSpeed : walkSpeed;
+                Vector3 velocity = new Vector3(moveInput * speed, rb.velocity.y, 0f);
+                rb.velocity = velocity;
 
-            // Sneaking
-            isSneaking = Input.GetKey(KeyCode.LeftShift);
+                // Flip character
+                if (moveInput < 0)
+                    transform.rotation = Quaternion.Euler(0, 270, 0);
+                else if (moveInput > 0)
+                    transform.rotation = Quaternion.Euler(0, 90, 0);
+
+                animator.SetBool("IsWalking", moveInput != 0);
+
+            }
+            else
+            {
 
 
-            // Apply horizontal movement
-            float speed = isSneaking ? sneakSpeed : walkSpeed;
-            Vector3 velocity = new Vector3(moveInput * speed, rb.velocity.y, 0f);
-            rb.velocity = velocity;
+            }
+                // Sneaking
+                isSneaking = Input.GetKey(KeyCode.LeftShift);
 
-            // Flip character
-            if (moveInput < 0)
-                transform.rotation = Quaternion.Euler(0, 270, 0);
-            else if (moveInput > 0)
-                transform.rotation = Quaternion.Euler(0, 90, 0);
+
 
             // Jump
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             {
-                rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+                isJumping = true;
+                jumpTimer = 0f;
                 animator.SetTrigger("Jump");
             }
 
 
             // Animator parameters
-            animator.SetBool("IsWalking", moveInput != 0 && isGrounded && !isSneaking);
             animator.SetBool("IsSneaking", isSneaking);
             animator.SetBool("IsClimbing", isClimbing);
+            animator.SetBool("InAir", isGrounded);
 
         }
     }
+    private void FixedUpdate()
+    {
+        PreventFallBelowGround();
+        if (GameManager.Instance.GetGameState() == GameManager.GameState.Play)
+        {
+            isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
 
-  public void ReturnToSpawn()
+            float moveInput = Input.GetAxisRaw("Horizontal");
+            float speed = isSneaking ? sneakSpeed : walkSpeed;
+
+            float horizontalSpeed = isGrounded ? speed : speed * airControlMultiplier;
+
+            Vector3 velocity = new Vector3(moveInput * horizontalSpeed, rb.velocity.y, 0f);
+
+            if (isJumping)
+            {
+                jumpTimer += Time.fixedDeltaTime;
+                float normalizedTime = jumpTimer / jumpDuration;
+
+                if (normalizedTime >= 1f)
+                {
+                    isJumping = false;
+                }
+                else
+                {
+                    float curveValue = jumpCurve.Evaluate(normalizedTime);
+                    velocity.y = curveValue * jumpForce;
+                }
+            }
+
+            rb.velocity = velocity;
+        }
+    }
+
+    public void ReturnToSpawn()
     {
         // Return the player to the spawn location
         transform.position = spawnLocation.position;
         transform.rotation = spawnLocation.rotation;
         rb.velocity = Vector3.zero; // Reset velocity
+    }
+
+    //jumping bug temp solution 
+    private void PreventFallBelowGround()
+    {
+        if (transform.position.y < -1f)
+        {
+            transform.position = new Vector3(transform.position.x, -1f, transform.position.z);
+
+            rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        }
     }
 
 

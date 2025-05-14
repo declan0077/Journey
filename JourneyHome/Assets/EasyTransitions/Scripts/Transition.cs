@@ -57,6 +57,7 @@ namespace EasyTransition
             ApplyColorTint(transitionIn);
             FlipIfNeeded(transitionIn);
             SetAnimatorSpeed(transitionIn);
+
         }
         public void PlayTransistionIn()
         {
@@ -70,7 +71,7 @@ namespace EasyTransition
             float destroyTime = transitionSettings.autoAdjustTransitionTime
                 ? transitionSettings.destroyTime / transitionSettings.transitionSpeed
                 : transitionSettings.destroyTime;
-         //   Destroy(gameObject, destroyTime);
+            Destroy(transitionIn, destroyTime);
         }
         public void PlayTransitionOut()
         {
@@ -88,7 +89,7 @@ namespace EasyTransition
                 ? transitionSettings.destroyTime / transitionSettings.transitionSpeed
                 : transitionSettings.destroyTime;
 
-         //   Destroy(gameObject, destroyTime);
+            Destroy(transitionOut, destroyTime);
         }
 
         private void ApplyColorTint(GameObject transitionObject)

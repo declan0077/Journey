@@ -271,7 +271,7 @@ MonoBehaviour:
   top: {fileID: 6653879872840480900}
   bottom: {fileID: 3077421546663052394}
   offset: {x: 0, y: 2, z: 0}
-  DelayTime: 0.19
+  DelayTime: 0.2
 --- !u!65 &953509865400692544
 BoxCollider:
   m_ObjectHideFlags: 0

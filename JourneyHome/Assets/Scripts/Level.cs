@@ -9,7 +9,7 @@ public class Level : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(LoadNextLeveld());
+            Transition.Instance.PlayTransistionIn();
             Debug.Log("Loading next level...");
         }
         else
@@ -19,10 +19,5 @@ public class Level : MonoBehaviour
 
     }
 
-    IEnumerator LoadNextLeveld()
-    {
-        Transition.Instance.PlayTransistionIn();
-        yield return new WaitForSeconds(1f);
-        Transition.Instance.PlayTransitionOut();
-    }
+
 }
