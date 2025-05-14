@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
 
 
     private Animator animator;
+   [SerializeField] private Transform spawnLocation;
+
 
     public bool isClimbing = false;
     public Transform model; // Assign this in the Inspector
@@ -25,7 +27,6 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-
         rb = GetComponent<Rigidbody>();
     }
 
@@ -33,36 +34,53 @@ public class PlayerController : MonoBehaviour
     {
         // Ground Check
         isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
-
-        // Movement input
-        float moveInput = Input.GetAxisRaw("Horizontal");
-
-        // Sneaking
-        isSneaking = Input.GetKey(KeyCode.LeftShift);
-   
-
-        // Apply horizontal movement
-        float speed = isSneaking ? sneakSpeed : walkSpeed;
-        Vector3 velocity = new Vector3(moveInput * speed, rb.velocity.y, 0f);
-        rb.velocity = velocity;
-
-        // Flip character
-        if (moveInput < 0)
-            transform.rotation = Quaternion.Euler(0, 270, 0);
-        else if (moveInput > 0)
-            transform.rotation = Quaternion.Euler(0, 90, 0);
-
-        // Jump
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (GameManager.Instance.GetGameState() == GameManager.GameState.Dialog)
         {
-            rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
-            animator.SetTrigger("Jump");
+            return;
         }
 
-        // Animator parameters
-        animator.SetBool("IsWalking", moveInput != 0 && isGrounded && !isSneaking);
-        animator.SetBool("IsSneaking", isSneaking);
-        animator.SetBool("IsClimbing", isClimbing); 
+        if (GameManager.Instance.GetGameState() == GameManager.GameState.Play)
+        {
+            // Movement input
+            float moveInput = Input.GetAxisRaw("Horizontal");
+
+            // Sneaking
+            isSneaking = Input.GetKey(KeyCode.LeftShift);
+
+
+            // Apply horizontal movement
+            float speed = isSneaking ? sneakSpeed : walkSpeed;
+            Vector3 velocity = new Vector3(moveInput * speed, rb.velocity.y, 0f);
+            rb.velocity = velocity;
+
+            // Flip character
+            if (moveInput < 0)
+                transform.rotation = Quaternion.Euler(0, 270, 0);
+            else if (moveInput > 0)
+                transform.rotation = Quaternion.Euler(0, 90, 0);
+
+            // Jump
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            {
+                rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+                animator.SetTrigger("Jump");
+            }
+
+
+            // Animator parameters
+            animator.SetBool("IsWalking", moveInput != 0 && isGrounded && !isSneaking);
+            animator.SetBool("IsSneaking", isSneaking);
+            animator.SetBool("IsClimbing", isClimbing);
+
+        }
+    }
+
+  public void ReturnToSpawn()
+    {
+        // Return the player to the spawn location
+        transform.position = spawnLocation.position;
+        transform.rotation = spawnLocation.rotation;
+        rb.velocity = Vector3.zero; // Reset velocity
     }
 
 

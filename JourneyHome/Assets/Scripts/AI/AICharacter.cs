@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -40,22 +41,35 @@ public class AICharacter : MonoBehaviour
         direction.y = 0f;
         float distance = direction.magnitude;
 
-        if (distance < 0.1f)
+        //switch on state
+        if (GameManager.Instance.GetGameState() == GameManager.GameState.Dialog)
         {
-            StartCoroutine(IdleAndSwitchPoint());
+            return;
         }
-        else
-        {
-            animator.SetBool("IsWalking", true);
-            transform.position += direction.normalized * speed * Time.deltaTime;
 
-            // Optional: face movement direction
-            if (direction != Vector3.zero)
+
+
+        if (GameManager.Instance.GetGameState() == GameManager.GameState.Play)
+        {
+            if (distance < 0.1f)
             {
-                Quaternion lookRotation = Quaternion.LookRotation(direction);
-                transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+                StartCoroutine(IdleAndSwitchPoint());
+            }
+            else
+            {
+                animator.SetBool("IsWalking", true);
+                transform.position += direction.normalized * speed * Time.deltaTime;
+
+                // Optional: face movement direction
+                if (direction != Vector3.zero)
+                {
+                    Quaternion lookRotation = Quaternion.LookRotation(direction);
+                    transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+                }
             }
         }
+
+      
     }
 
     private IEnumerator IdleAndSwitchPoint()

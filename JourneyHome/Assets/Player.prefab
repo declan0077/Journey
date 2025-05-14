@@ -244,8 +244,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.70710784}
   m_LocalPosition: {x: -10.008953, y: -1, z: -3.757}
-  m_LocalScale: {x: 0.53154, y: 0.53154, z: 0.53154}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.45, y: 0.45, z: 0.45}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7136084087642761712}
   - {fileID: 3675803993815953634}
@@ -326,6 +326,7 @@ MonoBehaviour:
     m_Bits: 8
   groundCheck: {fileID: 406414921633080614}
   groundCheckRadius: 0.2
+  spawnLocation: {fileID: 0}
   isClimbing: 0
   model: {fileID: 0}
 --- !u!114 &3782726495510982682

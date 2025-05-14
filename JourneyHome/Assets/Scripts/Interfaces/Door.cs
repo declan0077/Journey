@@ -52,4 +52,9 @@ public class Door : MonoBehaviour, IActivate
         }
         transform.position = originalPosition;
     }
+
+    public void OnNear()
+    {
+
+    }
 }

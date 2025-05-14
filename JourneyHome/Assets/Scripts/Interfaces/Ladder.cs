@@ -103,4 +103,9 @@ public class Ladder : MonoBehaviour, IActivate
         Gizmos.DrawSphere(top.position + offset, 0.2f);
 
     }
+
+   public void OnNear()
+    {
+
+    }
 }

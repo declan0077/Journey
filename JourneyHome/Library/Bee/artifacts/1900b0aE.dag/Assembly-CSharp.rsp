@@ -381,8 +381,6 @@
 "Assets/EasyTransitions/Scripts/Transition.cs"
 "Assets/EasyTransitions/Scripts/TransitionManager.cs"
 "Assets/EasyTransitions/Scripts/TransitionSettings.cs"
-"Assets/KeyPressed.cs"
-"Assets/Level.cs"
 "Assets/Samples/Yarn Spinner/2.5.1/3D Speech Bubble/Scripts/Spinner.cs"
 "Assets/Samples/Yarn Spinner/2.5.1/3D Speech Bubble/Scripts/YarnCharacter.cs"
 "Assets/Samples/Yarn Spinner/2.5.1/3D Speech Bubble/Scripts/YarnCharacterView.cs"
@@ -391,11 +389,14 @@
 "Assets/Scripts/Camera/CameraFollow.cs"
 "Assets/Scripts/Character/PlayerController.cs"
 "Assets/Scripts/Character/PlayerInteraction.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Interactable/IActivate.cs"
 "Assets/Scripts/Interfaces/Door.cs"
 "Assets/Scripts/Interfaces/Ladder.cs"
+"Assets/Scripts/Level.cs"
+"Assets/Scripts/Ui/KeyPressed.cs"
 "Assets/Scripts/Ui/TransitionEffect.cs"
-"Assets/YarnHelper.cs"
+"Assets/Scripts/YarnHelper.cs"
 -langversion:9.0
 /deterministic
 /optimize+
