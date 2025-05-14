@@ -1,0 +1,20 @@
+﻿title: Start
+position: -284,-283
+---
+Allen: These humans cannot keep me captive.
+Allen: I will escape and return to my home.
+<<CameraSwitch Soldier>>
+Rick: I hope no aliens escape
+<<CameraSwitch Player>>
+
+===
+
+title: Seen
+position: -284,-283
+---
+<<CameraSwitch Soldier>>
+Rick: OI I see you
+<<CameraSwitch Player>>
+Allen: No you dont
+
+===

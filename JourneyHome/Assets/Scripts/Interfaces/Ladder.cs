@@ -6,6 +6,10 @@ public class Ladder : MonoBehaviour, IActivate
     [SerializeField] private float speed = 5f;
     [SerializeField] private Transform top;
     [SerializeField] private Transform bottom;
+    [SerializeField] private Vector3 offset = new Vector3(0, 0, 0);
+
+
+    [SerializeField] private float DelayTime = 0.5f;
 
     private Transform playerTransform;
     private bool isClimbing = false;
@@ -59,6 +63,8 @@ public class Ladder : MonoBehaviour, IActivate
             yield return null;
         }
 
+        yield return new WaitForSeconds(DelayTime); 
+
         // Then move from start to end
         while (isClimbing && Vector3.Distance(playerTransform.position, endPoint.position) > 0.1f)
         {
@@ -68,7 +74,11 @@ public class Ladder : MonoBehaviour, IActivate
             yield return null;
         }
 
-        playerTransform.position = endPoint.position;
+        yield return new WaitForSeconds(DelayTime);
+        // Move player to the final position at the end of the climb
+        playerTransform.position = endPoint.position + offset;
+
+
         playerTransform.rotation = originalRotation;
         modelTransform.rotation = originalModelRotation;
 
@@ -82,5 +92,15 @@ public class Ladder : MonoBehaviour, IActivate
     public void StopActivate()
     {
         isClimbing = false;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(top.position, bottom.position);
+        Gizmos.DrawSphere(top.position, 0.2f);
+        Gizmos.DrawSphere(bottom.position, 0.2f);
+        Gizmos.DrawSphere(top.position + offset, 0.2f);
+
     }
 }

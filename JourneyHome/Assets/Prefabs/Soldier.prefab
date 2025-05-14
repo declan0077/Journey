@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1226679499989783341}
   m_Layer: 0
-  m_Name: Bip001 HeadNub
+  m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -445,8 +445,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
+  - point: {fileID: 0}
+    faceDirection: {x: 0, y: 0, z: 1}
+  - point: {fileID: 0}
+    faceDirection: {x: 0, y: 0, z: 1}
   speed: 2
   idleDuration: 2
 --- !u!114 &3498085341002963547

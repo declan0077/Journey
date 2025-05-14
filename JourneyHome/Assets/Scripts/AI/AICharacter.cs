@@ -1,10 +1,18 @@
 ﻿using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 public class AICharacter : MonoBehaviour
 {
-    public Transform[] patrolPoints;  // Array of patrol points
+    [System.Serializable]
+    public class PatrolPoint
+    {
+        public Transform point;
+        public Vector3 faceDirection = Vector3.forward; // Default to forward
+    }
+
+    public PatrolPoint[] patrolPoints;
     public float speed = 2f;
     public float idleDuration = 2f;
 
@@ -18,8 +26,8 @@ public class AICharacter : MonoBehaviour
 
         if (patrolPoints.Length > 0)
         {
-            transform.position = patrolPoints[0].position; // Optional: start at first point
-            currentPointIndex = 1 % patrolPoints.Length;   // Start heading to the second point
+            transform.position = patrolPoints[0].point.position;
+            currentPointIndex = 1 % patrolPoints.Length;
         }
     }
 
@@ -27,7 +35,7 @@ public class AICharacter : MonoBehaviour
     {
         if (isIdling || patrolPoints.Length < 2) return;
 
-        Transform targetPoint = patrolPoints[currentPointIndex];
+        Transform targetPoint = patrolPoints[currentPointIndex].point;
         Vector3 direction = targetPoint.position - transform.position;
         direction.y = 0f;
         float distance = direction.magnitude;
@@ -41,6 +49,12 @@ public class AICharacter : MonoBehaviour
             animator.SetBool("IsWalking", true);
             transform.position += direction.normalized * speed * Time.deltaTime;
 
+            // Optional: face movement direction
+            if (direction != Vector3.zero)
+            {
+                Quaternion lookRotation = Quaternion.LookRotation(direction);
+                transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+            }
         }
     }
 
@@ -51,38 +65,62 @@ public class AICharacter : MonoBehaviour
 
         yield return new WaitForSeconds(idleDuration);
 
-        int nextPointIndex = (currentPointIndex + 1) % patrolPoints.Length;
-        Transform nextTarget = patrolPoints[nextPointIndex];
-
-        float moveDir = Mathf.Sign(nextTarget.position.x - transform.position.x);
-        if (moveDir != 0f)
+        // Face the specified direction at the current patrol point
+        PatrolPoint currentPatrolPoint = patrolPoints[currentPointIndex];
+        if (currentPatrolPoint.faceDirection != Vector3.zero)
         {
-            float currentYRotation = transform.eulerAngles.y;
+            Vector3 flatDirection = new Vector3(
+                currentPatrolPoint.faceDirection.x,
+                0f,
+                currentPatrolPoint.faceDirection.z
+            );
 
-            if ((moveDir > 0 && currentYRotation != 0f) || (moveDir < 0 && currentYRotation != 180f))
+            if (flatDirection != Vector3.zero)
             {
-                float newYRotation = (currentYRotation + 180f) % 360f;
-                transform.rotation = Quaternion.Euler(0, newYRotation, 0);
+                Quaternion desiredRotation = Quaternion.LookRotation(flatDirection);
+                transform.rotation = Quaternion.Euler(0, desiredRotation.eulerAngles.y, 0);
             }
         }
 
-        currentPointIndex = nextPointIndex;
+
+        // Move to next patrol point
+        currentPointIndex = (currentPointIndex + 1) % patrolPoints.Length;
         isIdling = false;
     }
-
 
     private void OnDrawGizmosSelected()
     {
         if (patrolPoints != null && patrolPoints.Length > 1)
         {
-            Gizmos.color = Color.cyan;
             for (int i = 0; i < patrolPoints.Length; i++)
             {
-                Gizmos.DrawSphere(patrolPoints[i].position, 0.2f);
+                var patrolPoint = patrolPoints[i];
+                if (patrolPoint.point == null) continue;
 
+                // Draw patrol point
+                Gizmos.color = Color.cyan;
+                Gizmos.DrawSphere(patrolPoint.point.position, 0.2f);
+
+                // Draw path line
                 int nextIndex = (i + 1) % patrolPoints.Length;
-                Gizmos.DrawLine(patrolPoints[i].position, patrolPoints[nextIndex].position);
+                if (patrolPoints[nextIndex].point != null)
+                {
+                    Gizmos.DrawLine(patrolPoint.point.position, patrolPoints[nextIndex].point.position);
+                }
+
+                // Draw facing direction arrow
+                Vector3 origin = patrolPoint.point.position + Vector3.up * 0.5f; // lift arrow for clarity
+                Vector3 direction = patrolPoint.faceDirection.normalized * 0.8f;
+
+
+                Handles.color = Color.yellow;
+                Handles.ArrowHandleCap(0, origin, Quaternion.LookRotation(direction), 0.8f, EventType.Repaint);
+
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawRay(origin, direction);
+
             }
         }
     }
+
 }
