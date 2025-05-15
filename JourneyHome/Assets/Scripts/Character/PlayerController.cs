@@ -10,14 +10,14 @@ public class PlayerController : MonoBehaviour
 
 
     [Header("Jump Settings")]
-    public AnimationCurve jumpCurve; 
-    public float jumpDuration = 0.5f; 
+    public AnimationCurve jumpCurve;
+    public float jumpDuration = 0.5f;
     public float jumpForce = 7f;
     private bool isJumping = false;
     private float jumpTimer = 0f;
 
     [Header("Air Control Settings")]
-    public float airControlMultiplier = 0.5f; 
+    public float airControlMultiplier = 0.5f;
 
     public LayerMask groundLayer;
     public Transform groundCheck;
@@ -29,11 +29,20 @@ public class PlayerController : MonoBehaviour
 
 
     private Animator animator;
-   [SerializeField] private Transform spawnLocation;
+    [SerializeField] private Transform spawnLocation;
 
 
     public bool isClimbing = false;
-    public Transform model; 
+    public Transform model;
+
+    private bool isHoldingObject = false;
+    public Transform HoldingSpot;
+    public GameObject itemInHand;
+    public float throwForce = 15f;
+    public float liftDuration = 0.2f;
+    public float liftHeight = 1.5f;
+    public LayerMask throwAimLayer;
+
 
     private void Start()
     {
@@ -45,15 +54,22 @@ public class PlayerController : MonoBehaviour
     {
         // Ground Check
         isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
-       
-        
+
+
         if (GameManager.Instance.GetGameState() == GameManager.GameState.Dialog)
         {
             rb.velocity = Vector3.zero;
             return;
         }
 
+        animator.SetBool("HoldingObject", isHoldingObject);
 
+        if (Input.GetMouseButtonDown(0))
+        {
+
+            if (itemInHand != null)
+                ThrowObject();
+        }
 
         if (!isClimbing && isGrounded)
         {
@@ -78,7 +94,8 @@ public class PlayerController : MonoBehaviour
         isSneaking = Input.GetKey(KeyCode.LeftShift);
 
 
-
+        if (!isHoldingObject)
+        {
             // Jump
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             {
@@ -87,14 +104,15 @@ public class PlayerController : MonoBehaviour
                 animator.SetTrigger("Jump");
             }
 
+        }
 
-            // Animator parameters
-            animator.SetBool("IsSneaking", isSneaking);
-            animator.SetBool("IsClimbing", isClimbing);
-            animator.SetBool("InAir", isGrounded);
+        // Animator parameters
+        animator.SetBool("IsSneaking", isSneaking);
+        animator.SetBool("IsClimbing", isClimbing);
+        animator.SetBool("InAir", isGrounded);
 
     }
-    
+
     private void FixedUpdate()
     {
         PreventFallBelowGround();
@@ -129,6 +147,38 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void HoldObject(GameObject gameObject)
+    {
+        isHoldingObject = true;
+        if (itemInHand != null)
+        {
+            itemInHand.transform.SetParent(null);
+        }
+        itemInHand = gameObject;
+        itemInHand.transform.SetParent(HoldingSpot);
+        itemInHand.transform.localPosition = Vector3.zero;
+        itemInHand.transform.localRotation = Quaternion.identity;
+        Rigidbody itemRb = itemInHand.GetComponent<Rigidbody>();
+        Collider collider = itemInHand.GetComponent<Collider>();
+        if (collider != null)
+        {
+            collider.enabled = false;
+        }
+        if (itemRb != null)
+        {
+            itemRb.isKinematic = true;
+
+        }
+    }
+    public void ThrowObject()
+    {
+        if (itemInHand != null)
+        {
+            StartCoroutine(ThrowSequence());
+        }
+    }
+
+
     public void ReturnToSpawn()
     {
         // Return the player to the spawn location
@@ -147,7 +197,60 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
         }
     }
+    private IEnumerator ThrowSequence()
+    {
+        GameObject item = itemInHand;
+        itemInHand = null;
+        isHoldingObject = false;
 
+        item.transform.SetParent(null);
+
+        // Temporarily disable physics and collider
+        Rigidbody itemRb = item.GetComponent<Rigidbody>();
+        Collider itemCol = item.GetComponent<Collider>();
+        if (itemRb != null) itemRb.isKinematic = true;
+        if (itemCol != null) itemCol.enabled = false;
+
+        // Move above player for lift-up animation
+        Vector3 start = item.transform.position;
+        Vector3 end = transform.position + Vector3.up * liftHeight;
+
+        float elapsed = 0f;
+        while (elapsed < liftDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / liftDuration);
+            item.transform.position = Vector3.Lerp(start, end, t);
+            yield return null;
+        }
+
+        // Aim toward mouse
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Vector3 throwDirection = ray.direction;
+
+        // Apply force
+        if (itemRb != null)
+        {
+            itemRb.isKinematic = false;
+            itemRb.AddForce(throwDirection.normalized * throwForce, ForceMode.Impulse);
+        }
+
+        // Enable collider again
+        if (itemCol != null)
+        {
+            itemCol.enabled = true;
+        }
+    }
+
+    void OnDrawGizmos()
+    {
+        if (itemInHand != null)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Gizmos.color = Color.green;
+            Gizmos.DrawRay(itemInHand.transform.position, ray.direction * 5f);
+        }
+    }
 
     private void OnDrawGizmosSelected()
     {

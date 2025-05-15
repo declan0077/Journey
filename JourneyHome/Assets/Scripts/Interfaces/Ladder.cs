@@ -14,6 +14,7 @@ public class Ladder : MonoBehaviour, IActivate
     private Transform playerTransform;
     private bool isClimbing = false;
 
+
     public void StartActivate()
     {
         if (playerTransform == null)

@@ -7,20 +7,28 @@ public class PlayerInteraction : MonoBehaviour
     public float rayDistance = 2f;
     public LayerMask interactableLayer;
     [SerializeField] private Transform Eyes;
+    private IActivate currentTarget = null;
 
     void Update()
     {
         RaycastHit hit;
-        Ray ray = new Ray(Eyes.position, transform.forward); 
+        Ray ray = new Ray(Eyes.position, transform.forward);
 
-        // Check if the ray hits anything within rayDistance and is a interactableLayer
         if (Physics.Raycast(ray, out hit, rayDistance, interactableLayer))
         {
             IActivate activatable = hit.collider.GetComponent<IActivate>();
 
             if (activatable != null)
             {
-                Debug.Log("Found an activatable object!");
+
+                if (currentTarget != activatable)
+                {
+                    if (currentTarget != null)
+                        currentTarget.StopActivate();
+
+                    currentTarget = activatable;
+                    currentTarget.OnNear();
+                }
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -28,8 +36,15 @@ public class PlayerInteraction : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            if (currentTarget != null)
+            {
+                currentTarget.StopActivate();
+                currentTarget = null;
+            }
+        }
 
-        
         Debug.DrawRay(Eyes.position, transform.forward * rayDistance, Color.yellow);
     }
 }

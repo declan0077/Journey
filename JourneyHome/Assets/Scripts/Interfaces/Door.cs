@@ -10,6 +10,8 @@ public class Door : MonoBehaviour, IActivate
     private Vector3 originalPosition;
     private Coroutine moveCoroutine;
 
+    public Material Outline { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+
     private void Awake()
     {
         originalPosition = transform.position;
