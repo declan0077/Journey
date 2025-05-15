@@ -19,8 +19,6 @@ public class PlayerController : MonoBehaviour
     [Header("Air Control Settings")]
     public float airControlMultiplier = 0.5f; 
 
-
-
     public LayerMask groundLayer;
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
@@ -57,33 +55,27 @@ public class PlayerController : MonoBehaviour
 
 
 
-        if (GameManager.Instance.GetGameState() == GameManager.GameState.Play)
+        if (!isClimbing && isGrounded)
         {
-            if (isGrounded)
-            {
-                // Movement input
-                float moveInput = Input.GetAxisRaw("Horizontal");
-                // Apply horizontal movement
-                float speed = isSneaking ? sneakSpeed : walkSpeed;
-                Vector3 velocity = new Vector3(moveInput * speed, rb.velocity.y, 0f);
-                rb.velocity = velocity;
+            // Movement input
+            float moveInput = Input.GetAxisRaw("Horizontal");
 
-                // Flip character
-                if (moveInput < 0)
-                    transform.rotation = Quaternion.Euler(0, 270, 0);
-                else if (moveInput > 0)
-                    transform.rotation = Quaternion.Euler(0, 90, 0);
+            float speed = isSneaking ? sneakSpeed : walkSpeed;
+            Vector3 velocity = new Vector3(moveInput * speed, rb.velocity.y, 0f);
+            rb.velocity = velocity;
 
-                animator.SetBool("IsWalking", moveInput != 0);
+            // Flip character
+            if (moveInput < 0)
+                transform.rotation = Quaternion.Euler(0, 270, 0);
+            else if (moveInput > 0)
+                transform.rotation = Quaternion.Euler(0, 90, 0);
 
-            }
-            else
-            {
+            animator.SetBool("IsWalking", moveInput != 0);
+        }
 
 
-            }
-                // Sneaking
-                isSneaking = Input.GetKey(KeyCode.LeftShift);
+        // Sneaking
+        isSneaking = Input.GetKey(KeyCode.LeftShift);
 
 
 
@@ -101,8 +93,8 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("IsClimbing", isClimbing);
             animator.SetBool("InAir", isGrounded);
 
-        }
     }
+    
     private void FixedUpdate()
     {
         PreventFallBelowGround();

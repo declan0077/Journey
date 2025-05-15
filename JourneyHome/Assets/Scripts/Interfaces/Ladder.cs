@@ -52,7 +52,14 @@ public class Ladder : MonoBehaviour, IActivate
         Quaternion originalRotation = playerTransform.rotation;
         Quaternion originalModelRotation = modelTransform.rotation;
 
-        modelTransform.rotation = Quaternion.Euler(0, 90, 0); // Face ladder otherwise it faces the wrong way round
+
+
+        Vector3 toLadder = (transform.position - playerTransform.position).normalized;
+        toLadder.y = 0;
+
+        if (toLadder != Vector3.zero)
+            modelTransform.rotation = Quaternion.LookRotation(-toLadder);
+
 
         // Move to start point first
         while (isClimbing && Vector3.Distance(playerTransform.position, startPoint.position) > 0.1f)
