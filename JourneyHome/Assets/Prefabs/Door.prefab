@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovePositionObject: {fileID: 6288786455109265122}
-  MovePosition: {x: 0, y: 0, z: 0}
+  MovePosition: {x: 0, y: 1, z: 0}
   moveSpeed: 2
 --- !u!1 &5349354173410136457
 GameObject:

@@ -382,6 +382,8 @@
 "Assets/EasyTransitions/Scripts/Transition.cs"
 "Assets/EasyTransitions/Scripts/TransitionManager.cs"
 "Assets/EasyTransitions/Scripts/TransitionSettings.cs"
+"Assets/HackerTextRain.cs"
+"Assets/LightsOffGame.cs"
 "Assets/PressurePad.cs"
 "Assets/Samples/Yarn Spinner/2.5.1/3D Speech Bubble/Scripts/Spinner.cs"
 "Assets/Samples/Yarn Spinner/2.5.1/3D Speech Bubble/Scripts/YarnCharacter.cs"
@@ -400,6 +402,7 @@
 "Assets/Scripts/Ui/KeyPressed.cs"
 "Assets/Scripts/Ui/TransitionEffect.cs"
 "Assets/Scripts/YarnHelper.cs"
+"Assets/SimonSaysGame.cs"
 -langversion:9.0
 /deterministic
 /optimize+
