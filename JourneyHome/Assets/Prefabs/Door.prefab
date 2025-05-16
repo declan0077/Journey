@@ -368,8 +368,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovePositionObject: {fileID: 6288786455109265122}
-  MovePosition: {x: 0, y: 1, z: 0}
   moveSpeed: 2
+  closeDelay: 3
+  outlineMaterial: {fileID: 2100000, guid: 6d1b7596d0b1d8345b0f742a0cb89e60, type: 2}
 --- !u!1 &5349354173410136457
 GameObject:
   m_ObjectHideFlags: 0

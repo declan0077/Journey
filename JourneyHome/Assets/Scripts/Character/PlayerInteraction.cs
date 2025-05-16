@@ -23,11 +23,15 @@ public class PlayerInteraction : MonoBehaviour
 
                 if (currentTarget != activatable)
                 {
-                    if (currentTarget != null)
-                        currentTarget.StopActivate();
+                    if (currentTarget != activatable)
+                    {
+                        if (currentTarget != null)
+                            currentTarget.OnFar(); 
 
-                    currentTarget = activatable;
-                    currentTarget.OnNear();
+                        currentTarget = activatable;
+                        currentTarget.OnNear();
+                    }
+
                 }
 
                 if (Input.GetKeyDown(KeyCode.E))
@@ -40,10 +44,11 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (currentTarget != null)
             {
-                currentTarget.StopActivate();
+                currentTarget.OnFar(); // Add this line
                 currentTarget = null;
             }
         }
+
 
         Debug.DrawRay(Eyes.position, transform.forward * rayDistance, Color.yellow);
     }

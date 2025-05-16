@@ -14,14 +14,22 @@ public class Door : MonoBehaviour, IActivate
     private bool isOpen = false;
     private bool isMoving = false;
 
+    private bool locked = false; 
+
     private void Awake()
     {
         originalPosition = transform.position;
         movePosition = MovePositionObject.position;
     }
 
+    public void SetLocked(bool isLocked)
+    {
+        locked = isLocked;
+    }
+
     public void StartActivate()
     {
+        if (locked) return; 
         if (isMoving) return;
 
         if (!isOpen)
@@ -79,8 +87,30 @@ public class Door : MonoBehaviour, IActivate
         isMoving = false;
     }
 
+    private Material original;
+    [SerializeField] private Material outlineMaterial;
+
+    private Renderer rend;
+
+    private void Start()
+    {
+        rend = GetComponent<Renderer>();
+        original = rend.material;
+    }
     public void OnNear()
     {
-        // Optional: highlight the door or show UI
+        if (rend != null && outlineMaterial != null)
+        {
+            rend.material = outlineMaterial;
+        }
     }
+
+    public void OnFar()
+    {
+        if (rend != null && original != null)
+        {
+            rend.material = original;
+        }
+    }
+
 }

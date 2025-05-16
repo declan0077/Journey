@@ -116,4 +116,8 @@ public class Ladder : MonoBehaviour, IActivate
     {
 
     }
+
+    public void OnFar()
+    {
+    }
 }
