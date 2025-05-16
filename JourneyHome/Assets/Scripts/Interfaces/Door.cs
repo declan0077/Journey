@@ -14,7 +14,7 @@ public class Door : MonoBehaviour, IActivate
     private bool isOpen = false;
     private bool isMoving = false;
 
-    private bool locked = false; 
+    public bool locked = false; 
 
     private void Awake()
     {
@@ -25,6 +25,14 @@ public class Door : MonoBehaviour, IActivate
     public void SetLocked(bool isLocked)
     {
         locked = isLocked;
+        if(locked)
+        {
+            StopActivate(); // Stop any ongoing movement if locked
+        }
+        else
+        {
+            StartActivate(); // Resume movement if unlocked
+        }
     }
 
     public void StartActivate()
@@ -68,7 +76,7 @@ public class Door : MonoBehaviour, IActivate
         yield return new WaitForSeconds(closeDelay);
 
         // Start closing only if it's still open and not already moving
-        if (isOpen && !isMoving)
+        if (isOpen && !isMoving && locked)
         {
             moveCoroutine = StartCoroutine(Close());
         }
