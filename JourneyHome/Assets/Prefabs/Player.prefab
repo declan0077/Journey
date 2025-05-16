@@ -378,7 +378,7 @@ MonoBehaviour:
   model: {fileID: 7136084087642761712}
   HoldingSpot: {fileID: 9175122010416412802}
   itemInHand: {fileID: 0}
-  throwForce: 50
+  throwForce: 150
   liftDuration: 0
   liftHeight: 0
   throwAimLayer:

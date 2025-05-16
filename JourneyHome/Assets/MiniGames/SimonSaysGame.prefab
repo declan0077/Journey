@@ -196,6 +196,7 @@ MonoBehaviour:
   gridSize: 3
   flashDuration: 0.5
   timeBetweenFlashes: 0.3
+  maxRounds: 3
 --- !u!1 &4349659886324833643
 GameObject:
   m_ObjectHideFlags: 0

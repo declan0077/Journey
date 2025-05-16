@@ -115,7 +115,6 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        PreventFallBelowGround();
         if (GameManager.Instance.GetGameState() == GameManager.GameState.Play)
         {
             isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
@@ -187,16 +186,7 @@ public class PlayerController : MonoBehaviour
         rb.velocity = Vector3.zero; // Reset velocity
     }
 
-    //jumping bug temp solution 
-    private void PreventFallBelowGround()
-    {
-        if (transform.position.y < -1f)
-        {
-            transform.position = new Vector3(transform.position.x, -1f, transform.position.z);
 
-            rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-        }
-    }
     private IEnumerator ThrowSequence()
     {
         GameObject item = itemInHand;
