@@ -90,9 +90,20 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        // Sneaking
-        isSneaking = Input.GetKey(KeyCode.LeftShift);
 
+        bool sneakInput = Input.GetKey(KeyCode.LeftShift);
+
+        if (sneakInput)
+        {
+            isSneaking = true;
+        }
+        else
+        {
+            if (CanGetUp())
+            {
+                isSneaking = false;
+            }
+        }
 
         if (!isHoldingObject)
         {
@@ -177,6 +188,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private bool CanGetUp()
+    {
+        // Check if space above is clear for standing
+        return !Physics.Raycast(transform.position, Vector3.up, 1f, groundLayer);
+    }
 
     public void ReturnToSpawn()
     {
