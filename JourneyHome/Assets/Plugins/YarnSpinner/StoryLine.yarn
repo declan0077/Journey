@@ -2,13 +2,12 @@
 position: -284,-283
 ---
 <<SetGamemode "Dialog">>
-Allen: These humans cannot keep me captive.
-Allen: I will escape and return to my home.
+Allen: These fragile walls won't hold me for long.
+Allen: I must escape this place and warn the others.
 <<CameraSwitch Soldier>>
-Rick: I hope no aliens escape
+Rick: Another quiet night. Hope no aliens try anything funny...
 <<CameraSwitch Player>>
 <<SetGamemode "Play">>
-
 ===
 
 title: Seen
@@ -19,6 +18,13 @@ position: -284,-283
 Rick: OI I see you
 <<CameraSwitch Player>>
 Allen: No you dont
+<<Restart>>
+<<SetGamemode "Play">>
+===
+
+title: SeenCamera
+position: -284,-283
+---
 <<Restart>>
 <<SetGamemode "Play">>
 ===
