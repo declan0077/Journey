@@ -75,6 +75,7 @@ public class AICharacter : MonoBehaviour
     private IEnumerator IdleAndSwitchPoint()
     {
         animator.SetBool("IsWalking", false);
+        animator.SetBool("IsIdle", true);
         isIdling = true;
 
         yield return new WaitForSeconds(idleDuration);
@@ -100,6 +101,8 @@ public class AICharacter : MonoBehaviour
         // Move to next patrol point
         currentPointIndex = (currentPointIndex + 1) % patrolPoints.Length;
         isIdling = false;
+        animator.SetBool("IsIdle", false);
+
     }
 
     private void OnDrawGizmosSelected()

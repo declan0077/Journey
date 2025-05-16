@@ -13584,6 +13584,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!4 &658902476 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8268056187999569915, guid: 67f17ec02465a514d88f2cba5e290be4, type: 3}
+  m_PrefabInstance: {fileID: 4705092710639387153}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &663469429
 GameObject:
   m_ObjectHideFlags: 0
@@ -23496,7 +23501,7 @@ MonoBehaviour:
   obstacleMask:
     serializedVersion: 2
     m_Bits: 64
-  Eyes: {fileID: 0}
+  Eyes: {fileID: 658902476}
 --- !u!120 &7715925604454851055
 LineRenderer:
   serializedVersion: 2
@@ -23621,7 +23626,7 @@ MonoBehaviour:
   - point: {fileID: 573332584}
     faceDirection: {x: 0, y: 90, z: 0}
   speed: 2
-  idleDuration: 2
+  idleDuration: 4
 --- !u!33 &7731920476073401432
 MeshFilter:
   m_ObjectHideFlags: 0
