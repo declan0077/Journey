@@ -62,6 +62,11 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
+        if (GameManager.Instance.GetGameState() == GameManager.GameState.MiniGame)
+        {
+            rb.velocity = Vector3.zero;
+            return;
+        }
         animator.SetBool("HoldingObject", isHoldingObject);
 
         if (Input.GetMouseButtonDown(0))

@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
     public enum GameState
     {
         Play,
-        Dialog
+        Dialog,
+        MiniGame,
     }
 
     [SerializeField]

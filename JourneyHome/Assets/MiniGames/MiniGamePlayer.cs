@@ -45,6 +45,8 @@ public class MiniGamePlayer : MonoBehaviour, IActivate
         currentMiniGame = Instantiate(MiniGamePrefab);
         miniGameScript = currentMiniGame.GetComponent<IMiniGame>();
 
+        GameManager.Instance.SetGameState(GameManager.GameState.MiniGame);
+
         if (miniGameScript != null)
         {
             miniGameScript.OnGameWin.AddListener(OnGameWon);
@@ -68,6 +70,8 @@ public class MiniGamePlayer : MonoBehaviour, IActivate
     private void OnGameWon()
     {
         GameWon.Invoke();
+        GameManager.Instance.SetGameState(GameManager.GameState.Play);
+
         CleanUp();
     }
 

@@ -1,5 +1,5 @@
 ﻿title: Start
-position: -284,-283
+position: -117,-516
 ---
 <<SetGamemode "Dialog">>
 Allen: These fragile walls won't hold me for long.
@@ -11,7 +11,7 @@ Rick: Another quiet night. Hope no aliens try anything funny...
 ===
 
 title: Seen
-position: -284,-283
+position: -520,-133
 ---
 <<SetGamemode "Dialog">>
 <<CameraSwitch Soldier>>
@@ -23,8 +23,23 @@ Allen: No you dont
 ===
 
 title: SeenCamera
-position: -284,-283
+position: -492,-442
 ---
 <<Restart>>
 <<SetGamemode "Play">>
+===
+
+title: Level2
+position: -282,-223
+---
+<<SetGamemode "Dialog">>
+Allen: I escaped my cage now its time to find my spaceship
+Allen: But where is the exit.
+<<CameraSwitch Doctor>>
+Doctor: The Creature escaped, guards all stations
+<<CameraSwitch Player>>
+Allen: Oh no the alarms.
+<<SetGamemode "Play">>
+
+
 ===

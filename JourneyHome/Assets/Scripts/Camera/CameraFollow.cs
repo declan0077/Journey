@@ -34,4 +34,9 @@ public class CameraFollow : MonoBehaviour
     {
         target = newTarget;
     }
+
+    public void SetOffset(Vector3 newOffset)
+    {
+        offset = newOffset;
+    }
 }
