@@ -1100,7 +1100,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.48385274, g: 0.74509805, b: 0.41960785, a: 1}
   m_Intensity: 1
-  m_Range: 24.47
+  m_Range: 22.57
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -1194,7 +1194,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1.46
-  m_Range: 12.82
+  m_Range: 22.57
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -1633,7 +1633,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 10
+  m_Range: 22.57
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -5919,7 +5919,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 10
+  m_Range: 22.57
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -23352,7 +23352,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.48385274, g: 0.74509805, b: 0.41960785, a: 1}
   m_Intensity: 1
-  m_Range: 24.47
+  m_Range: 22.57
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -23877,7 +23877,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: 2100000, guid: 0f1e74d07673c0546aa200f6eb974764, type: 2}
   - {fileID: 2100000, guid: 5868fd4e31b81744581614cf24666ccb, type: 2}
-  - {fileID: 2100000, guid: a2c7d863876bdac47941e316fa3558fc, type: 2}
+  - {fileID: 2100000, guid: 0f1e74d07673c0546aa200f6eb974764, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -43567,19 +43567,11 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 418235281}
-  m_VersionIndex: 8040
+  m_VersionIndex: 8044
   m_IsSelectable: 1
-  m_SelectedFaces: 66000000
-  m_SelectedEdges:
-  - a: 409
-    b: 408
-  - a: 408
-    b: 410
-  - a: 410
-    b: 411
-  - a: 411
-    b: 409
-  m_SelectedVertices: 9a01000099010000980100009b010000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!4 &1619750929
 Transform:
   m_ObjectHideFlags: 0
@@ -50012,7 +50004,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 10
+  m_Range: 22.57
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -51624,7 +51616,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.48385274, g: 0.74509805, b: 0.41960785, a: 1}
   m_Intensity: 1
-  m_Range: 24.47
+  m_Range: 22.57
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
