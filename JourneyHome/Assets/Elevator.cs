@@ -1,47 +1,68 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Elevator : MonoBehaviour, IActivate
 {
     [SerializeField] private Transform Top;
     [SerializeField] private Transform Bottom;
+    [SerializeField] private float moveSpeed = 1f;
 
-    [SerializeField] private  float moveSpeed = 1f;
+    private bool isAtTop = false;
+    private bool isMoving = false;
+
+  [SerializeField] private GameObject computer;
+    private Material original;
+    [SerializeField] private Material outlineMaterial;
+
+    private Renderer rend;
+
+    private void Start()
+    {
+        rend = computer.GetComponent<Renderer>();
+        original = rend.material;
+    }
+    public void OnNear()
+    {
+        if (rend != null && outlineMaterial != null)
+        {
+            rend.material = outlineMaterial;
+        }
+    }
 
     public void OnFar()
     {
-        throw new System.NotImplementedException();
-    }
-
-    public void OnNear()
-    {
-        throw new System.NotImplementedException();
+        if (rend != null && original != null)
+        {
+            rend.material = original;
+        }
     }
 
     public void StartActivate()
     {
-               StartCoroutine(MoveElevator());
+        if (!isMoving)
+        {
+            StartCoroutine(MoveElevator());
+        }
     }
 
     public void StopActivate()
     {
-        throw new System.NotImplementedException();
+        // Optional: Add behavior for stopping the elevator
     }
 
-
-    IEnumerator MoveElevator()
+    private IEnumerator MoveElevator()
     {
-        while (Vector3.Distance(transform.position, Top.position) > 0.1f)
+        isMoving = true;
+        Transform target = isAtTop ? Bottom : Top;
+
+        while (Vector3.Distance(transform.position, target.position) > 0.05f)
         {
-            transform.position = Vector3.MoveTowards(transform.position, Top.position, moveSpeed * Time.deltaTime);
-            yield return null;
-        }
-        while (Vector3.Distance(transform.position, Bottom.position) > 0.1f)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, Bottom.position, moveSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
             yield return null;
         }
 
+        transform.position = target.position; // Snap to final position
+        isAtTop = !isAtTop;
+        isMoving = false;
     }
 }
