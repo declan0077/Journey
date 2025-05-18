@@ -4,17 +4,28 @@ using UnityEngine;
 [RequireComponent(typeof(LineRenderer))]
 public class CameraSight : MonoBehaviour
 {
+    [Header("Vision Settings")]
     public float viewDistance = 10f;
     public float angleOffset = 15f;
     public int numDirections = 3;
     public LayerMask targetMask;
     public LayerMask obstacleMask;
 
-    [SerializeField] Transform Eyes;
+    [Header("Rotation Settings")]
+    [SerializeField] private Transform Eyes;
+    [SerializeField] private float rotationSpeed = 2f;
+    [SerializeField] private float lookThreshold = 1f;
+
+    [Header("Looking Targets")]
+    [SerializeField] private bool canLook;
+    [SerializeField] private Transform look1;
+    [SerializeField] private Transform look2;
+
+    private Transform currentLookTarget;
+    private bool lookingAtFirst = true;
 
     private LineRenderer lineRenderer;
     private List<Vector3> endpoints = new List<Vector3>();
-
 
     public bool isActive = true;
 
@@ -22,68 +33,94 @@ public class CameraSight : MonoBehaviour
     {
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = 0;
+
+        if (canLook && look1 != null && look2 != null)
+        {
+            currentLookTarget = look1;
+        }
     }
 
     void Update()
     {
-        if (isActive)
+        if (!isActive || Eyes == null) return;
+
+        if (canLook && look1 != null && look2 != null)
         {
+            RotateEyesBetweenTargets();
+        }
 
-            if (Eyes == null) return;
+        DrawVisionCone();
+    }
 
-            Vector3 origin = Eyes.position;
-            Vector3 forward = Eyes.forward; // Use Eyes' actual facing direction
+    private void RotateEyesBetweenTargets()
+    {
+        Vector3 directionToTarget = currentLookTarget.position - Eyes.position;
+        Quaternion lookRotation = Quaternion.LookRotation(directionToTarget, Vector3.up);
+        Eyes.rotation = Quaternion.RotateTowards(Eyes.rotation, lookRotation, rotationSpeed * Time.deltaTime);
 
-            if (numDirections < 1) return;
-            if (numDirections % 2 == 0) numDirections++; // Ensure it's odd
+        float angleDifference = Quaternion.Angle(Eyes.rotation, lookRotation);
+        if (angleDifference < lookThreshold)
+        {
+            lookingAtFirst = !lookingAtFirst;
+            currentLookTarget = lookingAtFirst ? look1 : look2;
+        }
+    }
 
-            int half = numDirections / 2;
-            endpoints.Clear();
+    private void DrawVisionCone()
+    {
+        Vector3 origin = Eyes.position;
+        Vector3 forward = Eyes.forward;
 
-            for (int i = -half; i <= half; i++)
+        if (numDirections < 1) return;
+        if (numDirections % 2 == 0) numDirections++; // Ensure odd count
+
+        int half = numDirections / 2;
+        endpoints.Clear();
+
+        for (int i = -half; i <= half; i++)
+        {
+            float angle = i * angleOffset;
+            Vector3 dir = Quaternion.Euler(0, angle, 0) * forward;
+            Ray ray = new Ray(origin, dir);
+
+            Vector3 endPoint = origin + dir * viewDistance;
+
+            if (Physics.Raycast(ray, out RaycastHit hit, viewDistance))
             {
-                float angle = i * angleOffset;
-                Vector3 dir = Quaternion.Euler(0, angle, 0) * forward;
-                Ray ray = new Ray(origin, dir);
+                endPoint = hit.point;
 
-                Vector3 endPoint = origin + dir * viewDistance;
-
-                if (Physics.Raycast(ray, out RaycastHit hit, viewDistance))
+                if ((obstacleMask.value & (1 << hit.collider.gameObject.layer)) > 0)
                 {
-                    endPoint = hit.point;
-
-                    if ((obstacleMask.value & (1 << hit.collider.gameObject.layer)) > 0)
-                    {
-                        Debug.DrawLine(origin, hit.point, Color.gray);
-                    }
-                    else if ((targetMask.value & (1 << hit.collider.gameObject.layer)) > 0)
-                    {
-                        Debug.Log("AI sees: " + hit.collider.name);
-                        YarnHelper.Instance.SeenDialog(); // If YarnHelper is optional, add null check
-                        Debug.DrawLine(origin, hit.point, Color.green);
-                    }
-                    else
-                    {
-                        Debug.DrawLine(origin, hit.point, Color.yellow);
-                    }
+                    Debug.DrawLine(origin, hit.point, Color.gray);
+                }
+                else if ((targetMask.value & (1 << hit.collider.gameObject.layer)) > 0)
+                {
+                    Debug.Log("AI sees: " + hit.collider.name);
+                    if (YarnHelper.Instance != null)
+                        YarnHelper.Instance.SeenDialog();
+                    Debug.DrawLine(origin, hit.point, Color.green);
                 }
                 else
                 {
-                    Debug.DrawRay(origin, dir * viewDistance, Color.red);
+                    Debug.DrawLine(origin, hit.point, Color.yellow);
                 }
-
-                endpoints.Add(endPoint);
+            }
+            else
+            {
+                Debug.DrawRay(origin, dir * viewDistance, Color.red);
             }
 
-            UpdateLineRenderer();
+            endpoints.Add(endPoint);
         }
+
+        UpdateLineRenderer();
     }
 
     private void UpdateLineRenderer()
     {
         if (lineRenderer == null || Eyes == null) return;
 
-        int count = endpoints.Count + 2; // Eyes position + endpoints + back to eyes
+        int count = endpoints.Count + 2;
         lineRenderer.positionCount = count;
 
         lineRenderer.SetPosition(0, Eyes.position);
@@ -91,7 +128,7 @@ public class CameraSight : MonoBehaviour
         {
             lineRenderer.SetPosition(i + 1, endpoints[i]);
         }
-        lineRenderer.SetPosition(count - 1, Eyes.position); // Close the loop
+        lineRenderer.SetPosition(count - 1, Eyes.position);
     }
 
     public void SetActive(bool active)
@@ -103,6 +140,13 @@ public class CameraSight : MonoBehaviour
         }
     }
 
+    public void SetLookTargets(Transform target1, Transform target2)
+    {
+        look1 = target1;
+        look2 = target2;
+        currentLookTarget = look1;
+        canLook = true;
+    }
 
     private void OnDrawGizmosSelected()
     {
