@@ -43,3 +43,18 @@ Allen: Oh no the alarms.
 
 
 ===
+
+
+title: UFO
+position: -282,-223
+---
+<<SetGamemode "Dialog">>
+Allen: Oh no, I was not the only one captured, thats the mothership.
+<<CameraSwitch UFO>>
+UFO: So many of us.
+<<CameraSwitch Player>>
+Allen: I have to find a way out of here.
+<<SetGamemode "Play">>
+
+
+===
