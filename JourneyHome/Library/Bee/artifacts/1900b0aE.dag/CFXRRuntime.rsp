@@ -362,11 +362,11 @@
 -analyzer:"C:/Program Files/Unity 2022.3.58f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity 2022.3.58f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"Library/PackageCache/dev.yarnspinner.unity@2.5.1/SourceGenerator/YarnSpinner.Unity.SourceCodeGenerator.dll"
-"Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_Effect.CameraShake.cs"
-"Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_Effect.cs"
-"Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_EmissionBySurface.cs"
-"Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_ParticleText.cs"
-"Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_ParticleTextFontAsset.cs"
+"Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_Effect.CameraShake.cs"
+"Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_Effect.cs"
+"Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_EmissionBySurface.cs"
+"Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_ParticleText.cs"
+"Assets/Plugins/JMO Assets/Cartoon FX Remaster/CFXR Assets/Scripts/CFXR_ParticleTextFontAsset.cs"
 -langversion:9.0
 /deterministic
 /optimize+

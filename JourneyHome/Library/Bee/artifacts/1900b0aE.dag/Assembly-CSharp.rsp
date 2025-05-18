@@ -384,6 +384,7 @@
 -analyzer:"C:/Program Files/Unity 2022.3.58f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity 2022.3.58f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"Library/PackageCache/dev.yarnspinner.unity@2.5.1/SourceGenerator/YarnSpinner.Unity.SourceCodeGenerator.dll"
+"Assets/Elevator.cs"
 "Assets/MiniGames/MiniGamePlayer.cs"
 "Assets/Restart.cs"
 "Assets/Scripts/AI/AICharacter.cs"
