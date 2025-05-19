@@ -408,6 +408,7 @@
 "Assets/Scripts/Ui/KeyPressed.cs"
 "Assets/Scripts/Ui/TransitionEffect.cs"
 "Assets/Scripts/YarnHelper.cs"
+"Assets/SoundPlayer.cs"
 "Assets/StoryTellerTrigger.cs"
 -langversion:9.0
 /deterministic

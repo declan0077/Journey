@@ -64,7 +64,7 @@ public class AISight : MonoBehaviour
                 else if ((targetMask.value & (1 << hit.collider.gameObject.layer)) > 0)
                 {
                     Debug.Log("AI sees: " + hit.collider.name);
-                    YarnHelper.Instance.SeenDialog();
+                    YarnHelper.Instance.SeenDialog(gameObject.name);
                     Debug.DrawLine(origin, hit.point, Color.green);
                 }
                 else

@@ -14,7 +14,9 @@ public class Door : MonoBehaviour, IActivate
     private bool isOpen = false;
     private bool isMoving = false;
 
-    public bool locked = false; 
+    public bool locked = false;
+
+    [SerializeField] private AudioClip openSound;
 
     private void Awake()
     {
@@ -62,6 +64,9 @@ public class Door : MonoBehaviour, IActivate
 
     private IEnumerator Open()
     {
+     
+            SoundPlayer.Instance.PlaySound(openSound);
+        
         isMoving = true;
         while (Vector3.Distance(transform.position, movePosition) > 0.01f)
         {

@@ -43,10 +43,12 @@ public class YarnHelper : MonoBehaviour
         CameraFollow.Instance.SetTarget(targetObject.transform);
     }
 
-    public void SeenDialog()
+    public void SeenDialog(string guardName)
     {
-        dialogueRunner.StartDialogue("Seen");
+        dialogueRunner.StartDialogue($"Seen_{guardName}");
     }
+
+
 
     public void Restart()
     {

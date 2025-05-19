@@ -97,7 +97,7 @@ public class CameraSight : MonoBehaviour
                 {
                     Debug.Log("AI sees: " + hit.collider.name);
                     if (YarnHelper.Instance != null)
-                        YarnHelper.Instance.SeenDialog();
+                        YarnHelper.Instance.SeenDialog(gameObject.name);
                     Debug.DrawLine(origin, hit.point, Color.green);
                 }
                 else

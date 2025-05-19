@@ -10,17 +10,46 @@ Rick: Another quiet night. Hope no aliens try anything funny...
 <<SetGamemode "Play">>
 ===
 
-title: Seen
+title: Seen_Guard0
 position: -520,-133
 ---
 <<SetGamemode "Dialog">>
 <<CameraSwitch Soldier>>
-Rick: OI I see you
+Guard0: OI I see you
 <<CameraSwitch Player>>
 Allen: No you dont
 <<Restart>>
 <<SetGamemode "Play">>
 ===
+
+
+title: Seen_Guard1
+position: -520,-133
+---
+<<SetGamemode "Dialog">>
+<<CameraSwitch Soldier>>
+Guard1: OI I see you
+<<CameraSwitch Player>>
+Allen: No you dont
+<<Restart>>
+<<SetGamemode "Play">>
+===
+
+title: Seen_Guard2
+position: -520,-133
+---
+<<SetGamemode "Dialog">>
+<<CameraSwitch Soldier>>
+Guard2: OI I see you
+<<CameraSwitch Player>>
+Allen: No you dont
+<<Restart>>
+<<SetGamemode "Play">>
+===
+
+
+
+
 
 title: SeenCamera
 position: -492,-442

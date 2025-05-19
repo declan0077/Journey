@@ -13,6 +13,8 @@ public class SimonSaysGame : MonoBehaviour, IMiniGame
     [SerializeField] private float flashDuration = 0.5f;
     [SerializeField] private float timeBetweenFlashes = 0.3f;
 
+    [SerializeField] private AudioClip buttonClickSound;
+
     public int maxRounds = 5;
 
     public UnityEvent OnGameWin { get; } = new UnityEvent();
@@ -96,7 +98,7 @@ public class SimonSaysGame : MonoBehaviour, IMiniGame
         playerTurn = false;
 
         for (int i = 0; i < sequence.Count; i++)
-        {
+        {   
             Vector2Int pos = sequence[i];
             yield return FlashButton(pos.x, pos.y);
             yield return new WaitForSeconds(timeBetweenFlashes);
@@ -105,6 +107,7 @@ public class SimonSaysGame : MonoBehaviour, IMiniGame
 
     IEnumerator FlashButton(int x, int y)
     {
+        SoundPlayer.Instance.PlaySound(buttonClickSound);
         buttons[x, y].GetComponent<Image>().color = Color.yellow;
         yield return new WaitForSeconds(flashDuration);
         ResetButtonColor(x, y);
