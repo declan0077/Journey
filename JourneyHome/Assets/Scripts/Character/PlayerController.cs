@@ -47,7 +47,15 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        animator.applyRootMotion = false;
+
         rb = GetComponent<Rigidbody>();
+        rb.interpolation = RigidbodyInterpolation.Interpolate;
+        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+    }
+    private bool IsGrounded()
+    {
+        return Physics.Raycast(groundCheck.position, Vector3.down, groundCheckRadius + 0.1f, groundLayer);
     }
 
     private void Update()
@@ -113,12 +121,14 @@ public class PlayerController : MonoBehaviour
 
         if (!isHoldingObject)
         {
-            // Jump
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             {
                 isJumping = true;
                 jumpTimer = 0f;
                 animator.SetTrigger("Jump");
+
+                // Nudge the player upward to avoid clipping
+                transform.position += Vector3.up * 0.05f;
             }
 
         }
