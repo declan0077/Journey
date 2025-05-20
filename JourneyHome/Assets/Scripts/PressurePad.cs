@@ -12,6 +12,8 @@ public class PressurePad : MonoBehaviour
     public float checkHeight = 1.0f;
     public LayerMask detectionLayer;
 
+    [SerializeField] AudioClip Switch;
+
     private bool isPressed = false;
 
    [SerializeField] private Vector3 offset;
@@ -32,12 +34,15 @@ public class PressurePad : MonoBehaviour
 
         if (detected && !isPressed)
         {
+            SoundPlayer.Instance.PlaySound(Switch);
+
             isPressed = true;
             Debug.Log("Pressed");
             onPress.Invoke();
         }
         else if (!detected && isPressed)
         {
+            SoundPlayer.Instance.PlaySound(Switch);
             isPressed = false;
             Debug.Log("Released");
             onRelease.Invoke();

@@ -15,9 +15,9 @@ position: -520,-133
 ---
 <<SetGamemode "Dialog">>
 <<CameraSwitch Soldier>>
-Guard0: OI I see you
+Guard0: OI I see you.
 <<CameraSwitch Player>>
-Allen: No you dont
+Allen: No you dont.
 <<Restart>>
 <<SetGamemode "Play">>
 ===
@@ -28,9 +28,9 @@ position: -520,-133
 ---
 <<SetGamemode "Dialog">>
 <<CameraSwitch Soldier>>
-Guard1: OI I see you
+Guard1: OI I see you.
 <<CameraSwitch Player>>
-Allen: No you dont
+Allen: No you dont.
 <<Restart>>
 <<SetGamemode "Play">>
 ===
@@ -40,9 +40,9 @@ position: -520,-133
 ---
 <<SetGamemode "Dialog">>
 <<CameraSwitch Soldier>>
-Guard2: OI I see you
+Guard2: OI I see you.
 <<CameraSwitch Player>>
-Allen: No you dont
+Allen: No you dont.
 <<Restart>>
 <<SetGamemode "Play">>
 ===
@@ -51,28 +51,47 @@ Allen: No you dont
 
 
 
-title: SeenCamera
+title: Seen_Camera
 position: -492,-442
 ---
 <<Restart>>
 <<SetGamemode "Play">>
 ===
 
+title: Level3
+position: -282,-223
+---
+<<SetGamemode "Dialog">>
+Allen: More vents... it was so dark.
+Allen: Now where is that exit.
+<<CameraSwitch Doctor>>
+Doctor: The Creature escaped, guards all stations.
+<<CameraSwitch Player>>
+Allen: Oh no the alarms.
+Allen: They must of caught on to me escaping.
+<<SetGamemode "Play">>
+===
+
+
 title: Level2
 position: -282,-223
 ---
 <<SetGamemode "Dialog">>
-Allen: I escaped my cage now its time to find my spaceship
-Allen: But where is the exit.
-<<CameraSwitch Doctor>>
-Doctor: The Creature escaped, guards all stations
-<<CameraSwitch Player>>
-Allen: Oh no the alarms.
+Allen: Phew ive escaped my cell and crawled my way here, it looks like a storage room...
+Allen: How am I going to get past the doors!
+Allen: The Gaurds repeated a pattern, I should try that.
+
 <<SetGamemode "Play">>
-
-
 ===
 
+
+title: Level4
+position: -282,-223
+---
+<<SetGamemode "Dialog">>
+Allen: Im so close to escaping here, My ship must be nearby.
+<<SetGamemode "Play">>
+===
 
 title: UFO
 position: -282,-223
@@ -84,6 +103,4 @@ UFO: So many of us.
 <<CameraSwitch Player>>
 Allen: I have to find a way out of here.
 <<SetGamemode "Play">>
-
-
 ===

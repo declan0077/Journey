@@ -53,10 +53,6 @@ public class PlayerController : MonoBehaviour
         rb.interpolation = RigidbodyInterpolation.Interpolate;
         rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
     }
-    private bool IsGrounded()
-    {
-        return Physics.Raycast(groundCheck.position, Vector3.down, groundCheckRadius + 0.1f, groundLayer);
-    }
 
     private void Update()
     {
@@ -172,6 +168,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = velocity;
         }
     }
+
 
     public void HoldObject(GameObject gameObject)
     {

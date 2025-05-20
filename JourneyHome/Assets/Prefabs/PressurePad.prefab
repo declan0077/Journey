@@ -1023,4 +1023,5 @@ MonoBehaviour:
   detectionLayer:
     serializedVersion: 2
     m_Bits: 192
+  Switch: {fileID: 8300000, guid: 22fa618cd2f077743a0a431116e91fe0, type: 3}
   offset: {x: 0.65, y: -0.94, z: -0.5}
