@@ -65,7 +65,6 @@ public class CameraSight : MonoBehaviour
             currentLookTarget = lookingAtFirst ? look1 : look2;
         }
     }
-
     private void DrawVisionCone()
     {
         Vector3 origin = Eyes.position;
@@ -83,29 +82,40 @@ public class CameraSight : MonoBehaviour
             Vector3 dir = Quaternion.Euler(0, angle, 0) * forward;
             Ray ray = new Ray(origin, dir);
 
+            RaycastHit[] hits = Physics.RaycastAll(ray, viewDistance);
+            System.Array.Sort(hits, (a, b) => a.distance.CompareTo(b.distance)); // Sort by distance
+
             Vector3 endPoint = origin + dir * viewDistance;
+            bool hitObstacle = false;
 
-            if (Physics.Raycast(ray, out RaycastHit hit, viewDistance))
+            foreach (var hit in hits)
             {
-                endPoint = hit.point;
+                int layer = hit.collider.gameObject.layer;
 
-                if ((obstacleMask.value & (1 << hit.collider.gameObject.layer)) > 0)
+                if ((obstacleMask.value & (1 << layer)) != 0)
                 {
-                    Debug.DrawLine(origin, hit.point, Color.gray);
+                    endPoint = hit.point;
+                    Debug.DrawLine(origin, endPoint, Color.gray);
+                    hitObstacle = true;
+                    break; // Vision blocked
                 }
-                else if ((targetMask.value & (1 << hit.collider.gameObject.layer)) > 0)
+                else if ((targetMask.value & (1 << layer)) != 0)
                 {
                     Debug.Log("AI sees: " + hit.collider.name);
                     if (YarnHelper.Instance != null)
                         YarnHelper.Instance.SeenDialog(gameObject.name);
+
                     Debug.DrawLine(origin, hit.point, Color.green);
+                    // Don't break — keep going to check for obstacles
                 }
                 else
                 {
                     Debug.DrawLine(origin, hit.point, Color.yellow);
+                    // Unimportant object, ignore
                 }
             }
-            else
+
+            if (!hitObstacle)
             {
                 Debug.DrawRay(origin, dir * viewDistance, Color.red);
             }

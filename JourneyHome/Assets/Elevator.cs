@@ -47,7 +47,14 @@ public class Elevator : MonoBehaviour, IActivate
 
     public void StopActivate()
     {
-        // Optional: Add behavior for stopping the elevator
+
+    }
+
+    public void MoveElevatorMethod()
+    {
+     
+            StartCoroutine(MoveElevator());
+        
     }
 
     private IEnumerator MoveElevator()
