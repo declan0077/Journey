@@ -169,9 +169,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
+    [SerializeField] private AudioClip Pickup;
     public void HoldObject(GameObject gameObject)
     {
+        SoundPlayer.Instance.PlaySound(Pickup);
         isHoldingObject = true;
         if (itemInHand != null)
         {
@@ -193,10 +194,13 @@ public class PlayerController : MonoBehaviour
 
         }
     }
+    [SerializeField] private AudioClip Throw;
+
     public void ThrowObject()
     {
         if (itemInHand != null)
         {
+            SoundPlayer.Instance.PlaySound(Throw);
             StartCoroutine(ThrowSequence());
         }
     }

@@ -386,6 +386,7 @@
 -analyzer:"Library/PackageCache/dev.yarnspinner.unity@2.5.1/SourceGenerator/YarnSpinner.Unity.SourceCodeGenerator.dll"
 "Assets/CheckPointSet.cs"
 "Assets/Elevator.cs"
+"Assets/LiftParenter.cs"
 "Assets/MiniGames/MiniGamePlayer.cs"
 "Assets/Restart.cs"
 "Assets/Scripts/AI/AICharacter.cs"

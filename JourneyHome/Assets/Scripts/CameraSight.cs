@@ -103,7 +103,7 @@ public class CameraSight : MonoBehaviour
                 {
                     Debug.Log("AI sees: " + hit.collider.name);
                     if (YarnHelper.Instance != null)
-                        YarnHelper.Instance.SeenDialog(gameObject.name);
+                        YarnHelper.Instance.Restart();
 
                     Debug.DrawLine(origin, hit.point, Color.green);
                     // Don't break — keep going to check for obstacles
