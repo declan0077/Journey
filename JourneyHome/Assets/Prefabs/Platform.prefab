@@ -5737,6 +5737,8 @@ MonoBehaviour:
   Top: {fileID: 0}
   Bottom: {fileID: 0}
   moveSpeed: 1.5
+  elevatorSound: {fileID: 8300000, guid: c8cd18366344e004398166a10ebc7f54, type: 3}
+  bellDing: {fileID: 8300000, guid: 371ca6e55a0a9f44188d236023f06cf0, type: 3}
   computer: {fileID: 7778683909653316712}
   outlineMaterial: {fileID: 2100000, guid: 589116a44536aa44e8be0b5ea98e9977, type: 2}
 --- !u!65 &2083213766377695611

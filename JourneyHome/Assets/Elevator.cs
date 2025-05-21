@@ -10,7 +10,10 @@ public class Elevator : MonoBehaviour, IActivate
     private bool isAtTop = false;
     private bool isMoving = false;
 
-  [SerializeField] private GameObject computer;
+    [SerializeField] private AudioClip elevatorSound;
+    [SerializeField] private AudioClip bellDing;
+
+    [SerializeField] private GameObject computer;
     private Material original;
     [SerializeField] private Material outlineMaterial;
 
@@ -61,13 +64,14 @@ public class Elevator : MonoBehaviour, IActivate
     {
         isMoving = true;
         Transform target = isAtTop ? Bottom : Top;
+        SoundPlayer.Instance.PlaySound(elevatorSound);
 
         while (Vector3.Distance(transform.position, target.position) > 0.05f)
         {
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
             yield return null;
         }
-
+        SoundPlayer.Instance.PlaySound(bellDing);
         transform.position = target.position; // Snap to final position
         isAtTop = !isAtTop;
         isMoving = false;

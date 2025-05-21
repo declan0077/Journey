@@ -12,6 +12,9 @@ public class LightsOffGame : MonoBehaviour, IMiniGame
     private Button[,] buttons;
     private bool[,] states;
 
+    [SerializeField] private AudioClip lightSwitch;
+    [SerializeField] private AudioClip Win;
+
     public UnityEvent OnGameWin { get; } = new UnityEvent();
     public UnityEvent OnGameLose { get; } = new UnityEvent();
 
@@ -71,6 +74,7 @@ public class LightsOffGame : MonoBehaviour, IMiniGame
 
         if (CheckVictory())
         {
+            SoundPlayer.Instance.PlaySound(Win);
             OnGameWin.Invoke();
             Destroy(gameObject); 
         }
@@ -80,6 +84,7 @@ public class LightsOffGame : MonoBehaviour, IMiniGame
     {
         if (x >= 0 && x < gridSize && y >= 0 && y < gridSize)
         {
+            SoundPlayer.Instance.PlaySound(lightSwitch);
             states[x, y] = !states[x, y];
             UpdateButtonColor(x, y);
         }

@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
 
     private Animator animator;
-    [SerializeField] private Transform spawnLocation;
+    [SerializeField] public Transform spawnLocation;
 
 
     public bool isClimbing = false;

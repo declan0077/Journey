@@ -14,6 +14,7 @@ public class SimonSaysGame : MonoBehaviour, IMiniGame
     [SerializeField] private float timeBetweenFlashes = 0.3f;
 
     [SerializeField] private AudioClip buttonClickSound;
+    [SerializeField] private AudioClip Win;
 
     public int maxRounds = 5;
 
@@ -168,6 +169,7 @@ public class SimonSaysGame : MonoBehaviour, IMiniGame
 
     private void GameWin()
     {
+        SoundPlayer.Instance.PlaySound(Win);
         Debug.Log("Simon Says Win!");
         gameActive = false;
         OnGameWin.Invoke();

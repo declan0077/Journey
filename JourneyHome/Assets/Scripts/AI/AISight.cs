@@ -23,6 +23,7 @@ public class AISight : MonoBehaviour
 
     void Update()
     {
+        if(GameManager.Instance.gameObject.GetComponent<GameManager>().GetGameState() != GameManager.GameState.Play) return;
 
         if (IsFacingAllowedDirection())
         {

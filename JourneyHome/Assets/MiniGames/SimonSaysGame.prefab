@@ -214,6 +214,7 @@ MonoBehaviour:
   flashDuration: 0.5
   timeBetweenFlashes: 0.3
   buttonClickSound: {fileID: 8300000, guid: 4f464434287f3d14ea8386f7f9de446e, type: 3}
+  Win: {fileID: 8300000, guid: a40c766dcd2c27747ba53f07fbe26d63, type: 3}
   maxRounds: 3
 --- !u!1 &3986468519628409157
 GameObject:
