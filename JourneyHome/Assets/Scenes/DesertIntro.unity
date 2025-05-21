@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &4611959 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5919463605678179119, guid: afc5eeebc8d5914458384a4b4ecad71f, type: 3}
+  m_PrefabInstance: {fileID: 1257507860}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &11924276
 Mesh:
   m_ObjectHideFlags: 0
@@ -502,6 +507,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 12169015129eedb4695b8332072c20d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2125107235}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 12169015129eedb4695b8332072c20d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4611959}
     - targetCorrespondingSourceObject: {fileID: 8632055958874330854, guid: 12169015129eedb4695b8332072c20d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1759312996}
@@ -96602,7 +96610,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2012453548}
     m_Modifications:
     - target: {fileID: 2113199748481025113, guid: afc5eeebc8d5914458384a4b4ecad71f, type: 3}
       propertyPath: m_Name
@@ -96614,15 +96622,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5919463605678179119, guid: afc5eeebc8d5914458384a4b4ecad71f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 43.451897
+      value: 75.9219
       objectReference: {fileID: 0}
     - target: {fileID: 5919463605678179119, guid: afc5eeebc8d5914458384a4b4ecad71f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.45101547
+      value: -12.941015
       objectReference: {fileID: 0}
     - target: {fileID: 5919463605678179119, guid: afc5eeebc8d5914458384a4b4ecad71f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.81651
+      value: -23.436508
       objectReference: {fileID: 0}
     - target: {fileID: 5919463605678179119, guid: afc5eeebc8d5914458384a4b4ecad71f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -101208,7 +101216,6 @@ SceneRoots:
   - {fileID: 167410939}
   - {fileID: 651884615}
   - {fileID: 1190424439}
-  - {fileID: 1257507860}
   - {fileID: 2143415165}
   - {fileID: 1357143666}
   - {fileID: 472537583}

@@ -10,6 +10,19 @@ Rick: Another quiet night. Hope no aliens try anything funny...
 <<SetGamemode "Play">>
 ===
 
+title: Trapped
+position: -117,-516
+---
+<<SetGamemode "Dialog">>
+Allen: I'm not the only one trapped here, I must contact my homeworld for support
+<<CameraSwitch Trapped_Alien>>
+Trapped_Alien: Help!
+<<CameraSwitch Player>>
+<<SetGamemode "Play">>
+===
+
+
+
 title: Seen_Guard0
 position: -520,-133
 ---

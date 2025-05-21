@@ -352,6 +352,7 @@ MonoBehaviour:
   throwAimLayer:
     serializedVersion: 2
     m_Bits: 4294967295
+  jumpEffect: {fileID: 8487402871801164198, guid: 7390cf89a4cf3dc4da4461be35a75038, type: 3}
 --- !u!114 &3782726495510982682
 MonoBehaviour:
   m_ObjectHideFlags: 0

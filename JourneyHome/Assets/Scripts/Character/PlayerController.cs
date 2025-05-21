@@ -43,7 +43,6 @@ public class PlayerController : MonoBehaviour
     public float liftHeight = 1.5f;
     public LayerMask throwAimLayer;
 
-
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -151,6 +150,7 @@ public class PlayerController : MonoBehaviour
 
             if (isJumping)
             {
+                    
                 jumpTimer += Time.fixedDeltaTime;
                 float normalizedTime = jumpTimer / jumpDuration;
 
