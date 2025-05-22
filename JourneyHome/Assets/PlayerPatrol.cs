@@ -139,9 +139,7 @@ public class PlayerPatrol : MonoBehaviour
                 Vector3 origin = patrolPoint.point.position + Vector3.up * 0.5f;
                 Vector3 direction = patrolPoint.faceDirection.normalized * 0.8f;
 
-                Handles.color = Color.yellow;
-                Handles.ArrowHandleCap(0, origin, Quaternion.LookRotation(direction), 0.8f, EventType.Repaint);
-                Gizmos.DrawRay(origin, direction);
+           
             }
         }
     }

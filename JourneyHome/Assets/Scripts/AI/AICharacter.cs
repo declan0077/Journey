@@ -129,10 +129,6 @@ public class AICharacter : MonoBehaviour
                 Vector3 origin = patrolPoint.point.position + Vector3.up * 0.5f; // lift arrow for clarity
                 Vector3 direction = patrolPoint.faceDirection.normalized * 0.8f;
 
-
-                Handles.color = Color.yellow;
-                Handles.ArrowHandleCap(0, origin, Quaternion.LookRotation(direction), 0.8f, EventType.Repaint);
-
             Gizmos.color = Color.yellow;
             Gizmos.DrawRay(origin, direction);
 
