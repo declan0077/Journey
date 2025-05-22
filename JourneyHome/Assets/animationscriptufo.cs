@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class animationscriptufo : MonoBehaviour
 {
     public GameObject Thing;
@@ -17,5 +17,10 @@ public class animationscriptufo : MonoBehaviour
             CameraFollow.Instance.SetTarget(this.transform);
             animator.Play("ufoAnimation");
         }
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
     }
 }

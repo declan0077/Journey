@@ -4,8 +4,8 @@ position: -117,-516
 <<SetGamemode "Dialog">>
 Allen: These fragile walls won't hold me for long.
 Allen: I must escape this place and warn the others.
-<<CameraSwitch Soldier>>
-Rick: Another quiet night. Hope no aliens try anything funny...
+<<CameraSwitch Guard0>>
+Guard0: Another quiet night. Hope no aliens try anything funny...
 <<CameraSwitch Player>>
 <<SetGamemode "Play">>
 ===
@@ -14,9 +14,22 @@ title: Trapped
 position: -117,-516
 ---
 <<SetGamemode "Dialog">>
-Allen: I'm not the only one trapped here, I must contact my homeworld for support
+Allen: I'm not the only one trapped here, I must contact my homeworld for support.
 <<CameraSwitch Trapped_Alien>>
 Trapped_Alien: Help!
+<<CameraSwitch Player>>
+Allen: Dont worry friends!
+<<SetGamemode "Play">>
+===
+title: End
+position: -117,-516
+---
+<<SetGamemode "Dialog">>
+Allen: Right Earth is no longer on my bucket list im leaving.
+Allen: Time to journey home and tell the others what happened here.
+<<CameraSwitch Guard0>>
+Guard0: Your not leaving here!
+Allen: I need to run fast
 <<CameraSwitch Player>>
 <<SetGamemode "Play">>
 ===
