@@ -388,6 +388,7 @@
 "Assets/Elevator.cs"
 "Assets/LiftParenter.cs"
 "Assets/MiniGames/MiniGamePlayer.cs"
+"Assets/PowerSupply.cs"
 "Assets/Restart.cs"
 "Assets/Scripts/AI/AICharacter.cs"
 "Assets/Scripts/AI/AISight.cs"
