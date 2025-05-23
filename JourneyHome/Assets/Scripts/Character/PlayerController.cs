@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     private Animator animator;
     [SerializeField] public Transform spawnLocation;
-
+    [SerializeField] private AudioClip jumpSound;
 
     public bool isClimbing = false;
     public Transform model;
@@ -113,7 +113,6 @@ public class PlayerController : MonoBehaviour
                 isSneaking = false;
             }
         }
-
         if (!isHoldingObject)
         {
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
@@ -122,10 +121,12 @@ public class PlayerController : MonoBehaviour
                 jumpTimer = 0f;
                 animator.SetTrigger("Jump");
 
+                // Play jump sound
+                SoundPlayer.Instance.PlaySound(jumpSound);
+
                 // Nudge the player upward to avoid clipping
                 transform.position += Vector3.up * 0.05f;
             }
-
         }
 
         // Animator parameters
@@ -150,7 +151,6 @@ public class PlayerController : MonoBehaviour
 
             if (isJumping)
             {
-                    
                 jumpTimer += Time.fixedDeltaTime;
                 float normalizedTime = jumpTimer / jumpDuration;
 
@@ -217,6 +217,7 @@ public class PlayerController : MonoBehaviour
         transform.position = spawnLocation.position;
         transform.rotation = spawnLocation.rotation;
         rb.velocity = Vector3.zero; // Reset velocity
+        GameManager.Instance.SetGameState(GameManager.GameState.Play);
     }
 
 

@@ -11,8 +11,8 @@
 
 
 
-struct Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA;
 struct Dictionary_2_tB7D13A43E922B6ED935E5681CBBD79D7EE851EC5;
+struct Dictionary_2_t5C32AF17A5801FB3109E5B0E622BA8402A04E08E;
 struct IEqualityComparer_1_tAE94C8F24AD5B94D4EE85CA9FC59E3409D41CAF7;
 struct KeyCollection_tF764DF83AAE44BDD5DDAADBB53DDACED23CFCDD5;
 struct ValueCollection_t7718DCB045D055C11DF54439AB61331CCC3F9D95;
@@ -1264,17 +1264,17 @@ struct String_t_StaticFields
 #endif
 
 
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___0_key, RuntimeObject* ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m7745B6ED71E47C95E1BFCE647C4F026A404C668F_gshared (Dictionary_2_t5C32AF17A5801FB3109E5B0E622BA8402A04E08E* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m54D479280472DEA042DB3933AF547E666B017333_gshared (Dictionary_2_t5C32AF17A5801FB3109E5B0E622BA8402A04E08E* __this, Il2CppFullySharedGenericAny ___0_key, Il2CppFullySharedGenericAny ___1_value, const RuntimeMethod* method) ;
 
 inline void Dictionary_2__ctor_m6DAF38ABB96FF955069BD3FBD60A4F2C2EA2C4F4 (Dictionary_2_tB7D13A43E922B6ED935E5681CBBD79D7EE851EC5* __this, const RuntimeMethod* method)
 {
-	((  void (*) (Dictionary_2_tB7D13A43E922B6ED935E5681CBBD79D7EE851EC5*, const RuntimeMethod*))Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared)(__this, method);
+	((  void (*) (Dictionary_2_tB7D13A43E922B6ED935E5681CBBD79D7EE851EC5*, const RuntimeMethod*))Dictionary_2__ctor_m7745B6ED71E47C95E1BFCE647C4F026A404C668F_gshared)(__this, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CIELabColor_t9125FC971207AB3C1CC4FD6F12C04A88D89FB195* ColorUtility_CIELabFromRGB_mA9DABE3F612F05D2BE273076B257103D7420F7EA (float ___0_R, float ___1_G, float ___2_B, float ___3_Scale, const RuntimeMethod* method) ;
 inline void Dictionary_2_Add_mFB317D02F68E47F3EA3D846B68B20FF4DA71BAD9 (Dictionary_2_tB7D13A43E922B6ED935E5681CBBD79D7EE851EC5* __this, String_t* ___0_key, CIELabColor_t9125FC971207AB3C1CC4FD6F12C04A88D89FB195* ___1_value, const RuntimeMethod* method)
 {
-	((  void (*) (Dictionary_2_tB7D13A43E922B6ED935E5681CBBD79D7EE851EC5*, String_t*, CIELabColor_t9125FC971207AB3C1CC4FD6F12C04A88D89FB195*, const RuntimeMethod*))Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared)(__this, ___0_key, ___1_value, method);
+	((  void (*) (Dictionary_2_t5C32AF17A5801FB3109E5B0E622BA8402A04E08E*, Il2CppFullySharedGenericAny, Il2CppFullySharedGenericAny, const RuntimeMethod*))Dictionary_2_Add_m54D479280472DEA042DB3933AF547E666B017333_gshared)((Dictionary_2_t5C32AF17A5801FB3109E5B0E622BA8402A04E08E*)__this, (Il2CppFullySharedGenericAny)___0_key, (Il2CppFullySharedGenericAny)___1_value, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic push

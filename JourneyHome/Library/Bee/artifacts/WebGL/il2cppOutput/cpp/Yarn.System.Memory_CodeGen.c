@@ -35,14 +35,29 @@ extern void ThrowHelper_ThrowArgumentOutOfRangeException_mE939B7FD875E973E116C36
 extern void ThrowHelper_CreateArgumentOutOfRangeException_m71A787FDB935FBC64872B80A2FA845CFE73B808F (void);
 extern void ThrowHelper_ThrowArgumentOutOfRangeException_mEECE035AE49F378B431CBD7F04A8C96F6C67B1D4 (void);
 extern void ThrowHelper_CreateArgumentOutOfRangeException_mB2E905118231FBC13D4615CA029261DA468C48EC (void);
+extern void ThrowHelper_ThrowInvalidOperationException_mD25B9C473036C32F26F2F78BA59D3419CF99A29F (void);
+extern void ThrowHelper_CreateInvalidOperationException_mF8C2FF445C3C2C412D110D3930A631AF0958A5F4 (void);
 extern void ThrowHelper_ThrowInvalidOperationException_EndPositionNotReached_mCFA288CF8DBAAC21A99E2B5D3BC7C1978AC5140C (void);
 extern void ThrowHelper_CreateInvalidOperationException_EndPositionNotReached_m52F07FA4E835836AAE7FD6760E94C54A305D2A08 (void);
+extern void ThrowHelper_ThrowArgumentOutOfRangeException_PositionOutOfRange_m5D05B8B8F6B7D9F8A27A6CC05A15C3738B1A5DED (void);
+extern void ThrowHelper_CreateArgumentOutOfRangeException_PositionOutOfRange_m4104F0B9DD9A42AA72F2FFE1596BDF0A38DE1A4D (void);
+extern void ThrowHelper_ThrowArgumentOutOfRangeException_OffsetOutOfRange_mF2639F83CFEDE99A31FE9F03FB5A54EADC112574 (void);
+extern void ThrowHelper_CreateArgumentOutOfRangeException_OffsetOutOfRange_m23ADE86A4C1BE4B4B1CBC5C98F78B3345CE7A6EB (void);
+extern void ThrowHelper_ThrowArgumentValidationException_mAE3998AF8EE7B469F50227430B86EFDF30FE17BA (void);
+extern void ThrowHelper_CreateArgumentValidationException_m137932F595CCDAF1838C505B4F2D02E72E6F7A7D (void);
+extern void ThrowHelper_ThrowStartOrEndArgumentValidationException_mD1F44840675A149E0C9B93434625FFCA55A6E1E7 (void);
+extern void ThrowHelper_CreateStartOrEndArgumentValidationException_mDB7FF174C57A14639F782ED12C1037AF0E7BC289 (void);
 extern void MemoryExtensions_AsSpan_m929778980405ED40E99EBE7F774E3399E7E7228D (void);
 extern void MemoryExtensions_AsMemory_m0A3BFC7495ECCE3C20D80A6CA01669E42D239129 (void);
 extern void MemoryExtensions_MeasureStringAdjustment_m7682AFAFF56CE5D5054834B6F0F9B37DF7798077 (void);
 extern void MemoryExtensions__cctor_mB29243DFAD4BCDC97484C6B274BAF6CF5A779CD8 (void);
 extern void SpanHelpers_SequenceEqual_m25A7B1700BEEE5FB98A9B6A0035644A5F6D720D4 (void);
 extern void SpanHelpers_IsReferenceOrContainsReferencesCore_mCA2C49F48C0939B6B219D80418FEA198CC391F34 (void);
+extern void SpanHelpers_ClearLessThanPointerSized_mA9B908E1AF93EE453E670D7E9E05ADF58B38D608 (void);
+extern void SpanHelpers_ClearLessThanPointerSized_mF8E5544F9E881D5D90909421F37C2BFED980884D (void);
+extern void SpanHelpers_ClearPointerSizedWithoutReferences_m45EAFB4F8240D9CB8F88B3D9A03A597AABDCEFD3 (void);
+extern void SpanHelpers_ClearPointerSizedWithReferences_mDEFBF734BADFE58F5C2EB482AD3F02542783355F (void);
+extern void SpanHelpers_LessThanEqual_m92412F85405D9BDF0CC1810A8DF5E75180DFE187 (void);
 extern void NUInt__ctor_m0A2AA2F9576FB75407F0497CA3BEC3FF7A9DB6C4 (void);
 extern void NUInt__ctor_mC06378BB7FDC15F0AC2EC6AF70DC73FB1AA0F010 (void);
 extern void NUInt_op_Explicit_m93607EBF0656782D5A9B77D211FF002B21D44E82 (void);
@@ -62,14 +77,23 @@ extern void SR__cctor_m30F7BB884DCF1A442B70C2A014ED3FDD23557B2F (void);
 extern void HashHelpers_Combine_m385B341295B27D9ACDD3EE970B50345AC9E15508 (void);
 extern void HashHelpers__cctor_mEE4CE439878ADD10611F7446A570A089CAA32742 (void);
 extern void SequenceMarshal_TryGetString_mD94D577BF626D4811E92F2B624DA956707453723 (void);
+extern void MemoryMarshal_TryGetString_m023FFD9963E5A11FD480FF58B7DD0E383B4E712E (void);
+extern void ReadOnlySequence_SegmentToSequenceStart_mAB681375B73AD6C7DD20409D30FF245A521E563A (void);
+extern void ReadOnlySequence_SegmentToSequenceEnd_mA52508F4DD53F30D4E47CF81FAD8DD57DF79A453 (void);
 extern void ReadOnlySequence_ArrayToSequenceStart_m846A83DE097FF7007C2FD847BA155C65E49563F3 (void);
 extern void ReadOnlySequence_ArrayToSequenceEnd_mEB3B1F863B9FAB1FBBD9C7099D94A53B8969E9F6 (void);
+extern void ReadOnlySequence_MemoryManagerToSequenceStart_m349338A9A0F8774A912B315D6B4C962199C8C35A (void);
+extern void ReadOnlySequence_MemoryManagerToSequenceEnd_m65F0AE1A86FD55E298C317587484150C74010A71 (void);
+extern void ReadOnlySequence_StringToSequenceStart_m285373BE87FB2876F8F7AC1C0DC160832494CB3B (void);
+extern void ReadOnlySequence_StringToSequenceEnd_mF83764436EED64B45261C4E5F2B3252DBA9267C1 (void);
+extern void MemoryHandle__ctor_mBA0B513BF38F785EE7A1472404E422827401F5AF (void);
+extern void MemoryHandle_Dispose_mD1EF131EFA11A859E46B793643A6F1077B0D3625 (void);
 extern void BinaryPrimitives_ReverseEndianness_m700F1976C80E5F882FDE693373C46B7FFAB5A3A9 (void);
 extern void BinaryPrimitives_ReverseEndianness_mFAA3F86AB4735F79E222F8215DA1FCF29AA925B2 (void);
 extern void BinaryPrimitives_ReadUInt64LittleEndian_m61CD47C68498EF751C43770ACCFD2A4FF96095C2 (void);
 extern void BinaryPrimitives_WriteUInt32LittleEndian_m0F9C5448E19D158700BD7A77B9DA30651916E7BC (void);
 extern void BinaryPrimitives_WriteUInt64LittleEndian_m260B15BFB58652DE3281880081EC0B0483264B09 (void);
-static Il2CppMethodPointer s_methodPointers[169] = 
+static Il2CppMethodPointer s_methodPointers[283] = 
 {
 	EmbeddedAttribute__ctor_m8581CFEE3C0A5F1FEC486F784421EC2AB2C32E97,
 	IsReadOnlyAttribute__ctor_m1589D1545185205307D74BC2E1025BF5F7E16412,
@@ -94,8 +118,36 @@ static Il2CppMethodPointer s_methodPointers[169] =
 	ThrowHelper_CreateArgumentOutOfRangeException_m71A787FDB935FBC64872B80A2FA845CFE73B808F,
 	ThrowHelper_ThrowArgumentOutOfRangeException_mEECE035AE49F378B431CBD7F04A8C96F6C67B1D4,
 	ThrowHelper_CreateArgumentOutOfRangeException_mB2E905118231FBC13D4615CA029261DA468C48EC,
+	ThrowHelper_ThrowInvalidOperationException_mD25B9C473036C32F26F2F78BA59D3419CF99A29F,
+	ThrowHelper_CreateInvalidOperationException_mF8C2FF445C3C2C412D110D3930A631AF0958A5F4,
 	ThrowHelper_ThrowInvalidOperationException_EndPositionNotReached_mCFA288CF8DBAAC21A99E2B5D3BC7C1978AC5140C,
 	ThrowHelper_CreateInvalidOperationException_EndPositionNotReached_m52F07FA4E835836AAE7FD6760E94C54A305D2A08,
+	ThrowHelper_ThrowArgumentOutOfRangeException_PositionOutOfRange_m5D05B8B8F6B7D9F8A27A6CC05A15C3738B1A5DED,
+	ThrowHelper_CreateArgumentOutOfRangeException_PositionOutOfRange_m4104F0B9DD9A42AA72F2FFE1596BDF0A38DE1A4D,
+	ThrowHelper_ThrowArgumentOutOfRangeException_OffsetOutOfRange_mF2639F83CFEDE99A31FE9F03FB5A54EADC112574,
+	ThrowHelper_CreateArgumentOutOfRangeException_OffsetOutOfRange_m23ADE86A4C1BE4B4B1CBC5C98F78B3345CE7A6EB,
+	NULL,
+	NULL,
+	ThrowHelper_ThrowArgumentValidationException_mAE3998AF8EE7B469F50227430B86EFDF30FE17BA,
+	ThrowHelper_CreateArgumentValidationException_m137932F595CCDAF1838C505B4F2D02E72E6F7A7D,
+	ThrowHelper_ThrowStartOrEndArgumentValidationException_mD1F44840675A149E0C9B93434625FFCA55A6E1E7,
+	ThrowHelper_CreateStartOrEndArgumentValidationException_mDB7FF174C57A14639F782ED12C1037AF0E7BC289,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
 	NULL,
 	NULL,
 	NULL,
@@ -163,12 +215,51 @@ static Il2CppMethodPointer s_methodPointers[169] =
 	NULL,
 	NULL,
 	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
 	SpanHelpers_SequenceEqual_m25A7B1700BEEE5FB98A9B6A0035644A5F6D720D4,
 	NULL,
 	NULL,
 	NULL,
 	NULL,
 	SpanHelpers_IsReferenceOrContainsReferencesCore_mCA2C49F48C0939B6B219D80418FEA198CC391F34,
+	SpanHelpers_ClearLessThanPointerSized_mA9B908E1AF93EE453E670D7E9E05ADF58B38D608,
+	SpanHelpers_ClearLessThanPointerSized_mF8E5544F9E881D5D90909421F37C2BFED980884D,
+	SpanHelpers_ClearPointerSizedWithoutReferences_m45EAFB4F8240D9CB8F88B3D9A03A597AABDCEFD3,
+	SpanHelpers_ClearPointerSizedWithReferences_mDEFBF734BADFE58F5C2EB482AD3F02542783355F,
+	SpanHelpers_LessThanEqual_m92412F85405D9BDF0CC1810A8DF5E75180DFE187,
 	NULL,
 	NULL,
 	NUInt__ctor_m0A2AA2F9576FB75407F0497CA3BEC3FF7A9DB6C4,
@@ -193,6 +284,7 @@ static Il2CppMethodPointer s_methodPointers[169] =
 	NULL,
 	NULL,
 	NULL,
+	MemoryMarshal_TryGetString_m023FFD9963E5A11FD480FF58B7DD0E383B4E712E,
 	NULL,
 	NULL,
 	NULL,
@@ -227,8 +319,54 @@ static Il2CppMethodPointer s_methodPointers[169] =
 	NULL,
 	NULL,
 	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	ReadOnlySequence_SegmentToSequenceStart_mAB681375B73AD6C7DD20409D30FF245A521E563A,
+	ReadOnlySequence_SegmentToSequenceEnd_mA52508F4DD53F30D4E47CF81FAD8DD57DF79A453,
 	ReadOnlySequence_ArrayToSequenceStart_m846A83DE097FF7007C2FD847BA155C65E49563F3,
 	ReadOnlySequence_ArrayToSequenceEnd_mEB3B1F863B9FAB1FBBD9C7099D94A53B8969E9F6,
+	ReadOnlySequence_MemoryManagerToSequenceStart_m349338A9A0F8774A912B315D6B4C962199C8C35A,
+	ReadOnlySequence_MemoryManagerToSequenceEnd_m65F0AE1A86FD55E298C317587484150C74010A71,
+	ReadOnlySequence_StringToSequenceStart_m285373BE87FB2876F8F7AC1C0DC160832494CB3B,
+	ReadOnlySequence_StringToSequenceEnd_mF83764436EED64B45261C4E5F2B3252DBA9267C1,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	MemoryHandle__ctor_mBA0B513BF38F785EE7A1472404E422827401F5AF,
+	MemoryHandle_Dispose_mD1EF131EFA11A859E46B793643A6F1077B0D3625,
+	NULL,
 	NULL,
 	NULL,
 	NULL,
@@ -249,7 +387,9 @@ extern void SequencePosition_Equals_m0E6EF5D19B2A9BC4CA216281F7C95CD672140B69_Ad
 extern void SequencePosition_GetHashCode_m7842647CFB786D21F669201B1B9FBC5BA6D47DAB_AdjustorThunk (void);
 extern void NUInt__ctor_m0A2AA2F9576FB75407F0497CA3BEC3FF7A9DB6C4_AdjustorThunk (void);
 extern void NUInt__ctor_mC06378BB7FDC15F0AC2EC6AF70DC73FB1AA0F010_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[8] = 
+extern void MemoryHandle__ctor_mBA0B513BF38F785EE7A1472404E422827401F5AF_AdjustorThunk (void);
+extern void MemoryHandle_Dispose_mD1EF131EFA11A859E46B793643A6F1077B0D3625_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[10] = 
 {
 	{ 0x06000004, SequencePosition__ctor_m76B543A998FF27B79B37EEF8AB10B1B165FE5B6F_AdjustorThunk },
 	{ 0x06000005, SequencePosition_GetObject_m6270FB7EF92286558F3053CF1A9AF22FF6FB03F1_AdjustorThunk },
@@ -257,38 +397,50 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[8] =
 	{ 0x06000007, SequencePosition_Equals_m9C60848B8A498B093DB54E4C9EF0113E0132AAE2_AdjustorThunk },
 	{ 0x06000008, SequencePosition_Equals_m0E6EF5D19B2A9BC4CA216281F7C95CD672140B69_AdjustorThunk },
 	{ 0x06000009, SequencePosition_GetHashCode_m7842647CFB786D21F669201B1B9FBC5BA6D47DAB_AdjustorThunk },
-	{ 0x06000065, NUInt__ctor_m0A2AA2F9576FB75407F0497CA3BEC3FF7A9DB6C4_AdjustorThunk },
-	{ 0x06000066, NUInt__ctor_mC06378BB7FDC15F0AC2EC6AF70DC73FB1AA0F010_AdjustorThunk },
+	{ 0x060000A8, NUInt__ctor_m0A2AA2F9576FB75407F0497CA3BEC3FF7A9DB6C4_AdjustorThunk },
+	{ 0x060000A9, NUInt__ctor_mC06378BB7FDC15F0AC2EC6AF70DC73FB1AA0F010_AdjustorThunk },
+	{ 0x0600010E, MemoryHandle__ctor_mBA0B513BF38F785EE7A1472404E422827401F5AF_AdjustorThunk },
+	{ 0x0600010F, MemoryHandle_Dispose_mD1EF131EFA11A859E46B793643A6F1077B0D3625_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[169] = 
+static const int32_t s_InvokerIndices[283] = 
 {
-	5689,
-	5689,
-	5689,
-	2483,
-	5586,
-	5548,
-	3338,
-	3304,
-	5548,
-	8029,
-	7860,
-	8174,
-	8140,
-	8033,
-	7864,
-	8174,
-	8140,
-	8174,
-	8140,
-	8174,
-	8140,
-	8029,
-	7860,
-	8174,
-	8140,
+	1890,
+	1890,
+	1890,
+	1129,
+	1830,
+	1812,
+	1352,
+	1334,
+	1812,
+	3722,
+	3554,
+	3824,
+	3792,
+	3726,
+	3558,
+	3824,
+	3792,
+	3824,
+	3792,
+	3824,
+	3792,
+	3722,
+	3554,
+	3824,
+	3792,
+	3824,
+	3792,
+	3824,
+	3792,
+	3824,
+	3792,
 	0,
 	0,
+	3305,
+	3128,
+	3723,
+	3555,
 	0,
 	0,
 	0,
@@ -303,10 +455,6 @@ static const int32_t s_InvokerIndices[169] =
 	0,
 	0,
 	0,
-	7603,
-	6617,
-	8135,
-	8174,
 	0,
 	0,
 	0,
@@ -325,6 +473,10 @@ static const int32_t s_InvokerIndices[169] =
 	0,
 	0,
 	0,
+	3357,
+	2523,
+	3787,
+	3824,
 	0,
 	0,
 	0,
@@ -354,33 +506,12 @@ static const int32_t s_InvokerIndices[169] =
 	0,
 	0,
 	0,
-	6638,
 	0,
 	0,
 	0,
 	0,
-	7689,
 	0,
 	0,
-	4688,
-	4689,
-	7825,
-	7667,
-	7288,
-	8140,
-	8119,
-	7324,
-	7324,
-	8140,
-	8140,
-	8140,
-	8140,
-	8140,
-	8140,
-	8174,
-	7239,
-	8174,
-	6212,
 	0,
 	0,
 	0,
@@ -418,55 +549,204 @@ static const int32_t s_InvokerIndices[169] =
 	0,
 	0,
 	0,
-	7769,
-	7769,
 	0,
 	0,
 	0,
 	0,
 	0,
 	0,
-	7978,
-	7993,
-	7980,
-	7473,
-	7474,
+	0,
+	0,
+	0,
+	2540,
+	0,
+	0,
+	0,
+	0,
+	3405,
+	3279,
+	3279,
+	3279,
+	3279,
+	2946,
+	0,
+	0,
+	1701,
+	1702,
+	3541,
+	3382,
+	3105,
+	3792,
+	3771,
+	3132,
+	3132,
+	3792,
+	3792,
+	3792,
+	3792,
+	3792,
+	3792,
+	3824,
+	3063,
+	3824,
+	2265,
+	0,
+	0,
+	0,
+	2263,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	3485,
+	3485,
+	3485,
+	3485,
+	3485,
+	3485,
+	3485,
+	3485,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	691,
+	1890,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	3671,
+	3686,
+	3674,
+	3267,
+	3268,
 };
-static const Il2CppTokenRangePair s_rgctxIndices[27] = 
+static const Il2CppTokenRangePair s_rgctxIndices[36] = 
 {
-	{ 0x02000009, { 0, 26 } },
-	{ 0x0200000C, { 45, 27 } },
-	{ 0x0200000D, { 72, 24 } },
-	{ 0x0200000E, { 96, 19 } },
-	{ 0x02000011, { 129, 10 } },
-	{ 0x02000018, { 185, 13 } },
-	{ 0x0200001B, { 237, 33 } },
-	{ 0x0200001C, { 270, 8 } },
-	{ 0x02000020, { 278, 2 } },
-	{ 0x02000021, { 280, 9 } },
-	{ 0x06000026, { 26, 8 } },
-	{ 0x06000027, { 34, 7 } },
-	{ 0x06000028, { 41, 3 } },
-	{ 0x06000029, { 44, 1 } },
-	{ 0x0600005E, { 115, 6 } },
-	{ 0x0600005F, { 121, 5 } },
-	{ 0x06000060, { 126, 1 } },
-	{ 0x06000061, { 127, 2 } },
-	{ 0x06000078, { 139, 15 } },
-	{ 0x06000079, { 154, 4 } },
-	{ 0x0600007A, { 158, 5 } },
-	{ 0x0600007B, { 163, 6 } },
-	{ 0x0600007C, { 169, 8 } },
-	{ 0x0600007D, { 177, 8 } },
-	{ 0x06000086, { 198, 15 } },
-	{ 0x06000087, { 213, 15 } },
-	{ 0x06000088, { 228, 9 } },
+	{ 0x02000009, { 8, 41 } },
+	{ 0x0200000A, { 49, 8 } },
+	{ 0x0200000C, { 76, 41 } },
+	{ 0x0200000D, { 117, 36 } },
+	{ 0x0200000E, { 153, 2 } },
+	{ 0x0200000F, { 155, 35 } },
+	{ 0x02000010, { 190, 2 } },
+	{ 0x02000011, { 192, 8 } },
+	{ 0x02000016, { 214, 10 } },
+	{ 0x0200001D, { 275, 13 } },
+	{ 0x02000020, { 327, 59 } },
+	{ 0x02000021, { 386, 8 } },
+	{ 0x02000024, { 394, 17 } },
+	{ 0x02000025, { 411, 2 } },
+	{ 0x02000026, { 413, 2 } },
+	{ 0x02000029, { 415, 10 } },
+	{ 0x06000020, { 0, 2 } },
+	{ 0x06000021, { 2, 6 } },
+	{ 0x06000042, { 57, 8 } },
+	{ 0x06000043, { 65, 7 } },
+	{ 0x06000044, { 72, 3 } },
+	{ 0x06000045, { 75, 1 } },
+	{ 0x0600009C, { 200, 6 } },
+	{ 0x0600009D, { 206, 5 } },
+	{ 0x0600009E, { 211, 1 } },
+	{ 0x0600009F, { 212, 2 } },
+	{ 0x060000BB, { 224, 15 } },
+	{ 0x060000BC, { 239, 5 } },
+	{ 0x060000BD, { 244, 4 } },
+	{ 0x060000BF, { 248, 5 } },
+	{ 0x060000C0, { 253, 6 } },
+	{ 0x060000C1, { 259, 8 } },
+	{ 0x060000C2, { 267, 8 } },
+	{ 0x060000CB, { 288, 15 } },
+	{ 0x060000CC, { 303, 15 } },
+	{ 0x060000CD, { 318, 9 } },
 };
+extern const uint32_t g_rgctx_ReadOnlySequenceSegment_1_t047B56C0F15DEAD26A3710F900DFDE3CB3E46509;
+extern const uint32_t g_rgctx_ThrowHelper_CreateArgumentValidationException_TisT_tE302EF8DF448B18875AAF2092E0647C36CCBEFA0_m68F802262C640651A712CF08275F2271575E6E59;
+extern const uint32_t g_rgctx_ReadOnlySequenceSegment_1_t20DE091A1ED42988839A2D0B6164BF3F40FF0B4F;
+extern const uint32_t g_rgctx_ReadOnlySequenceSegment_1_get_RunningIndex_m8AEB23C6C3BF48C1D55F0E0DAFAEB04FCED37218;
+extern const uint32_t g_rgctx_ReadOnlySequenceSegment_1_get_Memory_m460842A421CBF7F8DF1FD019DBEA95451869C1A3;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1_t4372BF6ADBD09A1029B44AA8F8D5FE47E25B1F9B;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1_get_Length_m811B94BFDA2A541D03447143A6DFB80D712DE3F2;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1_t4372BF6ADBD09A1029B44AA8F8D5FE47E25B1F9B;
 extern const uint32_t g_rgctx_TU5BU5D_tA662652DD347C026CC5E51FA6A5CE4AF3A79D6CF;
 extern const uint32_t g_rgctx_Memory_1_tDEF11CEA07F88A6FB05CFBC0FFA08B9CE88CBB4D;
 extern const uint32_t g_rgctx_T_t522CEE6DA12937492837D1B7215754DB424D8615;
 extern const uint32_t g_rgctx_TU5BU5D_tA662652DD347C026CC5E51FA6A5CE4AF3A79D6CF;
 extern const uint32_t g_rgctx_MemoryManager_1_t1B27280259D4455CA27BC57A8057B51ECC9B43A6;
+extern const uint32_t g_rgctx_Memory_1__ctor_mE9829DC6244B4A9548EB3A398FD56ED6293D534B;
+extern const uint32_t g_rgctx_ArraySegment_1_tF18ECB5D8C5141F7F9263693005E89183319AC60;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Array_m80D1313800CD318FD3AB73BC8758E71BB1CED473;
+extern const uint32_t g_rgctx_ArraySegment_1_tF18ECB5D8C5141F7F9263693005E89183319AC60;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Offset_mE3728C141E23B423913A89AA267A21114759CC90;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Count_m001B650F3DB1FBB76C94B1BA67079962D3E53D3D;
+extern const uint32_t g_rgctx_Memory_1__ctor_m7806BEE5ED0DCA9945DD763431BADA71882D8B73;
 extern const uint32_t g_rgctx_Memory_1U26_t28B8C3BEE7BCCA33B4D2963CB7EB000F4BC1635B;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1U26_t402191E35CE355249884B4405DAAEEA712746865;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1_tE68A97CCDBC7B9145CD47E786D97F1D1F4714A81;
@@ -482,12 +762,28 @@ extern const uint32_t g_rgctx_Span_1_t6A03A93F0021F3F96044D2DFA79F58772AF39167;
 extern const uint32_t g_rgctx_Pinnable_1_tC0326DB4A83D075CEC3DD31A2A26E91F542B8A5F;
 extern const uint32_t g_rgctx_Span_1__ctor_mFBAAFAEE40F60A379DD0C4EC677568468F612010;
 extern const uint32_t g_rgctx_Span_1__ctor_mF3123880B980F1B827AE9318E4E4ED085129A4C8;
+extern const uint32_t g_rgctx_Span_1_CopyTo_mAD1B7F9C62C0499C0E96C35BB88AD11BEEA3AF6A;
+extern const uint32_t g_rgctx_Span_1_TryCopyTo_m3271B96A0638236E3FDD8D9E5135A712D0263314;
+extern const uint32_t g_rgctx_MemoryManager_1_Pin_m6D11D295A68CF8D03543C7E45C3060E3AC6A8869;
+extern const uint32_t g_rgctx_Unsafe_Add_TisT_t522CEE6DA12937492837D1B7215754DB424D8615_m79964DA5DEC27C5C5899F192E459E23E83E8BDBE;
+extern const uint32_t g_rgctx_Span_1_op_Implicit_m5128D038BE2F748F5ED7317D14BC12CE6C748D30;
+extern const uint32_t g_rgctx_MemoryMarshal_GetReference_TisT_t522CEE6DA12937492837D1B7215754DB424D8615_m7E0ADA08C0D88965DA121CCF3A30628A0DFE47AF;
+extern const uint32_t g_rgctx_TU26_t6F613A9266BCA9083B1EB13311D730D31686739D;
+extern const uint32_t g_rgctx_Span_1_ToArray_m6BABCBCDF26A0BF2DDE9A57F77E93644E7940842;
 extern const uint32_t g_rgctx_Memory_1_op_Implicit_m9853BC52A17CF8F3F62B6862B84CA68673141637;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1_Equals_m185AFF715A1A160FBE44F3299CB1FD70A36576EE;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1_tE68A97CCDBC7B9145CD47E786D97F1D1F4714A81;
 extern const uint32_t g_rgctx_Memory_1_Equals_mEF94FBB0820D4468E1E5799A576D150B17B87D26;
 extern const uint32_t g_rgctx_Memory_1_CombineHashCodes_m935BE15FB9FB86DF92777B75DDE128D0CF285110;
 extern const uint32_t g_rgctx_Memory_1_CombineHashCodes_mDE1230FC6B75A29628B82F2646B8336EC633FD3F;
+extern const uint32_t g_rgctx_Memory_1_t74433A4AD0AB026FF3791DE4E46C33276A27BDFE;
+extern const uint32_t g_rgctx_Memory_1_op_Implicit_m482F36E2D1B41F30991CB4192675C248107B83DA;
+extern const uint32_t g_rgctx_Memory_1_t74433A4AD0AB026FF3791DE4E46C33276A27BDFE;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1_t1587228F96C322C0942536AA9A31FF77966A6448;
+extern const uint32_t g_rgctx_MemoryDebugView_1_tC300126BFABCF802FEB3E2756E8CB9A53BA04CEE;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1_ToArray_mB6365EED9021A7BEE6C2C0312F14B421430AC103;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1_t1587228F96C322C0942536AA9A31FF77966A6448;
+extern const uint32_t g_rgctx_TU5BU5D_tAFE94D8A2D783462D316B9143F102D31A0D3AB06;
 extern const uint32_t g_rgctx_ReadOnlySpan_1_t6360305680BE77B24E5DEC4F06F367EA4C2355B0;
 extern const uint32_t g_rgctx_ReadOnlySpan_1_get_Length_mAD8A3A1E47447D36A3BA7E61352D4B966452A315;
 extern const uint32_t g_rgctx_ReadOnlySpan_1_t6360305680BE77B24E5DEC4F06F367EA4C2355B0;
@@ -510,6 +806,12 @@ extern const uint32_t g_rgctx_T_t92303F1D1C28C357AC846F468C626149B7AF79E0;
 extern const uint32_t g_rgctx_TU5BU5D_t2D6D299FE744746D53A22ADC27CDAA91DEC319D3;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1_tCF0B811E39F7FF977A4DB1A9F51F478A58BF32F5;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1__ctor_mB4279D147FF7813952625EBA7AF981D5A70F1083;
+extern const uint32_t g_rgctx_ArraySegment_1_t6ACCF8E110A639D8D36A8347F9A0581684219194;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Array_mE00A64DC259DCBC91E27121B6377B4129496908E;
+extern const uint32_t g_rgctx_ArraySegment_1_t6ACCF8E110A639D8D36A8347F9A0581684219194;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Offset_m9EFEF915AC59B00F1174CD75E0830FE599CE8ABF;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Count_mA12020F4E28C7DE05B7D49DD4E999E4983FD625D;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1__ctor_m7780ED5CE74AB501B2CEB510A28349C69FC24ED8;
 extern const uint32_t g_rgctx_T_tC52CF2CAD3970E753FC009F51BFD26C3DC0469A8;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1_get_Span_m6A6DA6E2FB21B0C153B590C097D270009A9C2874;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1_tCF0B811E39F7FF977A4DB1A9F51F478A58BF32F5;
@@ -527,19 +829,40 @@ extern const uint32_t g_rgctx_ReadOnlySpan_1__ctor_m1C7BCFB89F26D5F51F0056B8DD6E
 extern const uint32_t g_rgctx_ReadOnlySpan_1_Slice_m027AD9D12F01FD68C48385B0C113E32242D03098;
 extern const uint32_t g_rgctx_ReadOnlySpan_1_t33A20B1D38B5BC25AFA6466C52AF7A30C7261F74;
 extern const uint32_t g_rgctx_ReadOnlySpan_1__ctor_m247FC8AB134375B28522C6F57EFF9CDD6850E5CC;
+extern const uint32_t g_rgctx_Memory_1_t27384072CEEBF1AFA1B734A0FCAB8E444E5B9E24;
+extern const uint32_t g_rgctx_Memory_1_get_Span_m93CD995ED304CA2C0252317DD5F4CA8A271BF9B7;
+extern const uint32_t g_rgctx_Memory_1_t27384072CEEBF1AFA1B734A0FCAB8E444E5B9E24;
+extern const uint32_t g_rgctx_ReadOnlySpan_1_CopyTo_m873713789E3FC1A810235C8FB9F4845A73D75B9A;
+extern const uint32_t g_rgctx_ReadOnlySpan_1_TryCopyTo_m8E015453B1694A7A0B0A56E062E6CF431D89601D;
+extern const uint32_t g_rgctx_MemoryManager_1_Pin_mFA0B018268A7B849AC8E07D335BA8228474593B9;
+extern const uint32_t g_rgctx_Unsafe_Add_TisT_tC52CF2CAD3970E753FC009F51BFD26C3DC0469A8_m23F780A691C86617BAC99148FD3D945DE0F7B035;
+extern const uint32_t g_rgctx_Span_1_op_Implicit_m0E87E6E40311A309EF107A6C0255D0FF8D99E93E;
+extern const uint32_t g_rgctx_MemoryMarshal_GetReference_TisT_tC52CF2CAD3970E753FC009F51BFD26C3DC0469A8_m2BD948AF5364A11CF3AF85E1095DD9F8FCAF1EB9;
+extern const uint32_t g_rgctx_TU26_t601CB2A43FEAA0B672A1EBB485977E88BB79CA40;
 extern const uint32_t g_rgctx_ReadOnlySpan_1_ToArray_m44C4B09D7799B44054DE648FA2EC891A4B96E779;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1_Equals_mAE4FF5DF294C3BA300F202E6CB3286F7DFC601F5;
-extern const uint32_t g_rgctx_Memory_1_t27384072CEEBF1AFA1B734A0FCAB8E444E5B9E24;
 extern const uint32_t g_rgctx_Memory_1_op_Implicit_mD7BBA266EA1277FA910F608025769464F73F5307;
-extern const uint32_t g_rgctx_Memory_1_t27384072CEEBF1AFA1B734A0FCAB8E444E5B9E24;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1_CombineHashCodes_m95F6C97D4D83ADEF177D65007CF6A191939D9ED7;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1_CombineHashCodes_mEC3257AB9795D035A51D5DA30A420C298187481F;
 extern const uint32_t g_rgctx_ReadOnlySpan_1_t62DFA41FFEDE3C5A53728D5E65FBFB859E59AA39;
+extern const uint32_t g_rgctx_ReadOnlySpan_1_op_Equality_mC08E2C1768B42D51BADEBECEADB846AA09C3C1D0;
+extern const uint32_t g_rgctx_ReadOnlySpan_1_t62DFA41FFEDE3C5A53728D5E65FBFB859E59AA39;
 extern const uint32_t g_rgctx_TU5BU5D_tBFA59158EF501174F9BFFC75F4B85578D3E63761;
+extern const uint32_t g_rgctx_ReadOnlySpan_1__ctor_m8624E7C136A0E88EBDB00DC198F4E38D0320461A;
+extern const uint32_t g_rgctx_ArraySegment_1_t01DC39E42B8A7CA58F3369BE978414FD1D997229;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Array_m31382E2FE24C719FECCAF7860F890A95AB90D57D;
+extern const uint32_t g_rgctx_ArraySegment_1_t01DC39E42B8A7CA58F3369BE978414FD1D997229;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Offset_mB0304809AE16123AC68CCC5DEC57FFCB56B2BCF0;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Count_m595C940E50E1852F28B193818AECB1BC5B1A332A;
+extern const uint32_t g_rgctx_ReadOnlySpan_1__ctor_mA7327D2AFCCD4548996E9891E468E392A694CE6F;
+extern const uint32_t g_rgctx_Enumerator_tB428E49D828C3CDCEC3B46272E6161A922D18E84;
+extern const uint32_t g_rgctx_Enumerator__ctor_m34ADE64101978E042CF90AECE06BEB26351B7360;
 extern const uint32_t g_rgctx_Pinnable_1_t909CBB487A60F8196036FA9C59F260753AFCA242;
 extern const uint32_t g_rgctx_PerTypeValues_1_tA947E3C5DEF02F90C25E6137C71DD9471D49CF4E;
 extern const uint32_t g_rgctx_PerTypeValues_1_tA947E3C5DEF02F90C25E6137C71DD9471D49CF4E;
 extern const uint32_t g_rgctx_SpanHelpers_Add_TisT_t4F00CCF01AF809F7E14CDBD249631737BED9D50A_m4C40360173D185C60B4C281326B9A55BA4FB5FBE;
+extern const uint32_t g_rgctx_SpanHelpers_IsReferenceOrContainsReferences_TisT_t4F00CCF01AF809F7E14CDBD249631737BED9D50A_mB39D9DA4CBE517A921983B6FDD0FA2B0BF3BD437;
+extern const uint32_t g_rgctx_T_t4F00CCF01AF809F7E14CDBD249631737BED9D50A;
 extern const uint32_t g_rgctx_TU26_t10DDB34B391C2C6FF2FCFE7CD9F1E157096DA675;
 extern const uint32_t g_rgctx_Unsafe_Add_TisT_t4F00CCF01AF809F7E14CDBD249631737BED9D50A_m8BD093967D690D80AAD1DCA5A353917BD807D72A;
 extern const uint32_t g_rgctx_T_t4F00CCF01AF809F7E14CDBD249631737BED9D50A;
@@ -547,36 +870,63 @@ extern const uint32_t g_rgctx_Unsafe_AddByteOffset_TisT_t4F00CCF01AF809F7E14CDBD
 extern const uint32_t g_rgctx_TU26_t10DDB34B391C2C6FF2FCFE7CD9F1E157096DA675;
 extern const uint32_t g_rgctx_Span_1_t57C6AD281DE71E6D407646E107727AE88416F5E8;
 extern const uint32_t g_rgctx_ReadOnlySpan_1_TryCopyTo_m291DA4194AC2F59A29DB02FA0EFAAFFF13D206DC;
-extern const uint32_t g_rgctx_ReadOnlySpan_1_t62DFA41FFEDE3C5A53728D5E65FBFB859E59AA39;
 extern const uint32_t g_rgctx_Span_1_get_Length_mEFCF67251517985D8E7CB9E9D2B4021345AD3EA2;
 extern const uint32_t g_rgctx_Span_1_t57C6AD281DE71E6D407646E107727AE88416F5E8;
 extern const uint32_t g_rgctx_ReadOnlySpan_1_DangerousGetPinnableReference_mDF908296DBB920FCA6D8FC22ADD983C6F1C87036;
 extern const uint32_t g_rgctx_Span_1_DangerousGetPinnableReference_mB7488F876B0E48B0DC4E88447B0520BC633D98ED;
 extern const uint32_t g_rgctx_SpanHelpers_CopyTo_TisT_t4F00CCF01AF809F7E14CDBD249631737BED9D50A_m7EB66A387D0A4E100E062C600850E74BA646F7F0;
-extern const uint32_t g_rgctx_T_t4F00CCF01AF809F7E14CDBD249631737BED9D50A;
+extern const uint32_t g_rgctx_Unsafe_AreSame_TisT_t4F00CCF01AF809F7E14CDBD249631737BED9D50A_mF1B86CAABB2EB92DC1925D3F1410BC309D6477E5;
 extern const uint32_t g_rgctx_ReadOnlySpan_1__ctor_m024513683DE372FD36781EE0C1532B96AFAED09F;
 extern const uint32_t g_rgctx_TU5BU5D_tBFA59158EF501174F9BFFC75F4B85578D3E63761;
 extern const uint32_t g_rgctx_Span_1_op_Implicit_m8C7C75DAADFE62E1EB84AF5CDB270EAF627FCE8D;
 extern const uint32_t g_rgctx_ReadOnlySpan_1_CopyTo_m3C7BD8E5BDF7D5A2567C384EA375C109315B8625;
+extern const uint32_t g_rgctx_ReadOnlySpan_1_t6517B2579DE6050C4E72B627456A6C64940E5672;
+extern const uint32_t g_rgctx_Enumerator_t9A35ACD49F4C36B9D95DF11F745E5892FC296A45;
+extern const uint32_t g_rgctx_Span_1_tA554ACA894147174719FCFB920C803C8265DFA81;
+extern const uint32_t g_rgctx_Span_1_op_Equality_m425C2ADA2FA3C05BD10F88E160609F3E1709E8DE;
 extern const uint32_t g_rgctx_Span_1_tA554ACA894147174719FCFB920C803C8265DFA81;
 extern const uint32_t g_rgctx_TU5BU5D_tD530A4D3F4C879154C4784CB5F8AE806AE4670B0;
 extern const uint32_t g_rgctx_Span_1__ctor_m3090DB6797DA087C3D26FC6ED20508B36538DC83;
+extern const uint32_t g_rgctx_ArraySegment_1_t253AB78C2331F22E124B99AEC13C6DEC510CBF5D;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Array_m08BC72BC06BD87820B41E74D0FB2ACC78EB64007;
+extern const uint32_t g_rgctx_ArraySegment_1_t253AB78C2331F22E124B99AEC13C6DEC510CBF5D;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Offset_m67FE9E0607F9A97C7C826F21E32926C3554E9E88;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Count_m45FE96DC240465464A2EFF0A29D2C3BBF99C72BB;
+extern const uint32_t g_rgctx_Span_1__ctor_m089FB1BAF979BF4235C4FDB56F90FDF2D5F1AF0E;
+extern const uint32_t g_rgctx_Enumerator_tFC66D26499F1F3EA5AA12BF831934442D655F9CF;
+extern const uint32_t g_rgctx_Enumerator__ctor_m57F0DFA49978B4F2367D316ADA030C07F78015EC;
 extern const uint32_t g_rgctx_T_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A;
 extern const uint32_t g_rgctx_TU5BU5D_tD530A4D3F4C879154C4784CB5F8AE806AE4670B0;
 extern const uint32_t g_rgctx_Pinnable_1_t73504BE386F334AFA96E0592B4A4C1FB1FF63BD3;
 extern const uint32_t g_rgctx_PerTypeValues_1_t1092392DA536CF1F2F095AFA2BF230233283624B;
 extern const uint32_t g_rgctx_PerTypeValues_1_t1092392DA536CF1F2F095AFA2BF230233283624B;
 extern const uint32_t g_rgctx_SpanHelpers_Add_TisT_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A_m3866952F2D660F62A9C19175F1F2AA1A98824A31;
+extern const uint32_t g_rgctx_Span_1__ctor_m77143454A7E8DBF6DFA38663090F39439A56FDC6;
 extern const uint32_t g_rgctx_SpanHelpers_IsReferenceOrContainsReferences_TisT_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A_m64FD003B9CBCC4F466C661055A26C39FFE0025AB;
 extern const uint32_t g_rgctx_T_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A;
 extern const uint32_t g_rgctx_TU26_t27D3F0311C55B19A70D342C7162F11FF1EF10502;
 extern const uint32_t g_rgctx_Unsafe_Add_TisT_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A_mEBCDF3AFEA1FD3E7E5A0FC3B067719E60FE43D83;
 extern const uint32_t g_rgctx_Unsafe_AddByteOffset_TisT_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A_m433090E36D02265C6F44C89E3032C55660F7CFC1;
+extern const uint32_t g_rgctx_Unsafe_SizeOf_TisT_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A_m7897C40799CBB230192A3CFBF120623D2E8AA0F7;
+extern const uint32_t g_rgctx_Span_1_DangerousGetPinnableReference_mF3E219303A43CD21050FC2C8D7623DE8344C7899;
+extern const uint32_t g_rgctx_Span_1_TryCopyTo_mCAEF48728F221D26BB9217826F0A8DC5BC2C517F;
+extern const uint32_t g_rgctx_SpanHelpers_CopyTo_TisT_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A_m540FED06E00E3E9F42DAF9356D777569680A729B;
+extern const uint32_t g_rgctx_Unsafe_AreSame_TisT_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A_mCC99D097EF09A47B2F6D5DBB7789AFF7DACF2E73;
 extern const uint32_t g_rgctx_ReadOnlySpan_1_tA3C7D52B45B95F661E9BE6E657CC6677200B6A02;
 extern const uint32_t g_rgctx_ReadOnlySpan_1__ctor_mD6841445DE35DAD075CAD648973C42BC917355A7;
-extern const uint32_t g_rgctx_Span_1_DangerousGetPinnableReference_mF3E219303A43CD21050FC2C8D7623DE8344C7899;
-extern const uint32_t g_rgctx_Span_1_tA554ACA894147174719FCFB920C803C8265DFA81;
-extern const uint32_t g_rgctx_Span_1__ctor_m77143454A7E8DBF6DFA38663090F39439A56FDC6;
+extern const uint32_t g_rgctx_TU5BU5D_tD530A4D3F4C879154C4784CB5F8AE806AE4670B0;
+extern const uint32_t g_rgctx_Span_1_op_Implicit_m46DAB2C32CF92B8205068A81657D3BF8238DEF45;
+extern const uint32_t g_rgctx_Span_1_CopyTo_m9E1872433D2AD675934319A14746942FC3248F2B;
+extern const uint32_t g_rgctx_Span_1_t7DB056978E9ACECA2D0586C0C33829D2B42B43B3;
+extern const uint32_t g_rgctx_Enumerator_t58FC180ED25204B4D989F1BE072FD50543E0EF3F;
+extern const uint32_t g_rgctx_Span_1_t2288709B8A886C851DAB4A911A9F2AB65EFAD3AD;
+extern const uint32_t g_rgctx_Span_1_ToArray_m530B5F7C05A965C5520E573A23E41911FF6D0DB3;
+extern const uint32_t g_rgctx_Span_1_t2288709B8A886C851DAB4A911A9F2AB65EFAD3AD;
+extern const uint32_t g_rgctx_TU5BU5D_tED9EC24B32ECF277A1541518FBC75D542B06E84E;
+extern const uint32_t g_rgctx_SpanDebugView_1_tB8BDBA807752B70D8FE9C1AD2DABE71DFF2BF3EC;
+extern const uint32_t g_rgctx_ReadOnlySpan_1_tD8C48E921F404A12C64B024BBF13126E59A12612;
+extern const uint32_t g_rgctx_ReadOnlySpan_1_ToArray_m63772A1E7386AC4F93C42F6E6018734FD8959511;
+extern const uint32_t g_rgctx_ReadOnlySpan_1_tD8C48E921F404A12C64B024BBF13126E59A12612;
 extern const uint32_t g_rgctx_TU26_t5C5456616C795515698BBB563C820118BF408947;
 extern const uint32_t g_rgctx_Unsafe_AreSame_TisT_t7B53166B2895A840367325A6177F3555BEFFDF0E_m669338B28B4A3A8AE4749B8E86057049C188CCCC;
 extern const uint32_t g_rgctx_Unsafe_Add_TisT_t7B53166B2895A840367325A6177F3555BEFFDF0E_m2DAF80F1212C81676532874C81315663A160A56E;
@@ -616,6 +966,11 @@ extern const uint32_t g_rgctx_ArraySegment_1__ctor_mE172B890ADE9889C4A530538C93B
 extern const uint32_t g_rgctx_PerTypeValues_1_t6AAFA143AFA794E57CD6E3FB14834657FE12BADA;
 extern const uint32_t g_rgctx_PerTypeValues_1_t6AAFA143AFA794E57CD6E3FB14834657FE12BADA;
 extern const uint32_t g_rgctx_ArraySegment_1__ctor_mA6D0034ED2062D997880A96EA0CB2C542190E325;
+extern const uint32_t g_rgctx_TManagerU26_tB16C32BAF39DCAC6BF688F274BE0F09327BB13F5;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1_t389F6F0391BCA2F2BC6BE387D5C104257033A7E0;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1_GetObjectStartLength_m1AB2295CDCFDF54359EF533AC5D5BAD8F0E6AAE9;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1_t389F6F0391BCA2F2BC6BE387D5C104257033A7E0;
+extern const uint32_t g_rgctx_TManager_tA9E1AC1F74A765AEA8CA67009805EA8DFD5CCD7C;
 extern const uint32_t g_rgctx_U3CToEnumerableU3Ed__3_1_t800397D493E21B8EBEB32BB553E94B9BB4A38769;
 extern const uint32_t g_rgctx_U3CToEnumerableU3Ed__3_1__ctor_m5A5EB6AC272972C6711B3C0EC9C0513BCA18614E;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1_t240BF0257A868512C978BC132E5FE00C22839F6D;
@@ -701,34 +1056,60 @@ extern const uint32_t g_rgctx_Span_1_t4E27BF92670F998FB75644DDE43653FA32D6AAF3;
 extern const uint32_t g_rgctx_BuffersExtensions_CopyTo_TisT_t2C663D83F13E9CA9CCE7C4CCD4E8B6E7805C1907_m1DD6818AFC34805FC3E637103CD65D1E9D2477FB;
 extern const uint32_t g_rgctx_ReadOnlySequence_1_GetLength_mF2CC54CD6CB1224053E7C44F781F50B75FF1FE85;
 extern const uint32_t g_rgctx_ReadOnlySequence_1_t5B40BC7462A8BEF1DA8047DF63E6496B6E58FB93;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_get_Length_m2C5F7E797ED7C25E7995F2BF18B66BC0C2BC6DC0;
 extern const uint32_t g_rgctx_ReadOnlySequence_1_t5B40BC7462A8BEF1DA8047DF63E6496B6E58FB93;
 extern const uint32_t g_rgctx_ReadOnlySequence_1_GetFirstBuffer_m3B6A1D4103516A848E2818717D856EC572420710;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1_tF3E9BBC5FD9CFB8A853DCDDACF0600CFF8B8E511;
+extern const uint32_t g_rgctx_ReadOnlySequenceSegment_1_tD37619548A2BB64A906D73A07E1297845029760B;
+extern const uint32_t g_rgctx_ReadOnlySequenceSegment_1_get_RunningIndex_mD37056BE34457DDA9B8B96FB41928D465857A2E7;
+extern const uint32_t g_rgctx_ReadOnlySequenceSegment_1_get_Memory_mCE5C41BFD338BD3881BFD1E0D491B5B0CE19E094;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1_get_Length_m9C9A753B115C09EC2525B9A2A1B551B8974368CD;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1_tF3E9BBC5FD9CFB8A853DCDDACF0600CFF8B8E511;
+extern const uint32_t g_rgctx_ThrowHelper_ThrowArgumentValidationException_TisT_t582F0020006A8430EB5E56CBCC9E542A7573ED16_m9E65EA9490C430446CD56DB157291A65E26CD935;
 extern const uint32_t g_rgctx_TU5BU5D_t1133F65F1A9B01DD4D07DAA6DC36C0635C443FA7;
+extern const uint32_t g_rgctx_MemoryMarshal_TryGetMemoryManager_TisT_t582F0020006A8430EB5E56CBCC9E542A7573ED16_TisMemoryManager_1_tCE3D985EDCB065DE7763B0AD01069ED2A1C2F95E_mF1D97B37A8E21056138AE70C7F7CA97608EF2664;
+extern const uint32_t g_rgctx_MemoryManager_1U26_tB10A3E7E653BF8635E701AEF3D671EC5C3292C38;
+extern const uint32_t g_rgctx_MemoryMarshal_TryGetArray_TisT_t582F0020006A8430EB5E56CBCC9E542A7573ED16_m9A6DEDA2534FC7CCF4414F6AA5ED0EF040EF7610;
+extern const uint32_t g_rgctx_ArraySegment_1U26_tAEA6078979FA7C5947F79B345DF9121A5541D9F6;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Array_m2CE483BF837EC5559D52EF5DE15BC4CDBB32141B;
+extern const uint32_t g_rgctx_ArraySegment_1_t7505B0B8F502A9ED60D9E41F7677172473B4EB9A;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Offset_m318EDA44FF84D9475F57258D3F45AA5238CB4788;
+extern const uint32_t g_rgctx_ArraySegment_1_get_Count_m3DBE072668A8D07AE04F97225D8FCB0F3DBCB22C;
 extern const uint32_t g_rgctx_T_t582F0020006A8430EB5E56CBCC9E542A7573ED16;
+extern const uint32_t g_rgctx_MemoryManager_1_tCE3D985EDCB065DE7763B0AD01069ED2A1C2F95E;
+extern const uint32_t g_rgctx_ArraySegment_1_t7505B0B8F502A9ED60D9E41F7677172473B4EB9A;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_GetIndex_m50ECEDA6149620CD87D8725C45BB4D772D64B395;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_GetEndPosition_m7D2DD43A6216F8C51721645F2DAF103CD63FF25D;
+extern const uint32_t g_rgctx_ReadOnlySequenceSegment_1_get_Next_m78EDF36B7A9FD2129CE203519C730C2B816E52EE;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_SeekMultiSegment_m0255745741E83A4C147C23A4DCA3DA8F0448EF9E;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_SliceImpl_m1E028F187C99D0E3B9EF5F820E803FD59EEBA410;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_InRange_m333D35B3C1652B297EB272FC8CED082F2D33E361;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_InRange_m26EEC1A98D1CCB33DAB7B7963E1E46C66F496AE2;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_Slice_m854678DFC155354562055BB1B0505EBDE6995566;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_Slice_m1DDCBBF6B7E6C89A6A8EF40106DC32A05B7FD8B2;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_Slice_m16D533F8B3405DBBCCB7A4DD5E84F3846F303D27;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_BoundsCheck_m634492D34E00BBA9DEDF8AD8D7D5026E820B24DC;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_BoundsCheck_m829F676ED770E277E9997C84C2D50BF0DDE36208;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_Seek_m1691B30B6ACBBB5E8FAFD98A831CEA3F180F70A0;
 extern const uint32_t g_rgctx_ReadOnlySequence_1U26_t7C3672C3D8C3CBE2941B604EBF12DDAE675A7469;
-extern const uint32_t g_rgctx_ReadOnlySequence_1_get_Length_m2C5F7E797ED7C25E7995F2BF18B66BC0C2BC6DC0;
 extern const uint32_t g_rgctx_Enumerator_t238F2AFEE7C8C0A51220BC37BE8299F03CDB4ACC;
 extern const uint32_t g_rgctx_Enumerator__ctor_m27AD70E35BA6F17B8FE6C95AE7180E474B0B9758;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_GetPosition_m2B6D22C5E667870BC804246EF84BEB7F20827013;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1U26_t76CF28D1486E21ADCA5DE0FE904D51043FBA6AA8;
 extern const uint32_t g_rgctx_ReadOnlySequence_1_TryGetBuffer_m25F595633631EEE6144FD3EC921A6F01F0A5C93F;
 extern const uint32_t g_rgctx_ReadOnlySequence_1_GetSequenceType_mD14CBECEE4A4E451555E905F458C143850CF73E5;
 extern const uint32_t g_rgctx_SequenceType_t7A57B80E5824C6C436E24D44BF509F48F41D2663;
-extern const uint32_t g_rgctx_ReadOnlySequence_1_GetIndex_m50ECEDA6149620CD87D8725C45BB4D772D64B395;
-extern const uint32_t g_rgctx_ReadOnlySequenceSegment_1_tD37619548A2BB64A906D73A07E1297845029760B;
-extern const uint32_t g_rgctx_ReadOnlySequenceSegment_1_get_Next_m78EDF36B7A9FD2129CE203519C730C2B816E52EE;
-extern const uint32_t g_rgctx_ReadOnlySequenceSegment_1_get_Memory_mCE5C41BFD338BD3881BFD1E0D491B5B0CE19E094;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1_Slice_m70EB8EF2CAB466B9F1B971D85EDF36D495ECC892;
-extern const uint32_t g_rgctx_ReadOnlyMemory_1_tF3E9BBC5FD9CFB8A853DCDDACF0600CFF8B8E511;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1_Slice_mBB5B75830B042D3D34711079D3F343F359E2F855;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1__ctor_m18D3403837BE72C060D903526489D8993E1B9307;
-extern const uint32_t g_rgctx_MemoryManager_1_tCE3D985EDCB065DE7763B0AD01069ED2A1C2F95E;
 extern const uint32_t g_rgctx_MemoryManager_1_get_Memory_mF1C7215DA75EB08A772A7D651C98422A339B23C0;
 extern const uint32_t g_rgctx_Memory_1_tCC93A1F45BC6B9BBCB92E226465FD1069B6265DC;
 extern const uint32_t g_rgctx_Memory_1_Slice_m11D12E46DE1275E6E452A9E36E011E60585F9DF5;
 extern const uint32_t g_rgctx_Memory_1_tCC93A1F45BC6B9BBCB92E226465FD1069B6265DC;
 extern const uint32_t g_rgctx_Memory_1_op_Implicit_m7D15249D503FC6B7E9387FBC8F70F9975039CAF5;
-extern const uint32_t g_rgctx_ReadOnlySequenceSegment_1_get_RunningIndex_mD37056BE34457DDA9B8B96FB41928D465857A2E7;
+extern const uint32_t g_rgctx_ReadOnlySequence_1__ctor_m7C30D18FA173870101361333BC29C18FB4A4757D;
+extern const uint32_t g_rgctx_ReadOnlySequenceSegment_1U26_t4AFF27F034F3B604C5084724965DEE3BE637814F;
+extern const uint32_t g_rgctx_ArraySegment_1__ctor_m958691A17C949D316BA1ADFC0A19B52CC041E926;
 extern const uint32_t g_rgctx_PerTypeValues_1_tFDB16B11ADB6DAE21550AF55267EB2149653404F;
 extern const uint32_t g_rgctx_PerTypeValues_1_tFDB16B11ADB6DAE21550AF55267EB2149653404F;
 extern const uint32_t g_rgctx_ReadOnlySequence_1__ctor_m33B6EA6CF4749C01B13F5D9D9F6D966FEF9175FE;
@@ -740,6 +1121,25 @@ extern const uint32_t g_rgctx_ReadOnlySequence_1_tA82ECC8ECF01E102DE113A9D073312
 extern const uint32_t g_rgctx_ReadOnlySequence_1_tA82ECC8ECF01E102DE113A9D073312B597C4F958;
 extern const uint32_t g_rgctx_ReadOnlySequence_1_TryGet_mCD9635540E4105F7E53AF7E50631598A40E54BD4;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1U26_t3A6280A9D51291516E14FCA76BBEDAD492D06EC8;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_tCC502B86B93A53FB5A8DA86B9A00C4DAD73AA70A;
+extern const uint32_t g_rgctx_BuffersExtensions_ToArray_TisT_tD570729EB66A03D7983FBCD27C610E1C04BD18E2_m4E4F4C25C422ED3F8F0F13209B53A5D150C8F553;
+extern const uint32_t g_rgctx_ReadOnlySequence_1U26_tABA4C673E45F1820B19590B6D505C6167CAE9EF2;
+extern const uint32_t g_rgctx_TU5BU5D_tF12AB83532CF3C85ACFF5875EF592E893025E09C;
+extern const uint32_t g_rgctx_ReadOnlySequenceDebugView_1_tB37B205ABE7AED277634EACC221992F5A4393A1D;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_GetEnumerator_m7474F5ECC572215111B29375C07117C0BC955C8A;
+extern const uint32_t g_rgctx_ReadOnlySequence_1_tCC502B86B93A53FB5A8DA86B9A00C4DAD73AA70A;
+extern const uint32_t g_rgctx_Enumerator_t8E629DD7F436D5E914B6AD6A9A383F539EC565D4;
+extern const uint32_t g_rgctx_Enumerator_get_Current_mB160D2462ECC9CFB8020CE957D37A189758A1531;
+extern const uint32_t g_rgctx_Enumerator_t8E629DD7F436D5E914B6AD6A9A383F539EC565D4;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1_t804E638C4C4A3EB3B8D3EE1D057191BB971B4A29;
+extern const uint32_t g_rgctx_Enumerator_MoveNext_m2D8E637137E5911FC120CDA47735326BCDB763BD;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1U5BU5D_t320A82F48E1B7307BD35BD36E745B65ED446A06E;
+extern const uint32_t g_rgctx_ReadOnlySequenceDebugViewSegments_t29BB826E7088E2131745822ED797A01540CE1FC5;
+extern const uint32_t g_rgctx_ReadOnlySequenceDebugViewSegments_set_Segments_m1AA5D9F253CAD0309EC957C755FA3385571F7666;
+extern const uint32_t g_rgctx_ReadOnlySequenceDebugViewSegments_t29BB826E7088E2131745822ED797A01540CE1FC5;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1U5BU5D_t320A82F48E1B7307BD35BD36E745B65ED446A06E;
+extern const uint32_t g_rgctx_ReadOnlySequenceDebugViewSegments_t4BA68056E6C18FE6328D56D359D9826D3761403F;
+extern const uint32_t g_rgctx_ReadOnlyMemory_1U5BU5D_tFEB507224FFDBFBE6F430E7792D5F3E087390FA0;
 extern const uint32_t g_rgctx_ReadOnlySequenceSegment_1_tA7CFBEFFE126E4FF3B93E44772FF1E3366575183;
 extern const uint32_t g_rgctx_ReadOnlyMemory_1_tEBFE0C6B8C124CA1D033A2A2B29664FF44DAF3B0;
 extern const uint32_t g_rgctx_MemoryManager_1_t2C533B7B8604ADE32A89392E3DBB4F29CDD76A8A;
@@ -751,13 +1151,29 @@ extern const uint32_t g_rgctx_Memory_1_t6178063BAD74540C81A3DD659EF6EA60141BCF7B
 extern const uint32_t g_rgctx_Memory_1__ctor_mF1237E96A5328374990CC90597104A2B5D222418;
 extern const uint32_t g_rgctx_ArraySegment_1U26_t84C9F4A552ADB47D879E56639C31094DC0260251;
 extern const uint32_t g_rgctx_ArraySegment_1_tE3968BF67F569DED7EFAAF08032D7F3CE0D1A693;
-static const Il2CppRGCTXDefinition s_rgctxValues[289] = 
+extern const uint32_t g_rgctx_MemoryManager_1_Dispose_m977837C980647D2DD8384A7C35DCB04D13FB70D2;
+static const Il2CppRGCTXDefinition s_rgctxValues[425] = 
 {
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequenceSegment_1_t047B56C0F15DEAD26A3710F900DFDE3CB3E46509 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ThrowHelper_CreateArgumentValidationException_TisT_tE302EF8DF448B18875AAF2092E0647C36CCBEFA0_m68F802262C640651A712CF08275F2271575E6E59 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequenceSegment_1_t20DE091A1ED42988839A2D0B6164BF3F40FF0B4F },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequenceSegment_1_get_RunningIndex_m8AEB23C6C3BF48C1D55F0E0DAFAEB04FCED37218 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequenceSegment_1_get_Memory_m460842A421CBF7F8DF1FD019DBEA95451869C1A3 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_t4372BF6ADBD09A1029B44AA8F8D5FE47E25B1F9B },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlyMemory_1_get_Length_m811B94BFDA2A541D03447143A6DFB80D712DE3F2 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_t4372BF6ADBD09A1029B44AA8F8D5FE47E25B1F9B },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_tA662652DD347C026CC5E51FA6A5CE4AF3A79D6CF },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Memory_1_tDEF11CEA07F88A6FB05CFBC0FFA08B9CE88CBB4D },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_t522CEE6DA12937492837D1B7215754DB424D8615 },
 	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_TU5BU5D_tA662652DD347C026CC5E51FA6A5CE4AF3A79D6CF },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_MemoryManager_1_t1B27280259D4455CA27BC57A8057B51ECC9B43A6 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Memory_1__ctor_mE9829DC6244B4A9548EB3A398FD56ED6293D534B },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ArraySegment_1_tF18ECB5D8C5141F7F9263693005E89183319AC60 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Array_m80D1313800CD318FD3AB73BC8758E71BB1CED473 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ArraySegment_1_tF18ECB5D8C5141F7F9263693005E89183319AC60 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Offset_mE3728C141E23B423913A89AA267A21114759CC90 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Count_m001B650F3DB1FBB76C94B1BA67079962D3E53D3D },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Memory_1__ctor_m7806BEE5ED0DCA9945DD763431BADA71882D8B73 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Memory_1U26_t28B8C3BEE7BCCA33B4D2963CB7EB000F4BC1635B },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1U26_t402191E35CE355249884B4405DAAEEA712746865 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_tE68A97CCDBC7B9145CD47E786D97F1D1F4714A81 },
@@ -773,12 +1189,28 @@ static const Il2CppRGCTXDefinition s_rgctxValues[289] =
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Pinnable_1_tC0326DB4A83D075CEC3DD31A2A26E91F542B8A5F },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1__ctor_mFBAAFAEE40F60A379DD0C4EC677568468F612010 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1__ctor_mF3123880B980F1B827AE9318E4E4ED085129A4C8 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_CopyTo_mAD1B7F9C62C0499C0E96C35BB88AD11BEEA3AF6A },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_TryCopyTo_m3271B96A0638236E3FDD8D9E5135A712D0263314 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_MemoryManager_1_Pin_m6D11D295A68CF8D03543C7E45C3060E3AC6A8869 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Unsafe_Add_TisT_t522CEE6DA12937492837D1B7215754DB424D8615_m79964DA5DEC27C5C5899F192E459E23E83E8BDBE },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_op_Implicit_m5128D038BE2F748F5ED7317D14BC12CE6C748D30 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_MemoryMarshal_GetReference_TisT_t522CEE6DA12937492837D1B7215754DB424D8615_m7E0ADA08C0D88965DA121CCF3A30628A0DFE47AF },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU26_t6F613A9266BCA9083B1EB13311D730D31686739D },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_ToArray_m6BABCBCDF26A0BF2DDE9A57F77E93644E7940842 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Memory_1_op_Implicit_m9853BC52A17CF8F3F62B6862B84CA68673141637 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlyMemory_1_Equals_m185AFF715A1A160FBE44F3299CB1FD70A36576EE },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_tE68A97CCDBC7B9145CD47E786D97F1D1F4714A81 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Memory_1_Equals_mEF94FBB0820D4468E1E5799A576D150B17B87D26 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Memory_1_CombineHashCodes_m935BE15FB9FB86DF92777B75DDE128D0CF285110 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Memory_1_CombineHashCodes_mDE1230FC6B75A29628B82F2646B8336EC633FD3F },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Memory_1_t74433A4AD0AB026FF3791DE4E46C33276A27BDFE },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Memory_1_op_Implicit_m482F36E2D1B41F30991CB4192675C248107B83DA },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Memory_1_t74433A4AD0AB026FF3791DE4E46C33276A27BDFE },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_t1587228F96C322C0942536AA9A31FF77966A6448 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_MemoryDebugView_1_tC300126BFABCF802FEB3E2756E8CB9A53BA04CEE },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlyMemory_1_ToArray_mB6365EED9021A7BEE6C2C0312F14B421430AC103 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_t1587228F96C322C0942536AA9A31FF77966A6448 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_tAFE94D8A2D783462D316B9143F102D31A0D3AB06 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySpan_1_t6360305680BE77B24E5DEC4F06F367EA4C2355B0 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1_get_Length_mAD8A3A1E47447D36A3BA7E61352D4B966452A315 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySpan_1_t6360305680BE77B24E5DEC4F06F367EA4C2355B0 },
@@ -801,6 +1233,12 @@ static const Il2CppRGCTXDefinition s_rgctxValues[289] =
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_t2D6D299FE744746D53A22ADC27CDAA91DEC319D3 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_tCF0B811E39F7FF977A4DB1A9F51F478A58BF32F5 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlyMemory_1__ctor_mB4279D147FF7813952625EBA7AF981D5A70F1083 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ArraySegment_1_t6ACCF8E110A639D8D36A8347F9A0581684219194 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Array_mE00A64DC259DCBC91E27121B6377B4129496908E },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ArraySegment_1_t6ACCF8E110A639D8D36A8347F9A0581684219194 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Offset_m9EFEF915AC59B00F1174CD75E0830FE599CE8ABF },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Count_mA12020F4E28C7DE05B7D49DD4E999E4983FD625D },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlyMemory_1__ctor_m7780ED5CE74AB501B2CEB510A28349C69FC24ED8 },
 	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_T_tC52CF2CAD3970E753FC009F51BFD26C3DC0469A8 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlyMemory_1_get_Span_m6A6DA6E2FB21B0C153B590C097D270009A9C2874 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_tCF0B811E39F7FF977A4DB1A9F51F478A58BF32F5 },
@@ -818,19 +1256,40 @@ static const Il2CppRGCTXDefinition s_rgctxValues[289] =
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1_Slice_m027AD9D12F01FD68C48385B0C113E32242D03098 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySpan_1_t33A20B1D38B5BC25AFA6466C52AF7A30C7261F74 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1__ctor_m247FC8AB134375B28522C6F57EFF9CDD6850E5CC },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Memory_1_t27384072CEEBF1AFA1B734A0FCAB8E444E5B9E24 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Memory_1_get_Span_m93CD995ED304CA2C0252317DD5F4CA8A271BF9B7 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Memory_1_t27384072CEEBF1AFA1B734A0FCAB8E444E5B9E24 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1_CopyTo_m873713789E3FC1A810235C8FB9F4845A73D75B9A },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1_TryCopyTo_m8E015453B1694A7A0B0A56E062E6CF431D89601D },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_MemoryManager_1_Pin_mFA0B018268A7B849AC8E07D335BA8228474593B9 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Unsafe_Add_TisT_tC52CF2CAD3970E753FC009F51BFD26C3DC0469A8_m23F780A691C86617BAC99148FD3D945DE0F7B035 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_op_Implicit_m0E87E6E40311A309EF107A6C0255D0FF8D99E93E },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_MemoryMarshal_GetReference_TisT_tC52CF2CAD3970E753FC009F51BFD26C3DC0469A8_m2BD948AF5364A11CF3AF85E1095DD9F8FCAF1EB9 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU26_t601CB2A43FEAA0B672A1EBB485977E88BB79CA40 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1_ToArray_m44C4B09D7799B44054DE648FA2EC891A4B96E779 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlyMemory_1_Equals_mAE4FF5DF294C3BA300F202E6CB3286F7DFC601F5 },
-	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Memory_1_t27384072CEEBF1AFA1B734A0FCAB8E444E5B9E24 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Memory_1_op_Implicit_mD7BBA266EA1277FA910F608025769464F73F5307 },
-	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Memory_1_t27384072CEEBF1AFA1B734A0FCAB8E444E5B9E24 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlyMemory_1_CombineHashCodes_m95F6C97D4D83ADEF177D65007CF6A191939D9ED7 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlyMemory_1_CombineHashCodes_mEC3257AB9795D035A51D5DA30A420C298187481F },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySpan_1_t62DFA41FFEDE3C5A53728D5E65FBFB859E59AA39 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1_op_Equality_mC08E2C1768B42D51BADEBECEADB846AA09C3C1D0 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySpan_1_t62DFA41FFEDE3C5A53728D5E65FBFB859E59AA39 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_tBFA59158EF501174F9BFFC75F4B85578D3E63761 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1__ctor_m8624E7C136A0E88EBDB00DC198F4E38D0320461A },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ArraySegment_1_t01DC39E42B8A7CA58F3369BE978414FD1D997229 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Array_m31382E2FE24C719FECCAF7860F890A95AB90D57D },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ArraySegment_1_t01DC39E42B8A7CA58F3369BE978414FD1D997229 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Offset_mB0304809AE16123AC68CCC5DEC57FFCB56B2BCF0 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Count_m595C940E50E1852F28B193818AECB1BC5B1A332A },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1__ctor_mA7327D2AFCCD4548996E9891E468E392A694CE6F },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Enumerator_tB428E49D828C3CDCEC3B46272E6161A922D18E84 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerator__ctor_m34ADE64101978E042CF90AECE06BEB26351B7360 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Pinnable_1_t909CBB487A60F8196036FA9C59F260753AFCA242 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_PerTypeValues_1_tA947E3C5DEF02F90C25E6137C71DD9471D49CF4E },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_PerTypeValues_1_tA947E3C5DEF02F90C25E6137C71DD9471D49CF4E },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_SpanHelpers_Add_TisT_t4F00CCF01AF809F7E14CDBD249631737BED9D50A_m4C40360173D185C60B4C281326B9A55BA4FB5FBE },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_SpanHelpers_IsReferenceOrContainsReferences_TisT_t4F00CCF01AF809F7E14CDBD249631737BED9D50A_mB39D9DA4CBE517A921983B6FDD0FA2B0BF3BD437 },
+	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_T_t4F00CCF01AF809F7E14CDBD249631737BED9D50A },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU26_t10DDB34B391C2C6FF2FCFE7CD9F1E157096DA675 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Unsafe_Add_TisT_t4F00CCF01AF809F7E14CDBD249631737BED9D50A_m8BD093967D690D80AAD1DCA5A353917BD807D72A },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_t4F00CCF01AF809F7E14CDBD249631737BED9D50A },
@@ -838,36 +1297,63 @@ static const Il2CppRGCTXDefinition s_rgctxValues[289] =
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU26_t10DDB34B391C2C6FF2FCFE7CD9F1E157096DA675 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Span_1_t57C6AD281DE71E6D407646E107727AE88416F5E8 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1_TryCopyTo_m291DA4194AC2F59A29DB02FA0EFAAFFF13D206DC },
-	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySpan_1_t62DFA41FFEDE3C5A53728D5E65FBFB859E59AA39 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_get_Length_mEFCF67251517985D8E7CB9E9D2B4021345AD3EA2 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Span_1_t57C6AD281DE71E6D407646E107727AE88416F5E8 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1_DangerousGetPinnableReference_mDF908296DBB920FCA6D8FC22ADD983C6F1C87036 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_DangerousGetPinnableReference_mB7488F876B0E48B0DC4E88447B0520BC633D98ED },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_SpanHelpers_CopyTo_TisT_t4F00CCF01AF809F7E14CDBD249631737BED9D50A_m7EB66A387D0A4E100E062C600850E74BA646F7F0 },
-	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_T_t4F00CCF01AF809F7E14CDBD249631737BED9D50A },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Unsafe_AreSame_TisT_t4F00CCF01AF809F7E14CDBD249631737BED9D50A_mF1B86CAABB2EB92DC1925D3F1410BC309D6477E5 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1__ctor_m024513683DE372FD36781EE0C1532B96AFAED09F },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_tBFA59158EF501174F9BFFC75F4B85578D3E63761 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_op_Implicit_m8C7C75DAADFE62E1EB84AF5CDB270EAF627FCE8D },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1_CopyTo_m3C7BD8E5BDF7D5A2567C384EA375C109315B8625 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySpan_1_t6517B2579DE6050C4E72B627456A6C64940E5672 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Enumerator_t9A35ACD49F4C36B9D95DF11F745E5892FC296A45 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Span_1_tA554ACA894147174719FCFB920C803C8265DFA81 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_op_Equality_m425C2ADA2FA3C05BD10F88E160609F3E1709E8DE },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Span_1_tA554ACA894147174719FCFB920C803C8265DFA81 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_tD530A4D3F4C879154C4784CB5F8AE806AE4670B0 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1__ctor_m3090DB6797DA087C3D26FC6ED20508B36538DC83 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ArraySegment_1_t253AB78C2331F22E124B99AEC13C6DEC510CBF5D },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Array_m08BC72BC06BD87820B41E74D0FB2ACC78EB64007 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ArraySegment_1_t253AB78C2331F22E124B99AEC13C6DEC510CBF5D },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Offset_m67FE9E0607F9A97C7C826F21E32926C3554E9E88 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Count_m45FE96DC240465464A2EFF0A29D2C3BBF99C72BB },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1__ctor_m089FB1BAF979BF4235C4FDB56F90FDF2D5F1AF0E },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Enumerator_tFC66D26499F1F3EA5AA12BF831934442D655F9CF },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerator__ctor_m57F0DFA49978B4F2367D316ADA030C07F78015EC },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A },
 	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_TU5BU5D_tD530A4D3F4C879154C4784CB5F8AE806AE4670B0 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Pinnable_1_t73504BE386F334AFA96E0592B4A4C1FB1FF63BD3 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_PerTypeValues_1_t1092392DA536CF1F2F095AFA2BF230233283624B },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_PerTypeValues_1_t1092392DA536CF1F2F095AFA2BF230233283624B },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_SpanHelpers_Add_TisT_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A_m3866952F2D660F62A9C19175F1F2AA1A98824A31 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1__ctor_m77143454A7E8DBF6DFA38663090F39439A56FDC6 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_SpanHelpers_IsReferenceOrContainsReferences_TisT_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A_m64FD003B9CBCC4F466C661055A26C39FFE0025AB },
 	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_T_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU26_t27D3F0311C55B19A70D342C7162F11FF1EF10502 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Unsafe_Add_TisT_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A_mEBCDF3AFEA1FD3E7E5A0FC3B067719E60FE43D83 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Unsafe_AddByteOffset_TisT_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A_m433090E36D02265C6F44C89E3032C55660F7CFC1 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Unsafe_SizeOf_TisT_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A_m7897C40799CBB230192A3CFBF120623D2E8AA0F7 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_DangerousGetPinnableReference_mF3E219303A43CD21050FC2C8D7623DE8344C7899 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_TryCopyTo_mCAEF48728F221D26BB9217826F0A8DC5BC2C517F },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_SpanHelpers_CopyTo_TisT_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A_m540FED06E00E3E9F42DAF9356D777569680A729B },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Unsafe_AreSame_TisT_tDAED5AFE542C92F968E0BF0783BC9CEFD34CFA5A_mCC99D097EF09A47B2F6D5DBB7789AFF7DACF2E73 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySpan_1_tA3C7D52B45B95F661E9BE6E657CC6677200B6A02 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1__ctor_mD6841445DE35DAD075CAD648973C42BC917355A7 },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_DangerousGetPinnableReference_mF3E219303A43CD21050FC2C8D7623DE8344C7899 },
-	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Span_1_tA554ACA894147174719FCFB920C803C8265DFA81 },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1__ctor_m77143454A7E8DBF6DFA38663090F39439A56FDC6 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_tD530A4D3F4C879154C4784CB5F8AE806AE4670B0 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_op_Implicit_m46DAB2C32CF92B8205068A81657D3BF8238DEF45 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_CopyTo_m9E1872433D2AD675934319A14746942FC3248F2B },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Span_1_t7DB056978E9ACECA2D0586C0C33829D2B42B43B3 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Enumerator_t58FC180ED25204B4D989F1BE072FD50543E0EF3F },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Span_1_t2288709B8A886C851DAB4A911A9F2AB65EFAD3AD },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Span_1_ToArray_m530B5F7C05A965C5520E573A23E41911FF6D0DB3 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Span_1_t2288709B8A886C851DAB4A911A9F2AB65EFAD3AD },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_tED9EC24B32ECF277A1541518FBC75D542B06E84E },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_SpanDebugView_1_tB8BDBA807752B70D8FE9C1AD2DABE71DFF2BF3EC },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySpan_1_tD8C48E921F404A12C64B024BBF13126E59A12612 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySpan_1_ToArray_m63772A1E7386AC4F93C42F6E6018734FD8959511 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySpan_1_tD8C48E921F404A12C64B024BBF13126E59A12612 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU26_t5C5456616C795515698BBB563C820118BF408947 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Unsafe_AreSame_TisT_t7B53166B2895A840367325A6177F3555BEFFDF0E_m669338B28B4A3A8AE4749B8E86057049C188CCCC },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Unsafe_Add_TisT_t7B53166B2895A840367325A6177F3555BEFFDF0E_m2DAF80F1212C81676532874C81315663A160A56E },
@@ -907,6 +1393,11 @@ static const Il2CppRGCTXDefinition s_rgctxValues[289] =
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_PerTypeValues_1_t6AAFA143AFA794E57CD6E3FB14834657FE12BADA },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_PerTypeValues_1_t6AAFA143AFA794E57CD6E3FB14834657FE12BADA },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1__ctor_mA6D0034ED2062D997880A96EA0CB2C542190E325 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TManagerU26_tB16C32BAF39DCAC6BF688F274BE0F09327BB13F5 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_t389F6F0391BCA2F2BC6BE387D5C104257033A7E0 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlyMemory_1_GetObjectStartLength_m1AB2295CDCFDF54359EF533AC5D5BAD8F0E6AAE9 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_t389F6F0391BCA2F2BC6BE387D5C104257033A7E0 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TManager_tA9E1AC1F74A765AEA8CA67009805EA8DFD5CCD7C },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_U3CToEnumerableU3Ed__3_1_t800397D493E21B8EBEB32BB553E94B9BB4A38769 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_U3CToEnumerableU3Ed__3_1__ctor_m5A5EB6AC272972C6711B3C0EC9C0513BCA18614E },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_t240BF0257A868512C978BC132E5FE00C22839F6D },
@@ -992,34 +1483,60 @@ static const Il2CppRGCTXDefinition s_rgctxValues[289] =
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_BuffersExtensions_CopyTo_TisT_t2C663D83F13E9CA9CCE7C4CCD4E8B6E7805C1907_m1DD6818AFC34805FC3E637103CD65D1E9D2477FB },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_GetLength_mF2CC54CD6CB1224053E7C44F781F50B75FF1FE85 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequence_1_t5B40BC7462A8BEF1DA8047DF63E6496B6E58FB93 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_get_Length_m2C5F7E797ED7C25E7995F2BF18B66BC0C2BC6DC0 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequence_1_t5B40BC7462A8BEF1DA8047DF63E6496B6E58FB93 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_GetFirstBuffer_m3B6A1D4103516A848E2818717D856EC572420710 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_tF3E9BBC5FD9CFB8A853DCDDACF0600CFF8B8E511 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequenceSegment_1_tD37619548A2BB64A906D73A07E1297845029760B },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequenceSegment_1_get_RunningIndex_mD37056BE34457DDA9B8B96FB41928D465857A2E7 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequenceSegment_1_get_Memory_mCE5C41BFD338BD3881BFD1E0D491B5B0CE19E094 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlyMemory_1_get_Length_m9C9A753B115C09EC2525B9A2A1B551B8974368CD },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_tF3E9BBC5FD9CFB8A853DCDDACF0600CFF8B8E511 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ThrowHelper_ThrowArgumentValidationException_TisT_t582F0020006A8430EB5E56CBCC9E542A7573ED16_m9E65EA9490C430446CD56DB157291A65E26CD935 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_t1133F65F1A9B01DD4D07DAA6DC36C0635C443FA7 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_MemoryMarshal_TryGetMemoryManager_TisT_t582F0020006A8430EB5E56CBCC9E542A7573ED16_TisMemoryManager_1_tCE3D985EDCB065DE7763B0AD01069ED2A1C2F95E_mF1D97B37A8E21056138AE70C7F7CA97608EF2664 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_MemoryManager_1U26_tB10A3E7E653BF8635E701AEF3D671EC5C3292C38 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_MemoryMarshal_TryGetArray_TisT_t582F0020006A8430EB5E56CBCC9E542A7573ED16_m9A6DEDA2534FC7CCF4414F6AA5ED0EF040EF7610 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ArraySegment_1U26_tAEA6078979FA7C5947F79B345DF9121A5541D9F6 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Array_m2CE483BF837EC5559D52EF5DE15BC4CDBB32141B },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ArraySegment_1_t7505B0B8F502A9ED60D9E41F7677172473B4EB9A },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Offset_m318EDA44FF84D9475F57258D3F45AA5238CB4788 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1_get_Count_m3DBE072668A8D07AE04F97225D8FCB0F3DBCB22C },
 	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_T_t582F0020006A8430EB5E56CBCC9E542A7573ED16 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_MemoryManager_1_tCE3D985EDCB065DE7763B0AD01069ED2A1C2F95E },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ArraySegment_1_t7505B0B8F502A9ED60D9E41F7677172473B4EB9A },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_GetIndex_m50ECEDA6149620CD87D8725C45BB4D772D64B395 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_GetEndPosition_m7D2DD43A6216F8C51721645F2DAF103CD63FF25D },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequenceSegment_1_get_Next_m78EDF36B7A9FD2129CE203519C730C2B816E52EE },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_SeekMultiSegment_m0255745741E83A4C147C23A4DCA3DA8F0448EF9E },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_SliceImpl_m1E028F187C99D0E3B9EF5F820E803FD59EEBA410 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_InRange_m333D35B3C1652B297EB272FC8CED082F2D33E361 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_InRange_m26EEC1A98D1CCB33DAB7B7963E1E46C66F496AE2 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_Slice_m854678DFC155354562055BB1B0505EBDE6995566 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_Slice_m1DDCBBF6B7E6C89A6A8EF40106DC32A05B7FD8B2 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_Slice_m16D533F8B3405DBBCCB7A4DD5E84F3846F303D27 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_BoundsCheck_m634492D34E00BBA9DEDF8AD8D7D5026E820B24DC },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_BoundsCheck_m829F676ED770E277E9997C84C2D50BF0DDE36208 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_Seek_m1691B30B6ACBBB5E8FAFD98A831CEA3F180F70A0 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequence_1U26_t7C3672C3D8C3CBE2941B604EBF12DDAE675A7469 },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_get_Length_m2C5F7E797ED7C25E7995F2BF18B66BC0C2BC6DC0 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Enumerator_t238F2AFEE7C8C0A51220BC37BE8299F03CDB4ACC },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerator__ctor_m27AD70E35BA6F17B8FE6C95AE7180E474B0B9758 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_GetPosition_m2B6D22C5E667870BC804246EF84BEB7F20827013 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1U26_t76CF28D1486E21ADCA5DE0FE904D51043FBA6AA8 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_TryGetBuffer_m25F595633631EEE6144FD3EC921A6F01F0A5C93F },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_GetSequenceType_mD14CBECEE4A4E451555E905F458C143850CF73E5 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_SequenceType_t7A57B80E5824C6C436E24D44BF509F48F41D2663 },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_GetIndex_m50ECEDA6149620CD87D8725C45BB4D772D64B395 },
-	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequenceSegment_1_tD37619548A2BB64A906D73A07E1297845029760B },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequenceSegment_1_get_Next_m78EDF36B7A9FD2129CE203519C730C2B816E52EE },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequenceSegment_1_get_Memory_mCE5C41BFD338BD3881BFD1E0D491B5B0CE19E094 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlyMemory_1_Slice_m70EB8EF2CAB466B9F1B971D85EDF36D495ECC892 },
-	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_tF3E9BBC5FD9CFB8A853DCDDACF0600CFF8B8E511 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlyMemory_1_Slice_mBB5B75830B042D3D34711079D3F343F359E2F855 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlyMemory_1__ctor_m18D3403837BE72C060D903526489D8993E1B9307 },
-	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_MemoryManager_1_tCE3D985EDCB065DE7763B0AD01069ED2A1C2F95E },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_MemoryManager_1_get_Memory_mF1C7215DA75EB08A772A7D651C98422A339B23C0 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Memory_1_tCC93A1F45BC6B9BBCB92E226465FD1069B6265DC },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Memory_1_Slice_m11D12E46DE1275E6E452A9E36E011E60585F9DF5 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Memory_1_tCC93A1F45BC6B9BBCB92E226465FD1069B6265DC },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Memory_1_op_Implicit_m7D15249D503FC6B7E9387FBC8F70F9975039CAF5 },
-	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequenceSegment_1_get_RunningIndex_mD37056BE34457DDA9B8B96FB41928D465857A2E7 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1__ctor_m7C30D18FA173870101361333BC29C18FB4A4757D },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequenceSegment_1U26_t4AFF27F034F3B604C5084724965DEE3BE637814F },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ArraySegment_1__ctor_m958691A17C949D316BA1ADFC0A19B52CC041E926 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_PerTypeValues_1_tFDB16B11ADB6DAE21550AF55267EB2149653404F },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_PerTypeValues_1_tFDB16B11ADB6DAE21550AF55267EB2149653404F },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1__ctor_m33B6EA6CF4749C01B13F5D9D9F6D966FEF9175FE },
@@ -1031,6 +1548,25 @@ static const Il2CppRGCTXDefinition s_rgctxValues[289] =
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequence_1_tA82ECC8ECF01E102DE113A9D073312B597C4F958 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_TryGet_mCD9635540E4105F7E53AF7E50631598A40E54BD4 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1U26_t3A6280A9D51291516E14FCA76BBEDAD492D06EC8 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequence_1_tCC502B86B93A53FB5A8DA86B9A00C4DAD73AA70A },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_BuffersExtensions_ToArray_TisT_tD570729EB66A03D7983FBCD27C610E1C04BD18E2_m4E4F4C25C422ED3F8F0F13209B53A5D150C8F553 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequence_1U26_tABA4C673E45F1820B19590B6D505C6167CAE9EF2 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_tF12AB83532CF3C85ACFF5875EF592E893025E09C },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequenceDebugView_1_tB37B205ABE7AED277634EACC221992F5A4393A1D },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequence_1_GetEnumerator_m7474F5ECC572215111B29375C07117C0BC955C8A },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequence_1_tCC502B86B93A53FB5A8DA86B9A00C4DAD73AA70A },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Enumerator_t8E629DD7F436D5E914B6AD6A9A383F539EC565D4 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerator_get_Current_mB160D2462ECC9CFB8020CE957D37A189758A1531 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Enumerator_t8E629DD7F436D5E914B6AD6A9A383F539EC565D4 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_t804E638C4C4A3EB3B8D3EE1D057191BB971B4A29 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerator_MoveNext_m2D8E637137E5911FC120CDA47735326BCDB763BD },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1U5BU5D_t320A82F48E1B7307BD35BD36E745B65ED446A06E },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequenceDebugViewSegments_t29BB826E7088E2131745822ED797A01540CE1FC5 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ReadOnlySequenceDebugViewSegments_set_Segments_m1AA5D9F253CAD0309EC957C755FA3385571F7666 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequenceDebugViewSegments_t29BB826E7088E2131745822ED797A01540CE1FC5 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1U5BU5D_t320A82F48E1B7307BD35BD36E745B65ED446A06E },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequenceDebugViewSegments_t4BA68056E6C18FE6328D56D359D9826D3761403F },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1U5BU5D_tFEB507224FFDBFBE6F430E7792D5F3E087390FA0 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlySequenceSegment_1_tA7CFBEFFE126E4FF3B93E44772FF1E3366575183 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ReadOnlyMemory_1_tEBFE0C6B8C124CA1D033A2A2B29664FF44DAF3B0 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_MemoryManager_1_t2C533B7B8604ADE32A89392E3DBB4F29CDD76A8A },
@@ -1042,21 +1578,22 @@ static const Il2CppRGCTXDefinition s_rgctxValues[289] =
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Memory_1__ctor_mF1237E96A5328374990CC90597104A2B5D222418 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ArraySegment_1U26_t84C9F4A552ADB47D879E56639C31094DC0260251 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ArraySegment_1_tE3968BF67F569DED7EFAAF08032D7F3CE0D1A693 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_MemoryManager_1_Dispose_m977837C980647D2DD8384A7C35DCB04D13FB70D2 },
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Yarn_System_Memory_CodeGenModule;
 const Il2CppCodeGenModule g_Yarn_System_Memory_CodeGenModule = 
 {
 	"Yarn.System.Memory.dll",
-	169,
+	283,
 	s_methodPointers,
-	8,
+	10,
 	s_adjustorThunks,
 	s_InvokerIndices,
 	0,
 	NULL,
-	27,
+	36,
 	s_rgctxIndices,
-	289,
+	425,
 	s_rgctxValues,
 	NULL,
 	NULL,

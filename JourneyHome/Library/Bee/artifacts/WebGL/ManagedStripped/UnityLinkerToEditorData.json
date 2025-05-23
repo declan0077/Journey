@@ -7,6 +7,8 @@
           {
             "name": "AnimationClip",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -17,6 +19,8 @@
           {
             "name": "Animator",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -27,6 +31,8 @@
           {
             "name": "AnimatorController",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -43,6 +49,8 @@
           {
             "name": "Avatar",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -70,6 +78,8 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -80,6 +90,7 @@
           {
             "name": "AudioClip",
             "scenes": [
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -90,6 +101,8 @@
           {
             "name": "AudioListener",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -106,6 +119,7 @@
           {
             "name": "AudioSource",
             "scenes": [
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -116,6 +130,7 @@
           {
             "name": "SampleClip",
             "scenes": [
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -143,6 +158,8 @@
           {
             "name": "Camera",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -159,6 +176,7 @@
           {
             "name": "ComputeShader",
             "scenes": [
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -168,7 +186,10 @@
           },
           {
             "name": "Cubemap",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -187,6 +208,8 @@
           {
             "name": "EditorExtension",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -203,6 +226,8 @@
           {
             "name": "GameObject",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -231,6 +256,8 @@
           {
             "name": "LevelGameManager",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -241,6 +268,8 @@
           {
             "name": "Light",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -257,6 +286,8 @@
           {
             "name": "LightingSettings",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -267,6 +298,8 @@
           {
             "name": "LightmapSettings",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -277,6 +310,7 @@
           {
             "name": "LineRenderer",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -293,6 +327,8 @@
           {
             "name": "Material",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -303,6 +339,8 @@
           {
             "name": "Mesh",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -313,6 +351,8 @@
           {
             "name": "MeshFilter",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -323,6 +363,8 @@
           {
             "name": "MeshRenderer",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -333,6 +375,8 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -349,6 +393,8 @@
           {
             "name": "MonoScript",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -359,6 +405,8 @@
           {
             "name": "NamedObject",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -393,6 +441,8 @@
           {
             "name": "RectTransform",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -409,6 +459,8 @@
           {
             "name": "RenderSettings",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -443,6 +495,8 @@
           {
             "name": "Shader",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -459,6 +513,8 @@
           {
             "name": "SkinnedMeshRenderer",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -475,6 +531,8 @@
           {
             "name": "Sprite",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -512,22 +570,14 @@
           },
           {
             "name": "Texture",
-            "scenes": [
-              "Assets/Scenes/Level2.unity",
-              "Assets/Scenes/Level3.unity",
-              "Assets/Scenes/Level4.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
             "name": "Texture2D",
-            "scenes": [
-              "Assets/Scenes/Level2.unity",
-              "Assets/Scenes/Level3.unity",
-              "Assets/Scenes/Level4.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -756,6 +806,8 @@
           {
             "name": "ParticleSystem",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level4.unity"
             ],
             "dependencyType": 0,
@@ -764,6 +816,8 @@
           {
             "name": "ParticleSystemRenderer",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level4.unity"
             ],
             "dependencyType": 0,
@@ -777,6 +831,8 @@
           {
             "name": "BoxCollider",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -787,6 +843,8 @@
           {
             "name": "CapsuleCollider",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -803,6 +861,8 @@
           {
             "name": "MeshCollider",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -813,6 +873,7 @@
           {
             "name": "PhysicMaterial",
             "scenes": [
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -829,6 +890,7 @@
           {
             "name": "Rigidbody",
             "scenes": [
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -839,6 +901,8 @@
           {
             "name": "SphereCollider",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -1041,6 +1105,8 @@
           {
             "name": "Font",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -1086,6 +1152,8 @@
           {
             "name": "Canvas",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -1096,6 +1164,7 @@
           {
             "name": "CanvasGroup",
             "scenes": [
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -1106,6 +1175,8 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"

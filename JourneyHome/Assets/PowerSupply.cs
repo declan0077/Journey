@@ -12,6 +12,8 @@ public class PowerSupply : MonoBehaviour
 
     [SerializeField] private GameObject[] lightsObjects;
 
+    [SerializeField] private GameObject animatedDoor;
+
 
     private bool rodSwitchedUp = false;
     private Coroutine rotationCoroutine;
@@ -73,5 +75,6 @@ public class PowerSupply : MonoBehaviour
     {
         if (objectToSpawn != null && spawnLocation != null)
             Instantiate(objectToSpawn, spawnLocation.position, spawnLocation.rotation);
+        animatedDoor.GetComponent<Animator>().Play("VaultDoor");
     }
 }

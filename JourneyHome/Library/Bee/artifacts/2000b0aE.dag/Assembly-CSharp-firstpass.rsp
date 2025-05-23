@@ -367,9 +367,6 @@
 "Assets/Plugins/EasyTransitions/Scripts/Transition.cs"
 "Assets/Plugins/EasyTransitions/Scripts/TransitionManager.cs"
 "Assets/Plugins/EasyTransitions/Scripts/TransitionSettings.cs"
-"Assets/Plugins/YarnSpinner/Samples/Yarn Spinner/2.5.1/3D Speech Bubble/Scripts/Spinner.cs"
-"Assets/Plugins/YarnSpinner/Samples/Yarn Spinner/2.5.1/3D Speech Bubble/Scripts/YarnCharacter.cs"
-"Assets/Plugins/YarnSpinner/Samples/Yarn Spinner/2.5.1/3D Speech Bubble/Scripts/YarnCharacterView.cs"
 -langversion:9.0
 /deterministic
 /optimize+

@@ -12,23 +12,19 @@ public class YarnHelper : MonoBehaviour
 
     void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
+
         Instance = this;
+        dialogueRunner = GetComponent<DialogueRunner>();
+
 
     }
 
     void Start()
     {
-        dialogueRunner = GetComponent<DialogueRunner>();
         dialogueRunner.AddCommandHandler<string>("CameraSwitch", CameraSwitch);
         dialogueRunner.AddCommandHandler("Restart", Restart);
-        dialogueRunner.AddCommandHandler<string>("SetGamemode", SetGamemode);
+            dialogueRunner.AddCommandHandler<string>("SetGamemode", SetGamemode);
     }
-
     public void CameraSwitch(string targetName)
     {
         GameObject targetObject = GameObject.Find(targetName);

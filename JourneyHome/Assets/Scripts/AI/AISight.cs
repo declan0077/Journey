@@ -15,6 +15,10 @@ public class AISight : MonoBehaviour
     private LineRenderer lineRenderer;
     private List<Vector3> endpoints = new List<Vector3>();
 
+    private bool hasSeenPlayer = false;
+    private float forgetTimer = 0f;
+    public float forgetDuration = 3f; // Time after which AI can see the player again
+
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
@@ -23,7 +27,7 @@ public class AISight : MonoBehaviour
 
     void Update()
     {
-        if(GameManager.Instance.gameObject.GetComponent<GameManager>().GetGameState() != GameManager.GameState.Play) return;
+        if (GameManager.Instance.GetGameState() != GameManager.GameState.Play) return;
 
         if (IsFacingAllowedDirection())
         {
@@ -33,6 +37,16 @@ public class AISight : MonoBehaviour
         else
         {
             lineRenderer.enabled = false;
+        }
+
+        if (hasSeenPlayer)
+        {
+            forgetTimer += Time.deltaTime;
+            if (forgetTimer >= forgetDuration)
+            {
+                hasSeenPlayer = false;
+                forgetTimer = 0f;
+            }
         }
 
         Vector3 origin = Eyes.position;
@@ -57,15 +71,21 @@ public class AISight : MonoBehaviour
             {
                 endPoint = hit.point;
 
-                // Debug color visualization
                 if ((obstacleMask.value & (1 << hit.collider.gameObject.layer)) > 0)
                 {
                     Debug.DrawLine(origin, hit.point, Color.gray);
                 }
                 else if ((targetMask.value & (1 << hit.collider.gameObject.layer)) > 0)
                 {
-                    Debug.Log("AI sees: " + hit.collider.name);
-                    YarnHelper.Instance.SeenDialog(gameObject.name);
+                    if (!hasSeenPlayer)
+                    {
+                        Debug.Log("AI sees: " + hit.collider.name);
+                        YarnHelper.Instance.SeenDialog(gameObject.name);
+
+                        GameManager.Instance.SetGameState(GameManager.GameState.Dialog);
+                        hasSeenPlayer = true;
+                        forgetTimer = 0f;
+                    }
                     Debug.DrawLine(origin, hit.point, Color.green);
                 }
                 else
@@ -83,6 +103,7 @@ public class AISight : MonoBehaviour
 
         UpdateLineRenderer();
     }
+
     private bool IsFacingAllowedDirection()
     {
         float yRotation = transform.eulerAngles.y;
@@ -97,19 +118,16 @@ public class AISight : MonoBehaviour
     {
         if (lineRenderer == null || Eyes == null) return;
 
-        int count = endpoints.Count + 2; // Eyes position + endpoints + back to eyes
+        int count = endpoints.Count + 2;
         lineRenderer.positionCount = count;
 
-        // Start at the eye
         lineRenderer.SetPosition(0, Eyes.position);
 
-        // Connect all endpoints
         for (int i = 0; i < endpoints.Count; i++)
         {
             lineRenderer.SetPosition(i + 1, endpoints[i]);
         }
 
-        // Close the shape back to the eye position
         lineRenderer.SetPosition(count - 1, Eyes.position);
     }
 
@@ -158,5 +176,4 @@ public class AISight : MonoBehaviour
             Gizmos.DrawLine(origin, endPoint);
         }
     }
-
 }

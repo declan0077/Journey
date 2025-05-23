@@ -4,8 +4,6 @@ ScriptsOnlyBuild:
     - EasyTransition.CutoutMaskUI
     - EasyTransition.Transition
     - EasyTransition.TransitionSettings
-    - Yarn.Unity.Example.YarnCharacter
-    - Yarn.Unity.Example.YarnCharacterView
     Assembly-CSharp.dll:
     - AICharacter
     - AISight
@@ -25,13 +23,17 @@ ScriptsOnlyBuild:
     - MiniGamePlayer
     - PlayerController
     - PlayerInteraction
+    - PlayerPatrol
     - PowerSupply
     - PressurePad
     - Restart
     - SimonSaysGame
     - SoundPlayer
     - StoryTellerTrigger
+    - Yarn.Unity.Example.YarnCharacter
+    - Yarn.Unity.Example.YarnCharacterView
     - YarnHelper
+    - animationscriptufo
     CFXRRuntime.dll:
     - CartoonFX.CFXR_Effect
     Unity.Postprocessing.Runtime.dll:
@@ -51,7 +53,12 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections
     - UnityEngine.Rendering.PostProcessing.Vignette
     Unity.ProBuilder.Editor.dll:
+    - UnityEditor.ProBuilder.PositionToolContext
     - UnityEditor.ProBuilder.ProBuilderEditor
+    - UnityEditor.ProBuilder.ProBuilderShapeEditor
+    - UnityEditor.ProBuilder.ProbuilderMoveTool
+    - UnityEditor.ProBuilder.ProbuilderRotateTool
+    - UnityEditor.ProBuilder.ProbuilderScaleTool
     Unity.ProBuilder.dll:
     - UnityEngine.ProBuilder.ProBuilderMesh
     - UnityEngine.ProBuilder.Shapes.ProBuilderShape
@@ -71,8 +78,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -103,6 +112,7 @@ ScriptsOnlyBuild:
   serializedClasses:
     Assembly-CSharp:
     - AICharacter/PatrolPoint
+    - PatrolPoint
     CFXRRuntime:
     - CartoonFX.CFXR_Effect/AnimatedLight
     - CartoonFX.CFXR_Effect/CameraShake
@@ -173,9 +183,27 @@ ScriptsOnlyBuild:
     - Yarn.Unity.Localization/AssetDictionary
     - Yarn.Unity.Localization/StringDictionary
   methodsToPreserve:
+  - assembly: YarnSpinner.Unity
+    fullTypeName: Yarn.Unity.LineView
+    methodName: OnContinueClicked
+  - assembly: YarnSpinner.Unity
+    fullTypeName: Yarn.Unity.LineView
+    methodName: OnContinueClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: CameraSight
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: CameraSight
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: Door
     methodName: SetLocked
+  - assembly: Assembly-CSharp
+    fullTypeName: Door
+    methodName: SetLocked
+  - assembly: Assembly-CSharp
+    fullTypeName: Door
+    methodName: StartActivate
   - assembly: YarnSpinner.Unity
     fullTypeName: Yarn.Unity.LineView
     methodName: OnContinueClicked
@@ -183,11 +211,11 @@ ScriptsOnlyBuild:
     fullTypeName: Yarn.Unity.LineView
     methodName: OnContinueClicked
   - assembly: Assembly-CSharp
-    fullTypeName: CameraSight
-    methodName: SetActive
+    fullTypeName: Door
+    methodName: SetLocked
   - assembly: Assembly-CSharp
-    fullTypeName: CameraSight
-    methodName: SetActive
+    fullTypeName: Door
+    methodName: SetLocked
   - assembly: UnityEngine.PhysicsModule
     fullTypeName: UnityEngine.Rigidbody
     methodName: set_useGravity
@@ -195,46 +223,37 @@ ScriptsOnlyBuild:
     fullTypeName: Door
     methodName: SetLocked
   - assembly: Assembly-CSharp
-    fullTypeName: Door
-    methodName: SetLocked
-  - assembly: YarnSpinner.Unity
-    fullTypeName: Yarn.Unity.LineView
-    methodName: OnContinueClicked
-  - assembly: YarnSpinner.Unity
-    fullTypeName: Yarn.Unity.LineView
-    methodName: OnContinueClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Door
-    methodName: SetLocked
-  - assembly: Assembly-CSharp
-    fullTypeName: Door
-    methodName: StartActivate
-  - assembly: Assembly-CSharp
-    fullTypeName: Door
-    methodName: SetLocked
-  - assembly: Assembly-CSharp
-    fullTypeName: Door
-    methodName: SetLocked
-  - assembly: YarnSpinner.Unity
-    fullTypeName: Yarn.Unity.LineView
-    methodName: OnContinueClicked
-  - assembly: YarnSpinner.Unity
-    fullTypeName: Yarn.Unity.LineView
-    methodName: OnContinueClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: CameraSight
-    methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: CameraSight
-    methodName: SetActive
+    fullTypeName: PowerSupply
+    methodName: SetLock2
   - assembly: Assembly-CSharp
     fullTypeName: PowerSupply
     methodName: SetLock1
   - assembly: Assembly-CSharp
-    fullTypeName: PowerSupply
-    methodName: SetLock2
+    fullTypeName: CameraSight
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: CameraSight
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: Door
+    methodName: SetLocked
+  - assembly: YarnSpinner.Unity
+    fullTypeName: Yarn.Unity.LineView
+    methodName: OnContinueClicked
+  - assembly: YarnSpinner.Unity
+    fullTypeName: Yarn.Unity.LineView
+    methodName: OnContinueClicked
+  - assembly: YarnSpinner.Unity
+    fullTypeName: Yarn.Unity.LineView
+    methodName: OnContinueClicked
+  - assembly: YarnSpinner.Unity
+    fullTypeName: Yarn.Unity.LineView
+    methodName: OnContinueClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: animationscriptufo
+    methodName: RestartGame
   sceneClasses:
-    Assets/Scenes/Level2.unity:
+    Assets/Scenes/DesertIntro.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -254,6 +273,270 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16854}
+    - Class: 114
+      Script: {instanceID: 16858}
+    - Class: 114
+      Script: {instanceID: 17580}
+    - Class: 114
+      Script: {instanceID: 17598}
+    - Class: 114
+      Script: {instanceID: 18098}
+    - Class: 114
+      Script: {instanceID: 18356}
+    - Class: 114
+      Script: {instanceID: 19296}
+    - Class: 114
+      Script: {instanceID: 19900}
+    - Class: 114
+      Script: {instanceID: 20200}
+    - Class: 114
+      Script: {instanceID: 21050}
+    - Class: 114
+      Script: {instanceID: 21066}
+    - Class: 114
+      Script: {instanceID: 21904}
+    - Class: 114
+      Script: {instanceID: 22300}
+    - Class: 114
+      Script: {instanceID: 22742}
+    - Class: 114
+      Script: {instanceID: 22990}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/DesertOutro.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 72
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16854}
+    - Class: 114
+      Script: {instanceID: 16858}
+    - Class: 114
+      Script: {instanceID: 16860}
+    - Class: 114
+      Script: {instanceID: 16862}
+    - Class: 114
+      Script: {instanceID: 16864}
+    - Class: 114
+      Script: {instanceID: 16912}
+    - Class: 114
+      Script: {instanceID: 17490}
+    - Class: 114
+      Script: {instanceID: 17610}
+    - Class: 114
+      Script: {instanceID: 17844}
+    - Class: 114
+      Script: {instanceID: 18098}
+    - Class: 114
+      Script: {instanceID: 18168}
+    - Class: 114
+      Script: {instanceID: 18260}
+    - Class: 114
+      Script: {instanceID: 18356}
+    - Class: 114
+      Script: {instanceID: 18924}
+    - Class: 114
+      Script: {instanceID: 19240}
+    - Class: 114
+      Script: {instanceID: 19248}
+    - Class: 114
+      Script: {instanceID: 20122}
+    - Class: 114
+      Script: {instanceID: 20528}
+    - Class: 114
+      Script: {instanceID: 20700}
+    - Class: 114
+      Script: {instanceID: 20734}
+    - Class: 114
+      Script: {instanceID: 20776}
+    - Class: 114
+      Script: {instanceID: 21050}
+    - Class: 114
+      Script: {instanceID: 21066}
+    - Class: 114
+      Script: {instanceID: 21106}
+    - Class: 114
+      Script: {instanceID: 21118}
+    - Class: 114
+      Script: {instanceID: 21348}
+    - Class: 114
+      Script: {instanceID: 21750}
+    - Class: 114
+      Script: {instanceID: 21794}
+    - Class: 114
+      Script: {instanceID: 21904}
+    - Class: 114
+      Script: {instanceID: 22300}
+    - Class: 114
+      Script: {instanceID: 22430}
+    - Class: 114
+      Script: {instanceID: 22438}
+    - Class: 114
+      Script: {instanceID: 22564}
+    - Class: 114
+      Script: {instanceID: 22710}
+    - Class: 114
+      Script: {instanceID: 22742}
+    - Class: 114
+      Script: {instanceID: 22808}
+    - Class: 114
+      Script: {instanceID: 22942}
+    - Class: 114
+      Script: {instanceID: 23602}
+    - Class: 114
+      Script: {instanceID: 23696}
+    - Class: 114
+      Script: {instanceID: 23944}
+    - Class: 114
+      Script: {instanceID: 24096}
+    - Class: 114
+      Script: {instanceID: 24246}
+    - Class: 114
+      Script: {instanceID: 24356}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 134
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/Level2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
@@ -302,8 +585,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17580}
     - Class: 114
-      Script: {instanceID: 17598}
-    - Class: 114
       Script: {instanceID: 17610}
     - Class: 114
       Script: {instanceID: 17844}
@@ -328,13 +609,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19640}
     - Class: 114
-      Script: {instanceID: 19900}
-    - Class: 114
       Script: {instanceID: 20030}
     - Class: 114
       Script: {instanceID: 20122}
-    - Class: 114
-      Script: {instanceID: 20200}
     - Class: 114
       Script: {instanceID: 20528}
     - Class: 114
@@ -677,6 +954,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 16864}
     - Class: 114
       Script: {instanceID: 16912}
+    - Class: 114
+      Script: {instanceID: 17088}
     - Class: 114
       Script: {instanceID: 17260}
     - Class: 114
@@ -1262,7 +1541,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 3babc6342b63fb4cf31ebd60a85db447
+      Hash: d116d9bf239a88f5c330e20be85b106f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PowerSupply
@@ -1310,7 +1589,7 @@ ScriptsOnlyBuild:
     className: HackerTextRain
   - hash:
       serializedVersion: 2
-      Hash: b6886057dd34c4f25effae50718e4f60
+      Hash: a159e734ab60a2185197beac48b14cfe
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerController
@@ -1322,8 +1601,8 @@ ScriptsOnlyBuild:
     className: ScriptGraphAsset
   - hash:
       serializedVersion: 2
-      Hash: 8c5bf5c624e44a7a00a28f8197aa6388
-    assemblyName: Assembly-CSharp-firstpass
+      Hash: 282cbdbc6f8659e60b9fcffa7cba426d
+    assemblyName: Assembly-CSharp
     namespaceName: Yarn.Unity.Example
     className: Spinner
   - hash:
@@ -1826,8 +2105,8 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: e374aab39d2765a1e9cb51a0291ee22a
-    assemblyName: Assembly-CSharp-firstpass
+      Hash: 586c8fc87544c1578cdd0f191b9a0094
+    assemblyName: Assembly-CSharp
     namespaceName: Yarn.Unity.Example
     className: YarnCharacterView
   - hash:
@@ -1904,7 +2183,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 26ff17e1ed5bf149f2eb73a6fdd12c1b
+      Hash: 7a2de911caeff788c224cbdafb72b73a
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: AISight
@@ -1988,7 +2267,7 @@ ScriptsOnlyBuild:
     className: CFXR_EmissionBySurface
   - hash:
       serializedVersion: 2
-      Hash: c242d01525bf6da7503f47c53795d038
+      Hash: 69d53462ea61974212ef52b20c3c6448
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Door
@@ -2132,8 +2411,8 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: af7e52edf0f16d252933444295497825
-    assemblyName: Assembly-CSharp-firstpass
+      Hash: 180c8aa94605ae60033300d08a949e5e
+    assemblyName: Assembly-CSharp
     namespaceName: Yarn.Unity.Example
     className: YarnCharacter
   - hash:
@@ -2168,7 +2447,9 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   platform: 20
   scenePathNames:
+  - Assets/Scenes/DesertIntro.unity
   - Assets/Scenes/Level2.unity
   - Assets/Scenes/Level3.unity
   - Assets/Scenes/Level4.unity
+  - Assets/Scenes/DesertOutro.unity
   playerPath: C:/Users/iceth/Desktop/Game

@@ -4033,7 +4033,7 @@ PrefabInstance:
       objectReference: {fileID: 1323639081}
     - target: {fileID: 7401320654265759767, guid: 016b6762463df394898bb85da0958883, type: 3}
       propertyPath: m_VersionIndex
-      value: 1370
+      value: 1376
       objectReference: {fileID: 0}
     - target: {fileID: 7401320654265759767, guid: 016b6762463df394898bb85da0958883, type: 3}
       propertyPath: m_SelectedEdges.Array.size
@@ -20636,7 +20636,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3378540416981779003, guid: d50d22d04bffa3347963993ccc4068c6, type: 3}
       propertyPath: currentState
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4928561168520752120, guid: d50d22d04bffa3347963993ccc4068c6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20678,14 +20678,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6701372859426635844, guid: d50d22d04bffa3347963993ccc4068c6, type: 3}
-      propertyPath: m_Volume
-      value: 0.428
-      objectReference: {fileID: 0}
-    - target: {fileID: 6701372859426635844, guid: d50d22d04bffa3347963993ccc4068c6, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: feae88b2984d11c4f81184a6b8e74c14, type: 3}
     - target: {fileID: 8588318598684927249, guid: d50d22d04bffa3347963993ccc4068c6, type: 3}
       propertyPath: m_Name
       value: Manager

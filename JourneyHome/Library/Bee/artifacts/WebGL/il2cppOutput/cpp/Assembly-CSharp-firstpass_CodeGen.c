@@ -14,20 +14,6 @@
 
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mC7CA174A23290C34424DF6D2733D5E64B92E5977 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m3C9D09F94200334DD5FA29A465481C7848AF4549 (void);
-extern void Spinner_Update_mA62E8F4F76FF3DEB0B7BDD80532E5A5EFCFC090F (void);
-extern void Spinner__ctor_mE5550FA31E619C127F821C0990E826BF43849284 (void);
-extern void YarnCharacter_get_positionWithOffset_m95E10ACE7CC0564C217F06BA181486EC3C01446A (void);
-extern void YarnCharacter_Start_m563FC9F88C13EA62ED165FE4C456B202CC98A642 (void);
-extern void YarnCharacter_OnDestroy_m7A3BA927EAD1317F7EC330BF510BC7C4C3CA4CE9 (void);
-extern void YarnCharacter__ctor_mE1092B3DDB58BF0A04DC0B11A8DFFA1C07ECE805 (void);
-extern void YarnCharacterView_Awake_m16846363FFA2554D5AF2647C8809ABCE563E2E3F (void);
-extern void YarnCharacterView_RegisterYarnCharacter_mEE5BF3BB0CED572671A61558C2B2A9154F17797A (void);
-extern void YarnCharacterView_ForgetYarnCharacter_mFA2B094FF21ED054CF062C80C0FE6E03408DFF0A (void);
-extern void YarnCharacterView_RunLine_m971C883050BA227D41C1D838B6D4D8BE7C8A1F74 (void);
-extern void YarnCharacterView_FindCharacter_m60922C05CB018A824115D0FC0D170FA8B60D66DA (void);
-extern void YarnCharacterView_WorldToAnchoredPosition_m4BA6EEB53DE0C688BFE6874556C6861C2E399E8E (void);
-extern void YarnCharacterView_Update_m859A6E2981B2D97AB28A757252EF4453D28981C5 (void);
-extern void YarnCharacterView__ctor_m80A822D1E28CF6A2A30B3629D2758D66BEF3A0D8 (void);
 extern void CutoutMaskUI_get_materialForRendering_mD0F763BC8E44BE945F8FBF4B08B7FEB507A1AC45 (void);
 extern void CutoutMaskUI__ctor_m926D610EB51A0FFF9E5EA67676F9FEAEB191D1DA (void);
 extern void Transition_get_Instance_m7D8CC20A201713BDA329A2EB8DF0BAE48EA52D99 (void);
@@ -77,24 +63,10 @@ extern void U3CTimerU3Ed__14_System_Collections_Generic_IEnumeratorU3CSystem_Obj
 extern void U3CTimerU3Ed__14_System_Collections_IEnumerator_Reset_m1F82B267A6BA744064B27B4EB052E3430E86E20E (void);
 extern void U3CTimerU3Ed__14_System_Collections_IEnumerator_get_Current_m6554E2575B87301C2C6B1ABC5DDA3437EEFF56D1 (void);
 extern void TransitionSettings__ctor_mC7FF343214EF735A469C3D16CE67BAC7366CC7D8 (void);
-static Il2CppMethodPointer s_methodPointers[65] = 
+static Il2CppMethodPointer s_methodPointers[51] = 
 {
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mC7CA174A23290C34424DF6D2733D5E64B92E5977,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m3C9D09F94200334DD5FA29A465481C7848AF4549,
-	Spinner_Update_mA62E8F4F76FF3DEB0B7BDD80532E5A5EFCFC090F,
-	Spinner__ctor_mE5550FA31E619C127F821C0990E826BF43849284,
-	YarnCharacter_get_positionWithOffset_m95E10ACE7CC0564C217F06BA181486EC3C01446A,
-	YarnCharacter_Start_m563FC9F88C13EA62ED165FE4C456B202CC98A642,
-	YarnCharacter_OnDestroy_m7A3BA927EAD1317F7EC330BF510BC7C4C3CA4CE9,
-	YarnCharacter__ctor_mE1092B3DDB58BF0A04DC0B11A8DFFA1C07ECE805,
-	YarnCharacterView_Awake_m16846363FFA2554D5AF2647C8809ABCE563E2E3F,
-	YarnCharacterView_RegisterYarnCharacter_mEE5BF3BB0CED572671A61558C2B2A9154F17797A,
-	YarnCharacterView_ForgetYarnCharacter_mFA2B094FF21ED054CF062C80C0FE6E03408DFF0A,
-	YarnCharacterView_RunLine_m971C883050BA227D41C1D838B6D4D8BE7C8A1F74,
-	YarnCharacterView_FindCharacter_m60922C05CB018A824115D0FC0D170FA8B60D66DA,
-	YarnCharacterView_WorldToAnchoredPosition_m4BA6EEB53DE0C688BFE6874556C6861C2E399E8E,
-	YarnCharacterView_Update_m859A6E2981B2D97AB28A757252EF4453D28981C5,
-	YarnCharacterView__ctor_m80A822D1E28CF6A2A30B3629D2758D66BEF3A0D8,
 	CutoutMaskUI_get_materialForRendering_mD0F763BC8E44BE945F8FBF4B08B7FEB507A1AC45,
 	CutoutMaskUI__ctor_m926D610EB51A0FFF9E5EA67676F9FEAEB191D1DA,
 	Transition_get_Instance_m7D8CC20A201713BDA329A2EB8DF0BAE48EA52D99,
@@ -145,79 +117,65 @@ static Il2CppMethodPointer s_methodPointers[65] =
 	U3CTimerU3Ed__14_System_Collections_IEnumerator_get_Current_m6554E2575B87301C2C6B1ABC5DDA3437EEFF56D1,
 	TransitionSettings__ctor_mC7FF343214EF735A469C3D16CE67BAC7366CC7D8,
 };
-static const int32_t s_InvokerIndices[65] = 
+static const int32_t s_InvokerIndices[51] = 
 {
-	8180,
-	5689,
-	5689,
-	5689,
-	5680,
-	5689,
-	5689,
-	5689,
-	5689,
-	4607,
-	4607,
-	2489,
-	4069,
-	1159,
-	5689,
-	5689,
-	5586,
-	5689,
-	8140,
-	8033,
-	5689,
-	5689,
-	5689,
-	5689,
-	4607,
-	4607,
-	4607,
-	4607,
-	5689,
-	5689,
-	8140,
-	2494,
-	1322,
-	1267,
-	3865,
-	1126,
-	1103,
-	1939,
-	5586,
-	5689,
-	4571,
-	5689,
-	5494,
-	5586,
-	5689,
-	5586,
-	4571,
-	5689,
-	5494,
-	5586,
-	5689,
-	5586,
-	4571,
-	5689,
-	5494,
-	5586,
-	5689,
-	5586,
-	4571,
-	5689,
-	5494,
-	5586,
-	5689,
-	5586,
-	5689,
+	3831,
+	1890,
+	1830,
+	1890,
+	3792,
+	3726,
+	1890,
+	1890,
+	1890,
+	1890,
+	1660,
+	1660,
+	1660,
+	1660,
+	1890,
+	1890,
+	3792,
+	1138,
+	785,
+	732,
+	1457,
+	650,
+	629,
+	1007,
+	1830,
+	1890,
+	1647,
+	1890,
+	1779,
+	1830,
+	1890,
+	1830,
+	1647,
+	1890,
+	1779,
+	1830,
+	1890,
+	1830,
+	1647,
+	1890,
+	1779,
+	1830,
+	1890,
+	1830,
+	1647,
+	1890,
+	1779,
+	1830,
+	1890,
+	1830,
+	1890,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule = 
 {
 	"Assembly-CSharp-firstpass.dll",
-	65,
+	51,
 	s_methodPointers,
 	0,
 	NULL,

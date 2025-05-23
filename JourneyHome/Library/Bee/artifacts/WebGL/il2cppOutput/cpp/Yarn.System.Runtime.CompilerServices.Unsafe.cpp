@@ -93,6 +93,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Unsafe_CopyBlock_m07AC139D375DD33E225E4D
 		return;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Unsafe_InitBlockUnaligned_m12838BCAFDA45ABA127E4D684FD04DCEC2FFF7A9 (void* ___0_startAddress, uint8_t ___1_value, uint32_t ___2_byteCount, const RuntimeMethod* method) 
+{
+	{
+		void* L_0 = ___0_startAddress;
+		uint8_t L_1 = ___1_value;
+		uint32_t L_2 = ___2_byteCount;
+		il2cpp_codegen_memset(L_0, L_1, L_2);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Unsafe_InitBlockUnaligned_mFA5863CEFD5834125E3D233485A37A658EBAD8CA (uint8_t* ___0_startAddress, uint8_t ___1_value, uint32_t ___2_byteCount, const RuntimeMethod* method) 
+{
+	{
+		uint8_t* L_0 = ___0_startAddress;
+		uint8_t L_1 = ___1_value;
+		uint32_t L_2 = ___2_byteCount;
+		il2cpp_codegen_memset(L_0, L_1, L_2);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

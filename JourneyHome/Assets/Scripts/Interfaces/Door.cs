@@ -17,6 +17,7 @@ public class Door : MonoBehaviour, IActivate
     public bool locked = false;
 
     [SerializeField] private AudioClip openSound;
+    [SerializeField] private AudioClip lockedSound;
 
     private void Awake()
     {
@@ -30,6 +31,7 @@ public class Door : MonoBehaviour, IActivate
         if(locked)
         {
             StopActivate(); // Stop any ongoing movement if locked
+         
         }
         else
         {
@@ -39,7 +41,12 @@ public class Door : MonoBehaviour, IActivate
 
     public void StartActivate()
     {
-        if (locked) return; 
+        if (locked)
+        {
+            SoundPlayer.Instance.PlaySound(lockedSound);
+            return;
+        }
+
         if (isMoving) return;
 
         if (!isOpen)
@@ -60,6 +67,8 @@ public class Door : MonoBehaviour, IActivate
 
     public void StopActivate()
     {
+        Debug.Log("Locked door interaction – playing locked sound");
+        SoundPlayer.Instance.PlaySound(lockedSound);
     }
 
     private IEnumerator Open()

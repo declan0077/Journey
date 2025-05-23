@@ -338,6 +338,9 @@
 "Assets/Scripts/YarnHelper.cs"
 "Assets/SoundPlayer.cs"
 "Assets/StoryTellerTrigger.cs"
+"Assets/YarnSpinner/Samples/Yarn Spinner/2.5.1/3D Speech Bubble/Scripts/Spinner.cs"
+"Assets/YarnSpinner/Samples/Yarn Spinner/2.5.1/3D Speech Bubble/Scripts/YarnCharacter.cs"
+"Assets/YarnSpinner/Samples/Yarn Spinner/2.5.1/3D Speech Bubble/Scripts/YarnCharacterView.cs"
 -langversion:9.0
 /deterministic
 /optimize+

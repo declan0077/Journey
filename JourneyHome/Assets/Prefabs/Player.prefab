@@ -342,6 +342,7 @@ MonoBehaviour:
   groundCheck: {fileID: 406414921633080614}
   groundCheckRadius: 0.2
   spawnLocation: {fileID: 0}
+  jumpSound: {fileID: 8300000, guid: d36e11582aabe364c90298837d1b895a, type: 3}
   isClimbing: 0
   model: {fileID: 7136084087642761712}
   HoldingSpot: {fileID: 9175122010416412802}
@@ -352,7 +353,8 @@ MonoBehaviour:
   throwAimLayer:
     serializedVersion: 2
     m_Bits: 4294967295
-  jumpEffect: {fileID: 8487402871801164198, guid: 7390cf89a4cf3dc4da4461be35a75038, type: 3}
+  Pickup: {fileID: 8300000, guid: 43a47a4aa917a0b47a83e70cae5682f3, type: 3}
+  Throw: {fileID: 8300000, guid: 226241a190a3c80438506566fbc0b210, type: 3}
 --- !u!114 &3782726495510982682
 MonoBehaviour:
   m_ObjectHideFlags: 0

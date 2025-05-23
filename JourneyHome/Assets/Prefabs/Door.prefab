@@ -372,6 +372,7 @@ MonoBehaviour:
   closeDelay: 3
   locked: 0
   openSound: {fileID: 8300000, guid: f499946ff78085a4ea75b648d2cf355d, type: 3}
+  lockedSound: {fileID: 8300000, guid: ad62816ae762caa458b4f4fd96d4cac3, type: 3}
   outlineMaterial: {fileID: 2100000, guid: 6d1b7596d0b1d8345b0f742a0cb89e60, type: 2}
 --- !u!1 &5349354173410136457
 GameObject:
