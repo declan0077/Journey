@@ -9,6 +9,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -21,6 +22,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -33,6 +35,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -51,6 +54,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -80,6 +84,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -91,6 +96,7 @@
             "name": "AudioClip",
             "scenes": [
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -103,6 +109,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -120,6 +127,7 @@
             "name": "AudioSource",
             "scenes": [
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -131,6 +139,7 @@
             "name": "SampleClip",
             "scenes": [
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -160,6 +169,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -177,6 +187,7 @@
             "name": "ComputeShader",
             "scenes": [
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -210,6 +221,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -228,6 +240,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -258,6 +271,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -270,6 +284,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -288,6 +303,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -300,6 +316,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -311,6 +328,7 @@
             "name": "LineRenderer",
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -329,6 +347,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -341,6 +360,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -353,6 +373,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -365,6 +386,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -377,6 +399,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -395,6 +418,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -407,6 +431,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -443,6 +468,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -461,6 +487,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -497,6 +524,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -515,6 +543,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -533,6 +562,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -549,6 +579,7 @@
           {
             "name": "SpriteRenderer",
             "scenes": [
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -833,6 +864,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -845,6 +877,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -863,6 +896,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -874,6 +908,7 @@
             "name": "PhysicMaterial",
             "scenes": [
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -891,6 +926,7 @@
             "name": "Rigidbody",
             "scenes": [
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -903,6 +939,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -1107,6 +1144,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -1154,6 +1192,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -1165,6 +1204,7 @@
             "name": "CanvasGroup",
             "scenes": [
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"
@@ -1177,6 +1217,7 @@
             "scenes": [
               "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
+              "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
               "Assets/Scenes/Level3.unity",
               "Assets/Scenes/Level4.unity"

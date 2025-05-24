@@ -9,8 +9,25 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private Transform Eyes;
     private IActivate currentTarget = null;
 
+    [SerializeField] private GameObject Visual;
+    private void Start()
+    {
+        Visual.SetActive(false);
+    }
+
     void Update()
     {
+        float yRot = transform.eulerAngles.y;
+
+        if (Mathf.Approximately(yRot, 270f))
+        {
+            Visual.transform.localRotation = Quaternion.Euler(0, 90, 0);
+        }
+        else if (Mathf.Approximately(yRot, 90f))
+        {
+            Visual.transform.localRotation = Quaternion.Euler(0, -90, 0); // still face forward
+        }
+
         RaycastHit hit;
         Ray ray = new Ray(Eyes.position, transform.forward);
 
@@ -27,12 +44,17 @@ public class PlayerInteraction : MonoBehaviour
                     {
                         if (currentTarget != null)
                             currentTarget.OnFar(); 
+                        Visual.SetActive(false);
+
+
 
                         currentTarget = activatable;
                         currentTarget.OnNear();
                     }
 
                 }
+
+                Visual.SetActive(true);
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -44,6 +66,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (currentTarget != null)
             {
+                Visual.SetActive(false);
                 currentTarget.OnFar(); // Add this line
                 currentTarget = null;
             }

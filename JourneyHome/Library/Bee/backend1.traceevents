@@ -1,245 +1,261 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1747961853659247, "dur":50, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1747961853659326, "dur":3315, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1747961853662652, "dur":4142, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1747961853666849, "dur":53, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1747961853666903, "dur":1102, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1747961853668228, "dur":75, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/bdwgc/release_WebGL_wasm/efidp70pdudk.o" }}
-,{ "pid":12345, "tid":0, "ts":1747961853668353, "dur":1437, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/release_WebGL_wasm/1nbovcjgkv7u.o" }}
-,{ "pid":12345, "tid":0, "ts":1747961853670330, "dur":77, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/vbu1dl0gwf6r.o" }}
-,{ "pid":12345, "tid":0, "ts":1747961853670571, "dur":54, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/wcx6uotnecjq0.lump.cpp" }}
-,{ "pid":12345, "tid":0, "ts":1747961853672625, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/4pzth2kvxrgf.o" }}
-,{ "pid":12345, "tid":0, "ts":1747961853668034, "dur":9901, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1747961853677941, "dur":34951, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1747961853712893, "dur":416, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1747961853713309, "dur":325, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1747961853713943, "dur":6201, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1747961853668256, "dur":9933, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1747961853678190, "dur":3681, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Security.Principal.dll" }}
-,{ "pid":12345, "tid":1, "ts":1747961853681871, "dur":737, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1747961853683145, "dur":865, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Security.Cryptography.OpenSsl.dll" }}
-,{ "pid":12345, "tid":1, "ts":1747961853678190, "dur":8242, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1747961853686432, "dur":26457, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1747961853670231, "dur":7811, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1747961853678067, "dur":1338, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_HotReloadModule_Dynamic.a" }}
-,{ "pid":12345, "tid":2, "ts":1747961853679820, "dur":689, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_GameCenterModule_Dynamic.a" }}
-,{ "pid":12345, "tid":2, "ts":1747961853681522, "dur":617, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_ClothModule_Dynamic.a" }}
-,{ "pid":12345, "tid":2, "ts":1747961853683099, "dur":834, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\prejs\\SendMessage.js" }}
-,{ "pid":12345, "tid":2, "ts":1747961853683989, "dur":1028, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\prejs\\IdbFs.js" }}
-,{ "pid":12345, "tid":2, "ts":1747961853678067, "dur":7060, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1747961853685127, "dur":27813, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1747961853667984, "dur":9967, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1747961853677961, "dur":34879, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1747961853668390, "dur":10046, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1747961853678438, "dur":1767, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1747961853680206, "dur":1326, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1747961853681532, "dur":31407, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1747961853669175, "dur":9056, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1747961853678232, "dur":5283, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.IO.dll" }}
-,{ "pid":12345, "tid":5, "ts":1747961853684686, "dur":610, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Globalization.Extensions.dll" }}
-,{ "pid":12345, "tid":5, "ts":1747961853678232, "dur":8704, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1747961853686937, "dur":25948, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1747961853670246, "dur":7786, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1747961853678034, "dur":1397, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_SubsystemsModule_Dynamic.a" }}
-,{ "pid":12345, "tid":6, "ts":1747961853680281, "dur":658, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_SpriteMaskModule_Dynamic.a" }}
-,{ "pid":12345, "tid":6, "ts":1747961853680939, "dur":1312, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_SharedInternalsModule_Dynamic.a" }}
-,{ "pid":12345, "tid":6, "ts":1747961853682525, "dur":677, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_RuntimeInitializeOnLoadManagerInitializerModule_Dynamic.a" }}
-,{ "pid":12345, "tid":6, "ts":1747961853683919, "dur":583, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_PerformanceReportingModule_Dynamic.a" }}
-,{ "pid":12345, "tid":6, "ts":1747961853684503, "dur":532, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_ParticleSystemModule_Dynamic.a" }}
-,{ "pid":12345, "tid":6, "ts":1747961853686087, "dur":620, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_ImageConversionModule_Dynamic.a" }}
-,{ "pid":12345, "tid":6, "ts":1747961853678033, "dur":8674, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1747961853686708, "dur":26280, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1747961853668007, "dur":9974, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1747961853680078, "dur":527, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_WindModule_Dynamic.a" }}
-,{ "pid":12345, "tid":7, "ts":1747961853680606, "dur":627, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_WebGLModule_Dynamic.a" }}
-,{ "pid":12345, "tid":7, "ts":1747961853681233, "dur":1077, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_VRModule_Dynamic.a" }}
-,{ "pid":12345, "tid":7, "ts":1747961853678071, "dur":4709, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1747961853682781, "dur":30160, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1747961853668206, "dur":10151, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1747961853678358, "dur":1112, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-core-errorhandling-l1-1-0.dll" }}
-,{ "pid":12345, "tid":8, "ts":1747961853679470, "dur":2095, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-core-debug-l1-1-0.dll" }}
-,{ "pid":12345, "tid":8, "ts":1747961853681566, "dur":668, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-core-datetime-l1-1-0.dll" }}
-,{ "pid":12345, "tid":8, "ts":1747961853682234, "dur":769, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-core-console-l1-2-0.dll" }}
-,{ "pid":12345, "tid":8, "ts":1747961853683003, "dur":694, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-core-console-l1-1-0.dll" }}
-,{ "pid":12345, "tid":8, "ts":1747961853683697, "dur":937, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Analytics.runtimeconfig.json" }}
-,{ "pid":12345, "tid":8, "ts":1747961853685285, "dur":753, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Analytics.Api.Output.dll" }}
-,{ "pid":12345, "tid":8, "ts":1747961853678358, "dur":8018, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1747961853686376, "dur":26505, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1747961853668984, "dur":9669, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1747961853680130, "dur":829, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Memory.dll" }}
-,{ "pid":12345, "tid":9, "ts":1747961853678654, "dur":2706, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1747961853681360, "dur":2111, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1747961853683471, "dur":29477, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1747961853668245, "dur":10081, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1747961853678326, "dur":4699, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-core-sysinfo-l1-1-0.dll" }}
-,{ "pid":12345, "tid":10, "ts":1747961853683026, "dur":752, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-core-synch-l1-2-0.dll" }}
-,{ "pid":12345, "tid":10, "ts":1747961853683855, "dur":593, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-core-string-l1-1-0.dll" }}
-,{ "pid":12345, "tid":10, "ts":1747961853684448, "dur":609, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-core-rtlsupport-l1-1-0.dll" }}
-,{ "pid":12345, "tid":10, "ts":1747961853685673, "dur":976, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-core-processthreads-l1-1-0.dll" }}
-,{ "pid":12345, "tid":10, "ts":1747961853678326, "dur":9072, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1747961853687399, "dur":25561, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1747961853668292, "dur":10019, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1747961853678312, "dur":1177, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Core.dll" }}
-,{ "pid":12345, "tid":11, "ts":1747961853679489, "dur":696, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.BeeDriver.xml" }}
-,{ "pid":12345, "tid":11, "ts":1747961853680186, "dur":582, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.BeeDriver.dll" }}
-,{ "pid":12345, "tid":11, "ts":1747961853680768, "dur":935, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-crt-utility-l1-1-0.dll" }}
-,{ "pid":12345, "tid":11, "ts":1747961853682142, "dur":859, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-crt-string-l1-1-0.dll" }}
-,{ "pid":12345, "tid":11, "ts":1747961853678312, "dur":6124, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1747961853684436, "dur":28481, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1747961853668601, "dur":9930, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1747961853680086, "dur":701, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Security.Cryptography.OpenSsl.dll" }}
-,{ "pid":12345, "tid":12, "ts":1747961853678532, "dur":2256, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1747961853681164, "dur":1096, "ph":"X", "name": "File",  "args": { "detail":"C:\\Users\\iceth\\Documents\\GitHub\\Journey\\JourneyHome\\Library\\Bee\\PlayerScriptAssemblies\\CFXRRuntime.dll" }}
-,{ "pid":12345, "tid":12, "ts":1747961853683200, "dur":767, "ph":"X", "name": "File",  "args": { "detail":"C:\\Users\\iceth\\Documents\\GitHub\\Journey\\JourneyHome\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":12, "ts":1747961853683968, "dur":1204, "ph":"X", "name": "File",  "args": { "detail":"C:\\Users\\iceth\\Documents\\GitHub\\Journey\\JourneyHome\\Library\\Bee\\PlayerScriptAssemblies\\CFXRDemo.dll" }}
-,{ "pid":12345, "tid":12, "ts":1747961853680788, "dur":5210, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1747961853685998, "dur":26968, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1747961853668487, "dur":9961, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1747961853680059, "dur":591, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Threading.Timer.dll" }}
-,{ "pid":12345, "tid":13, "ts":1747961853678449, "dur":3350, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1747961853681799, "dur":31139, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1747961853668866, "dur":9671, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1747961853679674, "dur":1289, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Security.Claims.dll" }}
-,{ "pid":12345, "tid":14, "ts":1747961853678537, "dur":2963, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1747961853681501, "dur":386, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1747961853681888, "dur":31085, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1747961853668751, "dur":9794, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1747961853680139, "dur":818, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Net.WebSockets.dll" }}
-,{ "pid":12345, "tid":15, "ts":1747961853678550, "dur":2407, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1747961853680958, "dur":1005, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\Managed\\UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1747961853683871, "dur":1107, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\Managed\\UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1747961853680958, "dur":4020, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1747961853684978, "dur":27892, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1747961853669150, "dur":9138, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1747961853678396, "dur":1064, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Tools.dll" }}
-,{ "pid":12345, "tid":16, "ts":1747961853679461, "dur":640, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Toolchain.Xcode.dll" }}
-,{ "pid":12345, "tid":16, "ts":1747961853680101, "dur":675, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Toolchain.Windows.dll" }}
-,{ "pid":12345, "tid":16, "ts":1747961853680777, "dur":852, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Toolchain.VisualStudio.dll" }}
-,{ "pid":12345, "tid":16, "ts":1747961853681629, "dur":509, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Toolchain.VisionOS.dll" }}
-,{ "pid":12345, "tid":16, "ts":1747961853682138, "dur":708, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Toolchain.UWP.dll" }}
-,{ "pid":12345, "tid":16, "ts":1747961853682846, "dur":657, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Toolchain.TvOS.dll" }}
-,{ "pid":12345, "tid":16, "ts":1747961853684008, "dur":513, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Toolchain.IOS.dll" }}
-,{ "pid":12345, "tid":16, "ts":1747961853684790, "dur":888, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Stevedore.Program.dll" }}
-,{ "pid":12345, "tid":16, "ts":1747961853678396, "dur":7655, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1747961853686052, "dur":26915, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":17, "ts":1747961853669466, "dur":8790, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":17, "ts":1747961853678257, "dur":3829, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Collections.Concurrent.dll" }}
-,{ "pid":12345, "tid":17, "ts":1747961853682087, "dur":766, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Buffers.dll" }}
-,{ "pid":12345, "tid":17, "ts":1747961853682853, "dur":833, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.AppContext.dll" }}
-,{ "pid":12345, "tid":17, "ts":1747961853683686, "dur":526, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\SharpYaml.dll" }}
-,{ "pid":12345, "tid":17, "ts":1747961853684606, "dur":550, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\netstandard.dll" }}
-,{ "pid":12345, "tid":17, "ts":1747961853685157, "dur":579, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\msquic.dll" }}
-,{ "pid":12345, "tid":17, "ts":1747961853678257, "dur":8440, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":17, "ts":1747961853686697, "dur":26213, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1747961853669041, "dur":9381, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1747961853679452, "dur":675, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":18, "ts":1747961853678423, "dur":1772, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1747961853680379, "dur":595, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Diagnostics.FileVersionInfo.dll" }}
-,{ "pid":12345, "tid":18, "ts":1747961853682755, "dur":755, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Collections.Specialized.dll" }}
-,{ "pid":12345, "tid":18, "ts":1747961853680195, "dur":3512, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":18, "ts":1747961853683707, "dur":29166, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1747961853669371, "dur":8990, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1747961853679745, "dur":787, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\System.ServiceModel.Web.dll" }}
-,{ "pid":12345, "tid":19, "ts":1747961853678363, "dur":2557, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1747961853682752, "dur":898, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\Managed\\UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":19, "ts":1747961853680921, "dur":2936, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":19, "ts":1747961853683858, "dur":29104, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1747961853669645, "dur":8568, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1747961853678214, "dur":4423, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Private.Uri.dll" }}
-,{ "pid":12345, "tid":20, "ts":1747961853683189, "dur":1203, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Numerics.dll" }}
-,{ "pid":12345, "tid":20, "ts":1747961853684516, "dur":617, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Net.WebProxy.dll" }}
-,{ "pid":12345, "tid":20, "ts":1747961853678214, "dur":8390, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":20, "ts":1747961853686605, "dur":26290, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":21, "ts":1747961853669327, "dur":8802, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":21, "ts":1747961853678129, "dur":1762, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":21, "ts":1747961853681102, "dur":619, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Globalization.Calendars.dll" }}
-,{ "pid":12345, "tid":21, "ts":1747961853679892, "dur":2329, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":21, "ts":1747961853682221, "dur":30663, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":22, "ts":1747961853669497, "dur":8754, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":22, "ts":1747961853678252, "dur":1410, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Diagnostics.FileVersionInfo.dll" }}
-,{ "pid":12345, "tid":22, "ts":1747961853679663, "dur":513, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Diagnostics.DiagnosticSource.dll" }}
-,{ "pid":12345, "tid":22, "ts":1747961853680176, "dur":729, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Diagnostics.Debug.dll" }}
-,{ "pid":12345, "tid":22, "ts":1747961853680905, "dur":697, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Diagnostics.Contracts.dll" }}
-,{ "pid":12345, "tid":22, "ts":1747961853682059, "dur":773, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":22, "ts":1747961853683159, "dur":867, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.ComponentModel.TypeConverter.dll" }}
-,{ "pid":12345, "tid":22, "ts":1747961853684133, "dur":969, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.ComponentModel.dll" }}
-,{ "pid":12345, "tid":22, "ts":1747961853678251, "dur":7937, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":22, "ts":1747961853686188, "dur":26656, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":23, "ts":1747961853669751, "dur":8433, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":23, "ts":1747961853678185, "dur":2559, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Threading.Timer.dll" }}
-,{ "pid":12345, "tid":23, "ts":1747961853680744, "dur":877, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Threading.ThreadPool.dll" }}
-,{ "pid":12345, "tid":23, "ts":1747961853682066, "dur":1102, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Threading.Tasks.Parallel.dll" }}
-,{ "pid":12345, "tid":23, "ts":1747961853684086, "dur":703, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Text.RegularExpressions.dll" }}
-,{ "pid":12345, "tid":23, "ts":1747961853678185, "dur":8183, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":23, "ts":1747961853686368, "dur":26585, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1747961853669694, "dur":8457, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1747961853678152, "dur":1281, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Unity.IL2CPP.DataModel.dll" }}
-,{ "pid":12345, "tid":24, "ts":1747961853679434, "dur":569, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Unity.IL2CPP.CompilerServices.dll" }}
-,{ "pid":12345, "tid":24, "ts":1747961853680459, "dur":672, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Unity.IL2CPP.Common.dll" }}
-,{ "pid":12345, "tid":24, "ts":1747961853681131, "dur":768, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Unity.IL2CPP.Building.dll" }}
-,{ "pid":12345, "tid":24, "ts":1747961853681900, "dur":723, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.dll" }}
-,{ "pid":12345, "tid":24, "ts":1747961853683096, "dur":596, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Unity.IL2CPP.Bee.BuildLogic.WebGL.dll" }}
-,{ "pid":12345, "tid":24, "ts":1747961853678152, "dur":6358, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":24, "ts":1747961853684510, "dur":28410, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":25, "ts":1747961853669724, "dur":8497, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":25, "ts":1747961853678221, "dur":1777, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Net.Mail.dll" }}
-,{ "pid":12345, "tid":25, "ts":1747961853680461, "dur":674, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Net.Http.Json.dll" }}
-,{ "pid":12345, "tid":25, "ts":1747961853681135, "dur":726, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Net.Http.dll" }}
-,{ "pid":12345, "tid":25, "ts":1747961853681862, "dur":835, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Net.dll" }}
-,{ "pid":12345, "tid":25, "ts":1747961853683161, "dur":779, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.IO.UnmanagedMemoryStream.dll" }}
-,{ "pid":12345, "tid":25, "ts":1747961853678221, "dur":7481, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":25, "ts":1747961853685702, "dur":27240, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1747961853669787, "dur":8329, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1747961853678117, "dur":528, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\DOM.js" }}
-,{ "pid":12345, "tid":26, "ts":1747961853679698, "dur":519, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\Tools\\InternalCallRegistrationWriter\\InternalCallRegistrationWriter.exe" }}
-,{ "pid":12345, "tid":26, "ts":1747961853678117, "dur":3398, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":26, "ts":1747961853681521, "dur":31356, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":27, "ts":1747961853669949, "dur":8256, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":27, "ts":1747961853678206, "dur":3386, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Runtime.InteropServices.dll" }}
-,{ "pid":12345, "tid":27, "ts":1747961853681592, "dur":584, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Runtime.Handles.dll" }}
-,{ "pid":12345, "tid":27, "ts":1747961853682176, "dur":664, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Runtime.Extensions.dll" }}
-,{ "pid":12345, "tid":27, "ts":1747961853683008, "dur":884, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Runtime.CompilerServices.Unsafe.dll" }}
-,{ "pid":12345, "tid":27, "ts":1747961853684478, "dur":532, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Reflection.Emit.Lightweight.dll" }}
-,{ "pid":12345, "tid":27, "ts":1747961853685011, "dur":742, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Reflection.Emit.ILGeneration.dll" }}
-,{ "pid":12345, "tid":27, "ts":1747961853678206, "dur":7918, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":27, "ts":1747961853686124, "dur":26885, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":28, "ts":1747961853670029, "dur":8127, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":28, "ts":1747961853678156, "dur":2984, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Unity.IL2CPP.Api.dll" }}
-,{ "pid":12345, "tid":28, "ts":1747961853681140, "dur":716, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Unity.Cecil.Visitor.dll" }}
-,{ "pid":12345, "tid":28, "ts":1747961853681856, "dur":755, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Unity.Cecil.Awesome.dll" }}
-,{ "pid":12345, "tid":28, "ts":1747961853683002, "dur":898, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Xml.XPath.XDocument.dll" }}
-,{ "pid":12345, "tid":28, "ts":1747961853683900, "dur":691, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Xml.XPath.dll" }}
-,{ "pid":12345, "tid":28, "ts":1747961853678156, "dur":8122, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":28, "ts":1747961853686278, "dur":26650, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":29, "ts":1747961853670121, "dur":7934, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":29, "ts":1747961853678058, "dur":3644, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":29, "ts":1747961853681703, "dur":31196, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":30, "ts":1747961853670151, "dur":7997, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":30, "ts":1747961853678866, "dur":807, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\Emscripten\\emscripten\\emar.bat" }}
-,{ "pid":12345, "tid":30, "ts":1747961853679880, "dur":594, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\external\\bdwgc\\extra\\gc.c" }}
-,{ "pid":12345, "tid":30, "ts":1747961853680475, "dur":806, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\WindowsBase.dll" }}
-,{ "pid":12345, "tid":30, "ts":1747961853681281, "dur":620, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\UnityLinker.runtimeconfig.json" }}
-,{ "pid":12345, "tid":30, "ts":1747961853681902, "dur":751, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\UnityLinker.exe" }}
-,{ "pid":12345, "tid":30, "ts":1747961853683091, "dur":997, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\UnityLinker.deps.json" }}
-,{ "pid":12345, "tid":30, "ts":1747961853684089, "dur":902, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Unity.TinyProfiler.dll" }}
-,{ "pid":12345, "tid":30, "ts":1747961853678171, "dur":7846, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":30, "ts":1747961853686018, "dur":26828, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":31, "ts":1747961853670180, "dur":8079, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":31, "ts":1747961853678281, "dur":1898, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Microsoft.VisualBasic.dll" }}
-,{ "pid":12345, "tid":31, "ts":1747961853680180, "dur":551, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Microsoft.VisualBasic.Core.dll" }}
-,{ "pid":12345, "tid":31, "ts":1747961853680731, "dur":893, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Microsoft.DiaSymReader.Native.amd64.dll" }}
-,{ "pid":12345, "tid":31, "ts":1747961853682071, "dur":751, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Microsoft.Bcl.HashCode.dll" }}
-,{ "pid":12345, "tid":31, "ts":1747961853683151, "dur":762, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\il2cpp.dll.config" }}
-,{ "pid":12345, "tid":31, "ts":1747961853684374, "dur":627, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\createdump.exe" }}
-,{ "pid":12345, "tid":31, "ts":1747961853678281, "dur":7441, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":31, "ts":1747961853685722, "dur":27153, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":32, "ts":1747961853668192, "dur":9810, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":32, "ts":1747961853678003, "dur":1257, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_UnityWebRequestWWWModule_Dynamic.a" }}
-,{ "pid":12345, "tid":32, "ts":1747961853679261, "dur":577, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_UnityWebRequestTextureModule_Dynamic.a" }}
-,{ "pid":12345, "tid":32, "ts":1747961853679838, "dur":855, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_UnityWebRequestModule_Dynamic.a" }}
-,{ "pid":12345, "tid":32, "ts":1747961853682647, "dur":1323, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_UIElementsModule_Dynamic.a" }}
-,{ "pid":12345, "tid":32, "ts":1747961853683970, "dur":581, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_TLSModule_Dynamic.a" }}
-,{ "pid":12345, "tid":32, "ts":1747961853678003, "dur":7981, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":32, "ts":1747961853685984, "dur":26965, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1747961853724192, "dur":941, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1748097240949682, "dur":2611, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748097240952305, "dur":795, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748097240953148, "dur":80, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1748097240953228, "dur":1095, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748097240954516, "dur":122, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/release_WebGL_wasm/pyfepx4szd02.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240954694, "dur":82, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/release_WebGL_wasm/1nbovcjgkv7u.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240954879, "dur":58, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/zlib/release_WebGL_wasm/bspfhn6cqwsz.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240955065, "dur":135, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"WriteText Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/_dummy_for_header_discovery" }}
+,{ "pid":12345, "tid":0, "ts":1748097240955220, "dur":51, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/ksi5f53uq7dq0.lump.cpp" }}
+,{ "pid":12345, "tid":0, "ts":1748097240955330, "dur":55, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/rpf525mtt1sh0.lump.cpp" }}
+,{ "pid":12345, "tid":0, "ts":1748097240955516, "dur":137, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/80c25dq3whl60.lump.cpp" }}
+,{ "pid":12345, "tid":0, "ts":1748097240955825, "dur":120, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/08wgp9rm1ed22.lump.cpp" }}
+,{ "pid":12345, "tid":0, "ts":1748097240956156, "dur":58, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/0pnj52xx1xhz0.lump.cpp" }}
+,{ "pid":12345, "tid":0, "ts":1748097240956218, "dur":51, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/u6hmk4k6rkwo.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240956329, "dur":51, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/ror28rke0jvk.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240956404, "dur":54, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/kc3pfd8x6umh.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240957685, "dur":773, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/ly1ngtgx8zfg.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240958639, "dur":179, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/xz7g1s8ipegs.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240958851, "dur":53, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/0iiz206mluwm.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240959019, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/eifvpq8om5u50.lump.cpp" }}
+,{ "pid":12345, "tid":0, "ts":1748097240959268, "dur":62, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/uxewi24dlv131.lump.cpp" }}
+,{ "pid":12345, "tid":0, "ts":1748097240959334, "dur":57, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/4qorlgwp93sm.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240959531, "dur":106, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/ctc06zpecmh5.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240959817, "dur":157, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"MakeLump Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/iqkrzktz5x545.lump.cpp" }}
+,{ "pid":12345, "tid":0, "ts":1748097240960065, "dur":100, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/lstmo247dp0f.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240960265, "dur":93, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/fnfks8m4mnj5.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240960485, "dur":102, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/sx7wv2zyxvvq.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240960609, "dur":58, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/zobippiktrh1.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240960851, "dur":170, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/il2cpp/release_WebGL_wasm/iz1djgdwrwqw.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240961149, "dur":70, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"WriteText Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/_dummy_for_header_discovery" }}
+,{ "pid":12345, "tid":0, "ts":1748097240961384, "dur":77, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/x0l4ttf8lcmt.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240961773, "dur":176, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/b4no2y950xd2.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240962093, "dur":120, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/sn7t2c32za0e.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240962234, "dur":53, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/ebvy21xy60sd.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240962406, "dur":125, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/7olx5zdszhib.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240962534, "dur":54, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/8w5dqfuq3jzq.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240962603, "dur":53, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/uktiq4omaasp.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240962691, "dur":54, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/xik595auv9c3.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240962940, "dur":157, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/n406k565pzc6.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240963359, "dur":125, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/8kmpwewctk3k.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240963751, "dur":117, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/443iw0nfuv3v.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240964104, "dur":172, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/oeay5auqxb3b.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240964421, "dur":69, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/knjx8cw5wrd0.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240964493, "dur":51, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/lv3dtsc40tuf.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240964559, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/rqaqob5y65hi.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240964678, "dur":79, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/hc3fbfpohol0.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240964784, "dur":57, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/ofu8qdyhr2pi.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240964856, "dur":59, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/a3hdr2sdysih.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240965052, "dur":103, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/tg95rjrr70vd.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240965281, "dur":148, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/nsx7en9zjudf.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240965456, "dur":54, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/q0pe423hywql.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240965642, "dur":70, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"ICallRegistrationGenerator C:/Users/iceth/Documents/GitHub/Journey/JourneyHome/Library/Bee/artifacts/WebGL/il2cppOutput/UnityICallRegistration.cpp" }}
+,{ "pid":12345, "tid":0, "ts":1748097240965715, "dur":62, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/d515sdlr17ls.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240965829, "dur":101, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/0w9ffuvpj1fu.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240966299, "dur":62, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/7915dm89348z.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240966395, "dur":59, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/xjkpuzbeziy6.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240966553, "dur":134, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/jd0k0u4irzq9.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240966759, "dur":54, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/rdg7sngp3sj2.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240967267, "dur":185, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/1mtt3bulx0yz.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240967518, "dur":65, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/zque7cyf7o5h.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240967615, "dur":63, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"C_WebGL_wasm Library/Bee/artifacts/WebGL/GameAssembly/release_WebGL_wasm/u8nhsrl1i4xm.o" }}
+,{ "pid":12345, "tid":0, "ts":1748097240967734, "dur":61, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/iceth/Documents/GitHub/Journey/JourneyHome/Library/Bee/artifacts/WebGL/il2cppOutput/build/Data/Resources/mscorlib.dll-resources.dat" }}
+,{ "pid":12345, "tid":0, "ts":1748097240967984, "dur":163, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/iceth/Desktop/Game/Build/Game.data" }}
+,{ "pid":12345, "tid":0, "ts":1748097240968268, "dur":102, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"PreprocessJS Library/Bee/artifacts/WebGLGame.loader.js" }}
+,{ "pid":12345, "tid":0, "ts":1748097240954352, "dur":14058, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748097240968418, "dur":19674, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748097240988101, "dur":83, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748097240988185, "dur":188, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748097240988438, "dur":182, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748097240988897, "dur":7940, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1748097240953768, "dur":14681, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1748097240968484, "dur":19441, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748097240954154, "dur":14538, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748097240969358, "dur":1011, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_AndroidJNIModule_Dynamic.a" }}
+,{ "pid":12345, "tid":2, "ts":1748097240970411, "dur":563, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_AccessibilityModule_Dynamic.a" }}
+,{ "pid":12345, "tid":2, "ts":1748097240970974, "dur":539, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\prejs\\SendMessage.js" }}
+,{ "pid":12345, "tid":2, "ts":1748097240971597, "dur":726, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\prejs\\FullScreen.js" }}
+,{ "pid":12345, "tid":2, "ts":1748097240968706, "dur":3656, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1748097240972362, "dur":15823, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1748097240954582, "dur":14471, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1748097240969149, "dur":744, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Runtime.Extensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1748097240969894, "dur":1094, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1748097240971413, "dur":861, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Reflection.Primitives.dll" }}
+,{ "pid":12345, "tid":3, "ts":1748097240972598, "dur":869, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Reflection.Emit.ILGeneration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1748097240969061, "dur":4862, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1748097240973923, "dur":14105, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1748097240954038, "dur":14553, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1748097240969809, "dur":1013, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_TerrainModule_Dynamic.a" }}
+,{ "pid":12345, "tid":4, "ts":1748097240968605, "dur":2304, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1748097240970910, "dur":1368, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\Microsoft.Win32.Registry.AccessControl.dll" }}
+,{ "pid":12345, "tid":4, "ts":1748097240973004, "dur":752, "ph":"X", "name": "File",  "args": { "detail":"C:\\Users\\iceth\\Documents\\GitHub\\Journey\\JourneyHome\\Library\\PackageCache\\dev.yarnspinner.unity@2.5.1\\Runtime\\DLLs\\Yarn.Microsoft.Bcl.AsyncInterfaces.dll" }}
+,{ "pid":12345, "tid":4, "ts":1748097240970910, "dur":3230, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1748097240974140, "dur":14069, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1748097240954083, "dur":14525, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1748097240969074, "dur":531, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_ProfilerModule_Dynamic.a" }}
+,{ "pid":12345, "tid":5, "ts":1748097240969606, "dur":900, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_PhysicsModule_Dynamic.a" }}
+,{ "pid":12345, "tid":5, "ts":1748097240968619, "dur":2311, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1748097240971318, "dur":1278, "ph":"X", "name": "File",  "args": { "detail":"C:\\Users\\iceth\\Documents\\GitHub\\Journey\\JourneyHome\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":5, "ts":1748097240970931, "dur":2523, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1748097240973454, "dur":14509, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1748097240955462, "dur":14595, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1748097240970064, "dur":558, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\netstandard.dll" }}
+,{ "pid":12345, "tid":6, "ts":1748097240970975, "dur":531, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Threading.dll" }}
+,{ "pid":12345, "tid":6, "ts":1748097240970063, "dur":1801, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1748097240971864, "dur":16113, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1748097240954205, "dur":14566, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1748097240968786, "dur":1459, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1748097240971083, "dur":712, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Reflection.TypeExtensions.dll" }}
+,{ "pid":12345, "tid":7, "ts":1748097240971908, "dur":666, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Reflection.Emit.Lightweight.dll" }}
+,{ "pid":12345, "tid":7, "ts":1748097240972714, "dur":922, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Net.WebSockets.Client.dll" }}
+,{ "pid":12345, "tid":7, "ts":1748097240970246, "dur":3390, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1748097240973636, "dur":14586, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1748097240954284, "dur":14521, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1748097240969812, "dur":1633, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Tools.dll" }}
+,{ "pid":12345, "tid":8, "ts":1748097240968813, "dur":2962, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1748097240971776, "dur":666, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\Managed\\UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1748097240972874, "dur":535, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\Managed\\UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1748097240971776, "dur":2179, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1748097240973955, "dur":14367, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1748097240954322, "dur":14511, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1748097240969434, "dur":800, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\Emscripten\\emscripten\\emar.bat" }}
+,{ "pid":12345, "tid":9, "ts":1748097240970518, "dur":629, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\UnityLinker.dll.config" }}
+,{ "pid":12345, "tid":9, "ts":1748097240971184, "dur":701, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\UnityLinker.deps.json" }}
+,{ "pid":12345, "tid":9, "ts":1748097240972028, "dur":600, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Unity.Linker.Api.Output.dll" }}
+,{ "pid":12345, "tid":9, "ts":1748097240972710, "dur":566, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Unity.IL2CPP.Shell.dll" }}
+,{ "pid":12345, "tid":9, "ts":1748097240968858, "dur":4552, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1748097240973411, "dur":14518, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1748097240954365, "dur":14506, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1748097240968876, "dur":1616, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1748097240970656, "dur":574, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Net.Security.dll" }}
+,{ "pid":12345, "tid":10, "ts":1748097240971400, "dur":736, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Net.NetworkInformation.dll" }}
+,{ "pid":12345, "tid":10, "ts":1748097240972281, "dur":563, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Net.AuthenticationManager.dll" }}
+,{ "pid":12345, "tid":10, "ts":1748097240973006, "dur":572, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Linq.Parallel.dll" }}
+,{ "pid":12345, "tid":10, "ts":1748097240970492, "dur":3162, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1748097240973654, "dur":14564, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1748097240954395, "dur":14482, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1748097240969913, "dur":523, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Xml.XmlDocument.dll" }}
+,{ "pid":12345, "tid":11, "ts":1748097240970790, "dur":621, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Web.HttpUtility.dll" }}
+,{ "pid":12345, "tid":11, "ts":1748097240968885, "dur":3050, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1748097240971935, "dur":16314, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1748097240954510, "dur":14401, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1748097240969495, "dur":1289, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Threading.Tasks.Dataflow.dll" }}
+,{ "pid":12345, "tid":12, "ts":1748097240971233, "dur":727, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Text.Encodings.Web.dll" }}
+,{ "pid":12345, "tid":12, "ts":1748097240972074, "dur":571, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Text.Encoding.CodePages.dll" }}
+,{ "pid":12345, "tid":12, "ts":1748097240968920, "dur":4831, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1748097240973751, "dur":14476, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1748097240954542, "dur":14436, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1748097240969731, "dur":878, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Security.Claims.dll" }}
+,{ "pid":12345, "tid":13, "ts":1748097240971028, "dur":615, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Runtime.Serialization.Json.dll" }}
+,{ "pid":12345, "tid":13, "ts":1748097240971840, "dur":723, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":13, "ts":1748097240968983, "dur":3827, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1748097240972810, "dur":15365, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1748097240953873, "dur":14604, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1748097240969865, "dur":1585, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\BuildTools\\lib\\modules_development\\WebGLSupport_VFXModule_Dynamic.a" }}
+,{ "pid":12345, "tid":14, "ts":1748097240968491, "dur":3042, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1748097240972126, "dur":525, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\Managed\\UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1748097240971533, "dur":1359, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1748097240972892, "dur":15063, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1748097240954731, "dur":14445, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1748097240969182, "dur":677, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Private.DataContractSerialization.dll" }}
+,{ "pid":12345, "tid":15, "ts":1748097240970520, "dur":1367, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Net.WebProxy.dll" }}
+,{ "pid":12345, "tid":15, "ts":1748097240969182, "dur":3688, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1748097240972871, "dur":15085, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1748097240954833, "dur":14386, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1748097240971025, "dur":1383, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.IO.FileSystem.DriveInfo.dll" }}
+,{ "pid":12345, "tid":16, "ts":1748097240969224, "dur":3336, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1748097240972561, "dur":15420, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1748097240954938, "dur":14335, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1748097240969412, "dur":558, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":17, "ts":1748097240969971, "dur":678, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":17, "ts":1748097240970720, "dur":596, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Globalization.Extensions.dll" }}
+,{ "pid":12345, "tid":17, "ts":1748097240971375, "dur":797, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Globalization.Calendars.dll" }}
+,{ "pid":12345, "tid":17, "ts":1748097240972237, "dur":508, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Dynamic.Runtime.dll" }}
+,{ "pid":12345, "tid":17, "ts":1748097240972895, "dur":638, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Diagnostics.Tracing.dll" }}
+,{ "pid":12345, "tid":17, "ts":1748097240969280, "dur":4704, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1748097240973984, "dur":14132, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":18, "ts":1748097240955024, "dur":14381, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":18, "ts":1748097240970208, "dur":509, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Data.Common.dll" }}
+,{ "pid":12345, "tid":18, "ts":1748097240970717, "dur":760, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Core.dll" }}
+,{ "pid":12345, "tid":18, "ts":1748097240971578, "dur":817, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.ComponentModel.TypeConverter.dll" }}
+,{ "pid":12345, "tid":18, "ts":1748097240972395, "dur":506, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.ComponentModel.Primitives.dll" }}
+,{ "pid":12345, "tid":18, "ts":1748097240969410, "dur":4577, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":18, "ts":1748097240973987, "dur":14288, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":19, "ts":1748097240955118, "dur":14367, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":19, "ts":1748097240971391, "dur":838, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Mono.Cecil.Pdb.dll" }}
+,{ "pid":12345, "tid":19, "ts":1748097240969490, "dur":2985, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":19, "ts":1748097240972475, "dur":15525, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1748097240955146, "dur":14381, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1748097240970170, "dur":1121, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\JetBrains.Profiler.Api.dll" }}
+,{ "pid":12345, "tid":20, "ts":1748097240971451, "dur":838, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\il2cpp.dll" }}
+,{ "pid":12345, "tid":20, "ts":1748097240969532, "dur":4119, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1748097240973652, "dur":14351, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":21, "ts":1748097240955177, "dur":14455, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":21, "ts":1748097240970197, "dur":648, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Toolchain.TvOS.dll" }}
+,{ "pid":12345, "tid":21, "ts":1748097240970845, "dur":841, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Toolchain.MacOS.dll" }}
+,{ "pid":12345, "tid":21, "ts":1748097240971901, "dur":690, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Toolchain.GNU.dll" }}
+,{ "pid":12345, "tid":21, "ts":1748097240969637, "dur":4417, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":21, "ts":1748097240974054, "dur":14088, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":22, "ts":1748097240955271, "dur":14420, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":22, "ts":1748097240969959, "dur":516, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-crt-time-l1-1-0.dll" }}
+,{ "pid":12345, "tid":22, "ts":1748097240971955, "dur":681, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-crt-convert-l1-1-0.dll" }}
+,{ "pid":12345, "tid":22, "ts":1748097240969694, "dur":3177, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":22, "ts":1748097240972872, "dur":15446, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":23, "ts":1748097240955306, "dur":14468, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":23, "ts":1748097240971338, "dur":721, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-core-file-l2-1-0.dll" }}
+,{ "pid":12345, "tid":23, "ts":1748097240969779, "dur":2490, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":23, "ts":1748097240972269, "dur":15662, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":24, "ts":1748097240955402, "dur":14560, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":24, "ts":1748097240970989, "dur":603, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":24, "ts":1748097240969966, "dur":1741, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":24, "ts":1748097240971816, "dur":693, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\Managed\\UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":24, "ts":1748097240971708, "dur":2146, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":24, "ts":1748097240973855, "dur":14098, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":25, "ts":1748097240955339, "dur":14528, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":25, "ts":1748097240969871, "dur":1168, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-core-debug-l1-1-0.dll" }}
+,{ "pid":12345, "tid":25, "ts":1748097240971250, "dur":866, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\api-ms-win-core-console-l1-2-0.dll" }}
+,{ "pid":12345, "tid":25, "ts":1748097240972225, "dur":1254, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\il2cpp\\build\\deploy\\Analytics.runtimeconfig.json" }}
+,{ "pid":12345, "tid":25, "ts":1748097240969871, "dur":4217, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":25, "ts":1748097240974088, "dur":13853, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":26, "ts":1748097240955371, "dur":14544, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":26, "ts":1748097240970302, "dur":544, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\System.Windows.Forms.DataVisualization.dll" }}
+,{ "pid":12345, "tid":26, "ts":1748097240971297, "dur":707, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\System.ServiceModel.Web.dll" }}
+,{ "pid":12345, "tid":26, "ts":1748097240969920, "dur":2274, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":26, "ts":1748097240972194, "dur":15739, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":27, "ts":1748097240955435, "dur":14594, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":27, "ts":1748097240970608, "dur":569, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\System.Data.Services.dll" }}
+,{ "pid":12345, "tid":27, "ts":1748097240971325, "dur":650, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\System.Data.Linq.dll" }}
+,{ "pid":12345, "tid":27, "ts":1748097240970033, "dur":2802, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":27, "ts":1748097240972835, "dur":15297, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":28, "ts":1748097240954231, "dur":14556, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":28, "ts":1748097240969910, "dur":1112, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.Rocks.dll" }}
+,{ "pid":12345, "tid":28, "ts":1748097240971097, "dur":565, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.dll" }}
+,{ "pid":12345, "tid":28, "ts":1748097240968798, "dur":2989, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":28, "ts":1748097240971787, "dur":663, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\Managed\\UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":28, "ts":1748097240971787, "dur":816, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":28, "ts":1748097240972604, "dur":15372, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":29, "ts":1748097240955509, "dur":14563, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":29, "ts":1748097240970375, "dur":702, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.ServiceModel.Http.dll" }}
+,{ "pid":12345, "tid":29, "ts":1748097240971185, "dur":804, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Security.Principal.Windows.dll" }}
+,{ "pid":12345, "tid":29, "ts":1748097240972158, "dur":534, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Security.Cryptography.RSA.dll" }}
+,{ "pid":12345, "tid":29, "ts":1748097240970077, "dur":2800, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":29, "ts":1748097240972877, "dur":15072, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":30, "ts":1748097240955548, "dur":14542, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":30, "ts":1748097240970481, "dur":2970, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Security.Cryptography.Algorithms.dll" }}
+,{ "pid":12345, "tid":30, "ts":1748097240970093, "dur":3871, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":30, "ts":1748097240973964, "dur":14187, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":31, "ts":1748097240955638, "dur":15006, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":31, "ts":1748097240970744, "dur":600, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.IO.MemoryMappedFiles.dll" }}
+,{ "pid":12345, "tid":31, "ts":1748097240971455, "dur":847, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.IO.FileSystem.Primitives.dll" }}
+,{ "pid":12345, "tid":31, "ts":1748097240973311, "dur":836, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Diagnostics.Tools.dll" }}
+,{ "pid":12345, "tid":31, "ts":1748097240970649, "dur":3544, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":31, "ts":1748097240974193, "dur":13986, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":32, "ts":1748097240955671, "dur":15012, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":32, "ts":1748097240970800, "dur":560, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.Diagnostics.Debug.dll" }}
+,{ "pid":12345, "tid":32, "ts":1748097240971544, "dur":775, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.ComponentModel.TypeConverter.dll" }}
+,{ "pid":12345, "tid":32, "ts":1748097240972398, "dur":506, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity 2022.3.58f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityaot-linux\\Facades\\System.ComponentModel.Annotations.dll" }}
+,{ "pid":12345, "tid":32, "ts":1748097240970684, "dur":2921, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":32, "ts":1748097240973605, "dur":14608, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1748097241001545, "dur":1049, "ph":"X", "name": "ProfilerWriteOutput" }
 ,

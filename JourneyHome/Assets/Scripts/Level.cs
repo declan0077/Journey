@@ -14,8 +14,23 @@ public class Level : MonoBehaviour
             Debug.Log("Loading next level...");
             StartCoroutine(LoadNextLevelAfterTransition());
         }
+
+
     }
 
+    public void NextLevel()
+    {
+        Transition.Instance.PlayTransistionIn();
+        Debug.Log("Loading next level...");
+        StartCoroutine(LoadNextLevelAfterTransition());
+    }
+    public void LevelSelect(int level)
+    {
+        Transition.Instance.PlayTransistionIn();
+        Debug.Log("Loading next level...");
+        SceneManager.LoadScene(level);
+
+    }
     private IEnumerator LoadNextLevelAfterTransition()
     {
         // Wait for the transition duration (replace with actual duration if known)

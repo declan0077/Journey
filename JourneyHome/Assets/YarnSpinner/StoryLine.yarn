@@ -33,38 +33,26 @@ Allen: I need to run fast
 title: Seen_Guard0
 position: -520,-133
 ---
-<<CameraSwitch Soldier>>
 Guard0: OI I see you.
-<<CameraSwitch Player>>
-Allen: No you dont.
 <<Restart>>
 <<Restart>>
-
 ===
 
 
 title: Seen_Guard1
 position: -520,-133
 ---
-<<CameraSwitch Soldier>>
-Guard1: OI I see you.
-<<CameraSwitch Player>>
-Allen: No you dont.
+Guard0: OI I see you.
 <<Restart>>
 <<Restart>>
-
 ===
 
 title: Seen_Guard2
 position: -520,-133
 ---
-<<CameraSwitch Soldier>>
-Guard2: OI I see you.
-<<CameraSwitch Player>>
-Allen: No you dont.
+Guard0: OI I see you.
 <<Restart>>
 <<Restart>>
-
 ===
 
 

@@ -43,6 +43,10 @@ public class PlayerController : MonoBehaviour
     public float liftHeight = 1.5f;
     public LayerMask throwAimLayer;
 
+    [SerializeField] private Transform InteractionVisualSpot;
+
+
+
     private void Start()
     {
         animator = GetComponent<Animator>();
