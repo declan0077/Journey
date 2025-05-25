@@ -79,12 +79,7 @@ public class AISight : MonoBehaviour
                 {
                     if (!hasSeenPlayer)
                     {
-                        Debug.Log("AI sees: " + hit.collider.name);
-                        YarnHelper.Instance.SeenDialog(gameObject.name);
-
-                        GameManager.Instance.SetGameState(GameManager.GameState.Dialog);
-                        hasSeenPlayer = true;
-                        forgetTimer = 0f;
+                        hit.collider.gameObject.GetComponent<PlayerController>().ReturnToSpawn();
                     }
                     Debug.DrawLine(origin, hit.point, Color.green);
                 }

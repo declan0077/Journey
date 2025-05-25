@@ -53,13 +53,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections
     - UnityEngine.Rendering.PostProcessing.Vignette
     Unity.ProBuilder.Editor.dll:
-    - UnityEditor.ProBuilder.PositionToolContext
     - UnityEditor.ProBuilder.ProBuilderEditor
-    - UnityEditor.ProBuilder.ProBuilderMeshEditor
-    - UnityEditor.ProBuilder.ProBuilderShapeEditor
-    - UnityEditor.ProBuilder.ProbuilderMoveTool
-    - UnityEditor.ProBuilder.ProbuilderRotateTool
-    - UnityEditor.ProBuilder.ProbuilderScaleTool
     Unity.ProBuilder.dll:
     - UnityEngine.ProBuilder.ProBuilderMesh
     - UnityEngine.ProBuilder.Shapes.ProBuilderShape
@@ -187,6 +181,15 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Level
     methodName: NextLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: Level
+    methodName: LevelSelect
+  - assembly: Assembly-CSharp
+    fullTypeName: Level
+    methodName: LevelSelect
+  - assembly: Assembly-CSharp
+    fullTypeName: Level
+    methodName: LevelSelect
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -208,15 +211,21 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Level
     methodName: LevelSelect
+  - assembly: YarnSpinner.Unity
+    fullTypeName: Yarn.Unity.LineView
+    methodName: OnContinueClicked
+  - assembly: YarnSpinner.Unity
+    fullTypeName: Yarn.Unity.LineView
+    methodName: OnContinueClicked
   - assembly: Assembly-CSharp
-    fullTypeName: Level
-    methodName: LevelSelect
+    fullTypeName: CameraSight
+    methodName: SetActive
   - assembly: Assembly-CSharp
-    fullTypeName: Level
-    methodName: LevelSelect
+    fullTypeName: CameraSight
+    methodName: SetActive
   - assembly: Assembly-CSharp
-    fullTypeName: Level
-    methodName: LevelSelect
+    fullTypeName: Door
+    methodName: SetLocked
   - assembly: YarnSpinner.Unity
     fullTypeName: Yarn.Unity.LineView
     methodName: OnContinueClicked
@@ -227,53 +236,17 @@ ScriptsOnlyBuild:
     fullTypeName: Door
     methodName: SetLocked
   - assembly: Assembly-CSharp
-    fullTypeName: CameraSight
-    methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: CameraSight
-    methodName: SetActive
-  - assembly: YarnSpinner.Unity
-    fullTypeName: Yarn.Unity.LineView
-    methodName: OnContinueClicked
-  - assembly: YarnSpinner.Unity
-    fullTypeName: Yarn.Unity.LineView
-    methodName: OnContinueClicked
+    fullTypeName: Door
+    methodName: SetLocked
   - assembly: Assembly-CSharp
     fullTypeName: Door
     methodName: SetLocked
   - assembly: Assembly-CSharp
     fullTypeName: Door
     methodName: StartActivate
-  - assembly: YarnSpinner.Unity
-    fullTypeName: Yarn.Unity.LineView
-    methodName: OnContinueClicked
-  - assembly: YarnSpinner.Unity
-    fullTypeName: Yarn.Unity.LineView
-    methodName: OnContinueClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: Door
-    methodName: SetLocked
-  - assembly: Assembly-CSharp
-    fullTypeName: Door
-    methodName: SetLocked
   - assembly: UnityEngine.PhysicsModule
     fullTypeName: UnityEngine.Rigidbody
     methodName: set_useGravity
-  - assembly: Assembly-CSharp
-    fullTypeName: CameraSight
-    methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: CameraSight
-    methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: Door
-    methodName: SetLocked
-  - assembly: Assembly-CSharp
-    fullTypeName: PowerSupply
-    methodName: SetLock1
-  - assembly: Assembly-CSharp
-    fullTypeName: Door
-    methodName: SetLocked
   - assembly: YarnSpinner.Unity
     fullTypeName: Yarn.Unity.LineView
     methodName: OnContinueClicked
@@ -283,6 +256,27 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: PowerSupply
     methodName: SetLock2
+  - assembly: Assembly-CSharp
+    fullTypeName: Door
+    methodName: SetLocked
+  - assembly: YarnSpinner.Unity
+    fullTypeName: Yarn.Unity.LineView
+    methodName: OnContinueClicked
+  - assembly: YarnSpinner.Unity
+    fullTypeName: Yarn.Unity.LineView
+    methodName: OnContinueClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: PowerSupply
+    methodName: SetLock1
+  - assembly: Assembly-CSharp
+    fullTypeName: Door
+    methodName: SetLocked
+  - assembly: Assembly-CSharp
+    fullTypeName: CameraSight
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: CameraSight
+    methodName: SetActive
   - assembly: YarnSpinner.Unity
     fullTypeName: Yarn.Unity.LineView
     methodName: OnContinueClicked
