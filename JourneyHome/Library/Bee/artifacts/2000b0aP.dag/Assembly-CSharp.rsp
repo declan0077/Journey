@@ -312,6 +312,7 @@
 "Assets/Elevator.cs"
 "Assets/LiftParenter.cs"
 "Assets/MiniGames/MiniGamePlayer.cs"
+"Assets/OnHover.cs"
 "Assets/PlayerPatrol.cs"
 "Assets/PowerSupply.cs"
 "Assets/Restart.cs"

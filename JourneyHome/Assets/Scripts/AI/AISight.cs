@@ -79,7 +79,7 @@ public class AISight : MonoBehaviour
                 {
                     if (!hasSeenPlayer)
                     {
-                        hit.collider.gameObject.GetComponent<PlayerController>().ReturnToSpawn();
+                       FindAnyObjectByType<PlayerController>().ReturnToSpawn();
                     }
                     Debug.DrawLine(origin, hit.point, Color.green);
                 }

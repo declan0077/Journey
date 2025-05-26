@@ -289,139 +289,67 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DuplicateNodeError__ctor_m8D8D65F500D5C5
 #endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FloatMath_Compare_m7C257C05C46C30E54D9386E55477F117E4222143 (FloatMath_t1BDE422EA353FD3D0A987EFE5267722060210472* __this, float ___0_a, float ___1_b, const RuntimeMethod* method) 
 {
-	int32_t V_0 = 0;
 	{
 		float L_0 = ___1_b;
 		int32_t L_1;
 		L_1 = Single_CompareTo_m06F7868162EB392D3E99103D1A0BD27463C9E66F((&___0_a), L_0, NULL);
-		V_0 = L_1;
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		int32_t L_2 = V_0;
-		return L_2;
+		return L_1;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FloatMath_AreEqual_mE57C66C6A7E55F50E5A0FDF707ACFCF7918894DC (FloatMath_t1BDE422EA353FD3D0A987EFE5267722060210472* __this, float ___0_a, float ___1_b, const RuntimeMethod* method) 
 {
-	bool V_0 = false;
 	{
 		float L_0 = ___0_a;
 		float L_1 = ___1_b;
-		V_0 = (bool)((((float)L_0) == ((float)L_1))? 1 : 0);
-		goto IL_0008;
-	}
-
-IL_0008:
-	{
-		bool L_2 = V_0;
-		return L_2;
+		return (bool)((((float)L_0) == ((float)L_1))? 1 : 0);
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FloatMath_get_MinValue_mAF23F78D3EC9CA8EC8E71B9EA37E803EAF5E14D9 (FloatMath_t1BDE422EA353FD3D0A987EFE5267722060210472* __this, const RuntimeMethod* method) 
 {
-	float V_0 = 0.0f;
 	{
-		V_0 = (-(std::numeric_limits<float>::max)());
-		goto IL_0009;
-	}
-
-IL_0009:
-	{
-		float L_0 = V_0;
-		return L_0;
+		return (-(std::numeric_limits<float>::max)());
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FloatMath_get_Zero_mD441F84DD7AF38A937EFBAEA4CAC4C8A96680F32 (FloatMath_t1BDE422EA353FD3D0A987EFE5267722060210472* __this, const RuntimeMethod* method) 
 {
-	float V_0 = 0.0f;
 	{
-		V_0 = (0.0f);
-		goto IL_0009;
-	}
-
-IL_0009:
-	{
-		float L_0 = V_0;
-		return L_0;
+		return (0.0f);
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FloatMath_get_NegativeInfinity_m083E0731CB0E24D1C412EC9177814768465A5443 (FloatMath_t1BDE422EA353FD3D0A987EFE5267722060210472* __this, const RuntimeMethod* method) 
 {
-	float V_0 = 0.0f;
 	{
-		V_0 = (-std::numeric_limits<float>::infinity());
-		goto IL_0009;
-	}
-
-IL_0009:
-	{
-		float L_0 = V_0;
-		return L_0;
+		return (-std::numeric_limits<float>::infinity());
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FloatMath_get_PositiveInfinity_m4E4516F4842EA2772F5960A3F1D0BA787DC73AE2 (FloatMath_t1BDE422EA353FD3D0A987EFE5267722060210472* __this, const RuntimeMethod* method) 
 {
-	float V_0 = 0.0f;
 	{
-		V_0 = (std::numeric_limits<float>::infinity());
-		goto IL_0009;
-	}
-
-IL_0009:
-	{
-		float L_0 = V_0;
-		return L_0;
+		return (std::numeric_limits<float>::infinity());
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FloatMath_Add_mB1E5237E0C236D82848AEC5A5849B2D79AEE5440 (FloatMath_t1BDE422EA353FD3D0A987EFE5267722060210472* __this, float ___0_a, float ___1_b, const RuntimeMethod* method) 
 {
-	float V_0 = 0.0f;
 	{
 		float L_0 = ___0_a;
 		float L_1 = ___1_b;
-		V_0 = ((float)il2cpp_codegen_add(L_0, L_1));
-		goto IL_0007;
-	}
-
-IL_0007:
-	{
-		float L_2 = V_0;
-		return L_2;
+		return ((float)il2cpp_codegen_add(L_0, L_1));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FloatMath_Subtract_mA1DB886FE613CDA53601612D96DA919245723163 (FloatMath_t1BDE422EA353FD3D0A987EFE5267722060210472* __this, float ___0_a, float ___1_b, const RuntimeMethod* method) 
 {
-	float V_0 = 0.0f;
 	{
 		float L_0 = ___0_a;
 		float L_1 = ___1_b;
-		V_0 = ((float)il2cpp_codegen_subtract(L_0, L_1));
-		goto IL_0007;
-	}
-
-IL_0007:
-	{
-		float L_2 = V_0;
-		return L_2;
+		return ((float)il2cpp_codegen_subtract(L_0, L_1));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FloatMath_Multiply_m4149E71D41BEBDFFF7A9E630306C8686B8D49616 (FloatMath_t1BDE422EA353FD3D0A987EFE5267722060210472* __this, float ___0_a, float ___1_b, const RuntimeMethod* method) 
 {
-	float V_0 = 0.0f;
 	{
 		float L_0 = ___0_a;
 		float L_1 = ___1_b;
-		V_0 = ((float)il2cpp_codegen_multiply(L_0, L_1));
-		goto IL_0007;
-	}
-
-IL_0007:
-	{
-		float L_2 = V_0;
-		return L_2;
+		return ((float)il2cpp_codegen_multiply(L_0, L_1));
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FloatMath_DistanceSquaredBetweenPoints_m483A8B0B756B27B3FA12A23FF1448FAC51FF7D3B (FloatMath_t1BDE422EA353FD3D0A987EFE5267722060210472* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_a, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_b, const RuntimeMethod* method) 
@@ -431,8 +359,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FloatMath_DistanceSquaredBetweenPoints_
 	int32_t V_2 = 0;
 	float V_3 = 0.0f;
 	float V_4 = 0.0f;
-	bool V_5 = false;
-	float V_6 = 0.0f;
 	{
 		float L_0;
 		L_0 = VirtualFuncInvoker0< float >::Invoke(15, __this);
@@ -440,10 +366,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FloatMath_DistanceSquaredBetweenPoints_
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___0_a;
 		V_1 = ((int32_t)(((RuntimeArray*)L_1)->max_length));
 		V_2 = 0;
-		goto IL_0037;
+		goto IL_0034;
 	}
 
-IL_0010:
+IL_000f:
 	{
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___0_a;
 		int32_t L_3 = V_2;
@@ -470,27 +396,18 @@ IL_0010:
 		V_2 = ((int32_t)il2cpp_codegen_add(L_17, 1));
 	}
 
-IL_0037:
+IL_0034:
 	{
 		int32_t L_18 = V_2;
 		int32_t L_19 = V_1;
-		V_5 = (bool)((((int32_t)L_18) < ((int32_t)L_19))? 1 : 0);
-		bool L_20 = V_5;
-		if (L_20)
+		if ((((int32_t)L_18) < ((int32_t)L_19)))
 		{
-			goto IL_0010;
+			goto IL_000f;
 		}
 	}
 	{
-		float L_21 = V_0;
-		V_6 = L_21;
-		goto IL_0046;
-	}
-
-IL_0046:
-	{
-		float L_22 = V_6;
-		return L_22;
+		float L_20 = V_0;
+		return L_20;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FloatMath__ctor_mDAFB21A490BF4EF49B26DD79212810D4A6A4B071 (FloatMath_t1BDE422EA353FD3D0A987EFE5267722060210472* __this, const RuntimeMethod* method) 

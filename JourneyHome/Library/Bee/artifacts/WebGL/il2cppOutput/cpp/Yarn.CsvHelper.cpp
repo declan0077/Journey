@@ -7070,7 +7070,7 @@ IL_0004:
 		L_4 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(6, L_3);
 		String_t* L_5;
 		L_5 = InterfaceFuncInvoker0< String_t* >::Invoke(0, ISerializerConfiguration_t916A6A4021041D78D54C03DD20629E2E2D84BE02_il2cpp_TypeInfo_var, L_4);
-		VirtualActionInvoker1< String_t* >::Invoke(14, L_2, L_5);
+		VirtualActionInvoker1< String_t* >::Invoke(13, L_2, L_5);
 	}
 
 IL_0028:
@@ -7111,7 +7111,7 @@ IL_0043:
 		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_18;
 		L_18 = VirtualFuncInvoker0< TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* >::Invoke(7, L_17);
 		String_t* L_19 = V_1;
-		VirtualActionInvoker1< String_t* >::Invoke(14, L_18, L_19);
+		VirtualActionInvoker1< String_t* >::Invoke(13, L_18, L_19);
 		int32_t L_20 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_20, 1));
 	}
@@ -7141,7 +7141,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CsvSerializer_WriteLine_mC8E157E68CEFB99
 		WritingContext_t4157D0D5134D3215D51CD84A2E69EB812C32A3A9* L_0 = __this->___context;
 		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_1;
 		L_1 = VirtualFuncInvoker0< TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* >::Invoke(7, L_0);
-		VirtualActionInvoker1< String_t* >::Invoke(14, L_1, _stringLiteral4133EC0E83E4C69B6C0094B47BFD1408F0C8D4C5);
+		VirtualActionInvoker1< String_t* >::Invoke(13, L_1, _stringLiteral4133EC0E83E4C69B6C0094B47BFD1408F0C8D4C5);
 		return;
 	}
 }

@@ -95,6 +95,7 @@
           {
             "name": "AudioClip",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",
@@ -138,6 +139,7 @@
           {
             "name": "SampleClip",
             "scenes": [
+              "Assets/Scenes/DesertIntro.unity",
               "Assets/Scenes/DesertOutro.unity",
               "Assets/Scenes/Level1.unity",
               "Assets/Scenes/Level2.unity",

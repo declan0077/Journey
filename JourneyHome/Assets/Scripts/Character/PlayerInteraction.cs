@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerInteraction : MonoBehaviour
 {
     public float rayDistance = 2f;
@@ -43,8 +43,20 @@ public class PlayerInteraction : MonoBehaviour
                     if (currentTarget != activatable)
                     {
                         if (currentTarget != null)
-                            currentTarget.OnFar(); 
-                        Visual.SetActive(false);
+                            currentTarget.OnFar();
+
+                        if (SceneManager.GetActiveScene().buildIndex <= 2)
+                        {
+
+                           Visual.SetActive(true);
+                        }
+                        else
+                        {
+                            Visual.SetActive(false);
+
+                        }
+
+
 
 
 

@@ -17,6 +17,8 @@ public class Ladder : MonoBehaviour, IActivate
 
     public void StartActivate()
     {
+        if(isClimbing)
+            return; // Already climbing
         if (playerTransform == null)
         {
             GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
